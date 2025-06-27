@@ -1,0 +1,100 @@
+{% extends 'public/public_layout.html' %}
+{% block title %} HU | Our History
+
+{% endblock %}
+
+<!-- custom css -->
+{% block news_custom_css %}
+
+{% endblock %}
+
+{% block content %}
+    <!-- from here content -->
+
+    <section>
+        <div class="col d-none d-lg-block">
+
+            
+
+            <img src="{{url_for('static', filename='img/public/ourHistory.png')}}" class="card-img-top fit-image" alt="Hormuud University Mission Image">
+        </div>
+        <div class="col d-block d-sm-block d-md-none">
+            <img src="{{url_for('static', filename='img/public/hu_history3.png')}}" class="card-img-top fit-image" alt="Hormuud University Mission Image">
+        </div>
+        <div class="col d-none d-md-block d-lg-none ">
+            <img src="{{url_for('static', filename='img/public/ourHistory2.png')}}" class="card-img-top fit-image" alt="Hormuud University Mission Image">
+        </div>
+    </section>
+
+    <div class="text-center mt-3">
+        <h1>
+            "Hormuud University: Illuminating Minds, Shaping Somalia's Future"
+        </h1>
+    </div>
+    
+
+    <section class="mt-5 mb-5">
+
+        <div class="container-lg">
+                <div class="row  justify-content-center pb-5">
+                    <div class="col-12 col-md-12 col-lg-9 p-0">
+                        <div class="card">
+                            
+                            <img src="{{url_for('static', filename='img/public/hist-hu-1.jpg')}}" class="card-img-top rounded" alt="..." height="400">
+                            <div class="card-body">
+                                <h5 class="card-title text-black fs-2 mb-5 mt-4">Educational Challenges and Opportunities in
+                                    Somalia</h5>
+                                <p class="card-text">Destruction of the sector went far beyond the deterioration of physical
+                                    infrastructure. It is estimated that more than 80% of the educated elite left the
+                                    country in the period since the conflict began. This extended period of insecurity and
+                                    instability has robbed a generation of young Somali men and women the chance to attend
+                                    formal education. Somalia now suffers from one of the lowest literacy rates in the
+                                    world.</p>
+                            </div>
+                            <div class="row ms-1 me-1 mt-5 p-0">
+                                <div class="col-12 col-md-6 mb-5 p-0">
+                                    <img src="{{url_for('static', filename='img/public/hist_1.png')}}" class="card-img-top ms-1 me-1 rounded" alt="...">
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title text-black fs-2 mb-5">Hormuud University: A Beacon of Hope</h5>
+                                    <p class="card-text">
+                                        Hormuud University is a private, Non-profit institution, established by elite members of Hormuud Telecommunication Company in 2010, majoring in the field of engineering and technology in Somalia. Hormuud University has a member of a number of associations, local, regional, and international.
+                                    </p>
+                                    <p>
+                                        Hormuud University brings together the most promising students who value and seek knowledge to acquire a profession, lead principled lives, and assume leading roles in solving major problems of the society.
+                                    </p>
+                                    <p>
+                                        The university is dedicated to the highest standard of education to promote self-knowledge and engagement with the world through learning, research, and action. Situated in the capital city of Somalia. The university is not only one of the largest in the country but also the inexperienced student has the opportunity to study in the same class with former and current officials in high places of government. Entering the community knowledge seekers and providers at Hormuud University, therefore represents a significant leap from prior levels of education and experience in Somalia.
+                                    </p>
+                                </div>
+                            </div>
+
+                        
+                            <div class="card-body mt-5">
+                                <h5 class="card-title text-black fs-2 mb-5">Vision and Mission of Hormuud University</h5>
+                                <p class="card-text">Hormuud University strives to create a learning environment where intellectual freedom is cherished, tolerance of different ideas exists, and no how contradictory to one’s opinions, and the personal as well as the physical integrity of every one is respected and protected. The aim at all times is to banish ignorance to achieve enlightened lives and serve our people waiting for durable solutions ton poverty, premature death, and social injustice.</p>
+                                <p>
+                                    To realize this mission, Hormuud University provides different disciplines that prepare the future leaders of Somalia and the region in every major walk of life. Including to engineering and technology, business management, economics and entrepreneurship, agriculture and veterinary, and social sciences. These faculties prepare the future of the country.
+                                </p>
+                                <p>
+                                    HU is one of the republic of Somalia’s leading higher education institution and is committed to providing a wide range of undergraduate degree courses. It is the goal of the university to give all graduates the skills needed for success in their futures careers and to contribute to wider processes of educational and professional development in Somalia.
+                                </p>
+                                <p>
+                                    Hormuud University prepares not only the rescuers but also the creative leaders and builders of great Somalia.
+                                </p>
+                              </div>
+                              <img src="{{url_for('static', filename='img/public/hist-3.JPG')}}" class="card-img-bottom rounded" alt="...">
+                            
+                        </div>
+
+                        
+                    </div>
+                </div>
+        </div>
+
+    </section>
+
+
+    <!-- to here content end -->
+
+{% endblock %}

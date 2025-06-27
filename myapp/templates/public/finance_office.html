@@ -1,0 +1,80 @@
+{% extends 'public/public_layout.html' %}
+{% block title %} HU | Finance Office
+
+{% endblock %}
+
+<!-- custom css -->
+{% block news_custom_css %}
+{% endblock %}
+
+{% block content %}
+    <!-- from here content -->
+
+    <section>
+        <div class="container  mb-5">
+            <div class="row p-1 justify-content-center pb-5">
+                <div class="col-12 col-md-10 mt-5">
+                    <h1 class="display-1 text-dark" style="font-size: 18px;">A message from finance office </h1>
+                    <h1 class="display-5 text-dark mt-4">
+                        Unlocking Accessible Education: Hormuud University's Flexible Tuition Plans for a Brighter Future
+                    </h1>
+
+                    <div class="container pre-container mt-5">
+                        <img class="image rounded-circle d-none" src="{{url_for('static', filename='img/public/President-image.jpg')}}" alt="Profile Picture"
+                            width="60" height="60">
+                        <div>
+                            <p class="pre-name ms-2 text-primary">Abdullahi </p>
+                            <p class="pre-title ms-2">Finance Office, Hormuud University</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-5 border border-2 border-primary rounded-3 p-1 d-none">
+                        <img src="{{url_for('static', filename='img/public/President-image.jpg')}}" class="card-img-top rounded" alt="..." width="50">
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-10 mt-5 card-text display-6"
+                            style="font-size: 15px; letter-spacing: 1px;">
+                            
+                            <p class="card-text">
+                                The finance office is a department responsible for managing the financial operations of
+                                the university includes budgeting, accounting, financial reporting, payroll, accounts
+                                receivable, accounts payable, and financial planning. The office manipulates the
+                                university's financial resources are efficiently managed, in compliance with policies
+                                and regulations, with involvement in forecasting, investment management, and providing
+                                financial advice to university leadership.
+                            </p>
+                            <p class="card-text">
+                                Hormuud University's finance office has offer tuition fees for the university to better
+                                support students during challenging times, ensuring education remains accessible to all.
+                                The study mode is flexible, allowing students to study full-time or part-time on a
+                                programme (Faculty). The fees vary from one Programme (Faculty) to another and also by
+                                the mode of study. The current fees for students are available below table.
+                            </p>
+
+                            <div class="mt-5 border border-2 border-primary rounded-3 p-1">
+                                <img src="{{url_for('static', filename='img/public/finance-public-data.png')}}" class="card-img-top rounded" alt="..."
+                                    width="50">
+                            </div>
+
+                            <p class="card-text mt-4">
+                                We encourage students to reach out to our office if they require any assistance or have
+                                any questions regarding their fees.
+                                Thank you for your understanding and cooperation as we work together to create a more
+                                inclusive and supportive educational environment at Hormuud University.
+
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- to here content end -->
+
+{% endblock %}

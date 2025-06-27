@@ -1,0 +1,1574 @@
+{% extends 'public/public_layout.html' %}
+{% block title %} HU | Home
+
+{% endblock %}
+
+<!-- custom css -->
+{% block news_custom_css %}
+{% endblock %}
+
+{% block content %}
+
+
+
+    <!-- from here -->
+
+    <section class="background-section mb-5">
+        <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false"
+            data-bs-interval="5000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 0"></button>
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="3"
+                    aria-label="Slide 3"></button>
+                <!-- <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="4"
+                    aria-label="Slide 4"></button> -->
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active c-item">
+                    <img src="{{url_for('static', filename='img/public/graduationimg2022_2.jpg')}}" class="d-block w-100 c-img" alt="Slide 0">
+                    <div class="carousel-caption top-0 mt-4">
+                        <p class="v2_font  fs-3 text-title">Students are the creators</p>
+                        <h1 class="display-1 fw-bolder text-capitalize hu-hero-font">JOIN US AND BECOME CREATIVE</h1>
+                        <!-- <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Book a tour</button> -->
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="{{url_for('static', filename='img/public/greate_compus.jpg')}}" class="d-block w-100 c-img" alt="Slide 1">
+                    <div class="carousel-caption top-0 mt-4">
+                        <p class="v2_font text-title fs-3 mt-5">Good environment, good study</p>
+                        <h1 class="display-1 fw-bolder text-capitalize hu-hero-font">WELCOME TO THE BIG ENVIRONMENT</h1>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="{{url_for('static', filename='img/public/three_graduating_girls_2023.jpg')}}" class="d-block w-100 c-img" alt="Slide 2">
+                    <div class="carousel-caption top-0 mt-4">
+                        <p class="v2_font text-title fs-3 mt-5">Destination activities</p>
+                        <h1 class="display-1 fw-bolder text-capitalize hu-hero-font">WE ALWAYS SEEK DIFFERENCE</h1>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="{{url_for('static', filename='img/public/library.jpg')}}" class="d-block w-100 c-img" alt="Slide 3">
+                    <div class="carousel-caption top-0 mt-4 "> 
+                        <p class="v2_font text-title fs-3 mt-5">Library, the ocean of knowledge</p>
+                        <h1 class="display-1 fw-bolder text-capitalize hu-hero-font">STUDENTS LEARN BY READING</h1>
+
+                    </div>
+                </div>
+                <!-- <div class="carousel-item c-item">
+                    <img src="{{url_for('static', filename='img/public/geo4.jpg')}}" class="d-block w-100 c-img" alt="Slide 4">
+                    <div class="carousel-caption top-0 mt-4">
+                        <p class="v2_font text-title fs-3 mt-5">Lab, the place of invention</p>
+                        <h1 class="display-1 fw-bolder text-capitalize hu-hero-font">DO NOT STUDY, ALSO PRACTICE</h1>
+
+                    </div>
+                </div> -->
+                <div class="carousel-item c-item">
+                    <img src="{{url_for('static', filename='img/public/inovation_agriculture.jpg')}}" class="d-block w-100 c-img" alt="Slide 4">
+                    <div class="carousel-caption top-0 mt-4">
+                        <p class="v2_font text-title fs-3 mt-5">Innovation in Agriculture</p>
+                        <h1 class="display-1 fw-bolder text-capitalize hu-hero-font text-uppercase">EMBRACING TRADITIONS
+                            AND TECHNOLOGY
+                        </h1>
+
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="{{url_for('static', filename='img/public/telecomstudent-girls.jpg')}}" class="d-block w-100 c-img" alt="Slide 5">
+                    <div class="carousel-caption top-0 mt-4">
+                        <p class="v2_font text-title fs-3 mt-5">Students have the priority</p>
+                        <h1 class="display-1 fw-bolder text-capitalize hu-hero-font">FUTURE GAME CHANGERS ARE STUDENTS
+                        </h1>
+
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+
+    <!-- sestion two start ==============================================================================-->
+
+    <section class="mt-4 mb-5 pb-5">
+
+        <h1 class="v2_font text-center fw-bolder mt-5 ms-1 me-1" style="color: #168055;">A university for a progressive
+            education</h1>
+
+        <div class="row ms-1 me-1 mt-5 row-cols-1 row-cols-md-2 row-cols-lg-4">
+            <div class="col mb-3 ">
+
+                <div class="image-container">
+                    <img src="{{url_for('static', filename='img/public/yatch.jpeg')}}" alt="Your Image Description">
+                    <div class="text-overlay">
+                        <h1 class="display-6 fw-bold text-white fs-6 v2_font">Creative@HU</h1>
+                        <p class="text-white mb-0 text-center v2_font">Today boat, tomorrow something bigger</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col mb-3 ">
+                <div class="image-container">
+                    <img src="{{url_for('static', filename='img/public/eng-lap.jpg')}}" alt="Your Image Description">
+                    <div class="text-overlay">
+                        <h1 class="display-6 fw-bold text-white fs-6 v2_font">Invent@HU</h1>
+                        <p class="text-white mb-0 text-center v2_font">Tomorrow depends on what we work on today</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col mb-3 ">
+                <div class="image-container">
+                    <img src="{{url_for('static', filename='img/public/hupresident.jpg')}}" alt="Your Image Description">
+                    <div class="text-overlay">
+                        <h1 class="display-6 fw-bold text-white fs-6 v2_font">Knowledge@HU</h1>
+                        <p class="text-white mb-0 text-center v2_font">Your are different from other with education</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-3 ">
+                <div class="image-container">
+                    <img src="{{url_for('static', filename='img/public/fartuun.jpeg')}}" alt="Your Image Description">
+                    <div class="text-overlay">
+                        <h1 class="display-6 fw-bold text-white fs-6 v2_font">Study@HU</h1>
+                        <p class="text-white mb-0 text-center v2_font">Come with an idea and make it done at HU</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- sestion two end ==============================================================================-->
+
+    <!-- section start 3 ======================================-->
+
+    <section class="mt-5 section3 mb-5 pt-5 pb-5">
+
+        <div class="container mt-5 mb-5">
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col-12 col-md-4 mb-3">
+                    <h1 class="v2_font display-6 fw-bold fs-2 text-blue">Upcomming events</h1>
+                    <a href="" id="all_events" class="all_events">Explore all upcoming events
+                        <span class="ms-3 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-8 mb-3">
+                    <div class="card card_elevation card-header-border">
+                        <div class="card-body">
+                            <div class="row ">
+                                <div class="col-3 text-center text-blue">
+                                    <span class="v2_font fs-1 fw-bold ">
+                                        29
+                                    </span>
+                                    <span class="v2_font">DECEMBER</span>
+                                </div>
+                                <div class="col">
+                                    We are excited to announce the upcoming Graduation Ceremony of, which will be held
+                                    at
+                                    <span class="text-success fw-bold">
+                                        8:00 AM - 5:00 PM.
+                                    </span>
+
+                                    <div class="text-end">
+                                        <a href="" class="text-blue all_events text-decoration-none">Read more
+
+                                            <span class="ms-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-arrow-right-circle-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- section end 3 ======================================-->
+
+
+    <!-- section 4 start ======================================- -->
+    <section class="mt-5 mb-5">
+
+        <div class="container">
+            <h1 class="display-1 fw-bolder fs-1 v2_font" style="color: #168055;">News</h1>
+
+            <div class="row mt-5 mb-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <!-- Check if the article are more than 3 -->
+                {%if article_data.favorite_article_info|length >=3%}
+                <div class="col mb-3">
+                    <a href="">
+                        <div class="card card_elevation ">
+                            <div class="bg-image hover-overlay news_card_bg_image" data-mdb-ripple-init
+                                data-mdb-ripple-color="light">
+                                <a
+                                    href="{{ url_for('read_article', article_info=article_data.favorite_article_info[0].topic) }}">
+                                    <img src="{{article_data.favorite_article_info[0].image}}" class="card-img-top "
+                                        alt="..." style="height: 417px;">
+                                </a>
+                            </div>
+                            <div class="card-body card_elevation_body">
+                                <a href="#" class="all_events text-decoration-none">
+                                    <h5 class="card-title v2_font fw-bolder fs-4">{{article_data.favorite_article_info[0].topic}}</h5>
+                                </a>
+                                <p class="card-text mt-3"> <span class="p-1 rounded-2"
+                                        style="background-color: rgb(212, 212, 212);">{{article_data.favorite_article_info[0].category_name}}</span> <span
+                                        class="small_fs_">{{article_data.favorite_article_info[0].article_my_date[:-5] | format_date_somali_short}}</span> </p>
+
+                                <div class="mb-5">
+                                    <p class="card-text">{{article_data.favorite_article_info[0].topic_context}}</p>
+                                </div>
+
+                                <div class="mt-5 mb-5">
+                                    <a href="{{ url_for('read_article', article_info=article_data.favorite_article_info[0].topic) }}" class="text-blue all_events text-decoration-none">
+                                        <span class="me-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                                fill="currentColor" class="bi bi-arrow-right-circle-fill"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                                            </svg>
+                                        </span>
+                                        <span>Read more from HU news</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col mb-3">
+                    <a href="">
+                        <div class="card card_elevation ">
+                            <div class="bg-image hover-overlay news_card_bg_image" data-mdb-ripple-init
+                                data-mdb-ripple-color="light">
+                                <a
+                                    href="{{ url_for('read_article', article_info=article_data.favorite_article_info[1].topic) }}">
+                                    <img src="{{article_data.favorite_article_info[1].image}}" class="card-img-top "
+                                        alt="..." style="height: 417px;">
+                                </a>
+                            </div>
+                            <div class="card-body card_elevation_body">
+                                <a href="#" class="all_events text-decoration-none">
+                                    <h5 class="card-title v2_font fw-bolder fs-4">{{article_data.favorite_article_info[1].topic}}</h5>
+                                </a>
+                                <p class="card-text mt-3"> <span class="p-1 rounded-2"
+                                        style="background-color: rgb(212, 212, 212);">{{article_data.favorite_article_info[1].category_name}}</span> <span
+                                        class="small_fs_">{{article_data.favorite_article_info[1].article_my_date[:-5] | format_date_somali_short}}</span> </p>
+
+                                <div class="mb-5">
+                                    <p class="card-text">{{article_data.favorite_article_info[1].topic_context}}</p>
+                                </div>
+
+                                <div class="mt-5 mb-5">
+                                    <a href="{{ url_for('read_article', article_info=article_data.favorite_article_info[1].topic) }}" class="text-blue all_events text-decoration-none">
+                                        <span class="me-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                                fill="currentColor" class="bi bi-arrow-right-circle-fill"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                                            </svg>
+                                        </span>
+                                        <span>Read more from HU news</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                                {%else%}
+                <h1 class="fs-6">
+                    Dear reader, there is no more articles. Please check back later.
+                </h1>
+                {%endif%}
+                
+                <div class="col mb-3 col-md-12 ">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-1 ">
+
+                        {%if article_data.article_info|length >=5%}
+
+                        <div class="col">
+                            <a href="">
+                                <div class="card card_elevation ">
+                                    <div class="card-body card_elevation_body">
+
+                                        <a href="{{ url_for('read_article', article_info=article_data.article_info[2].topic) }}" class="side_news_text">
+                                            {{article_data.article_info[2].topic_context}}
+                                        </a>
+
+                                        <div class="mt-5">
+                                            <p class="card-text mt-3"> <span class="p-1 rounded-2"
+                                                    style="background-color: rgb(212, 212, 212);">{{article_data.article_info[2].category_name}}</span> <span
+                                                    class="small_fs_">{{article_data.article_info[2].article_my_date[:-5] | format_date_somali_short}}</span> </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col mt-3 mt-sm-0 mt-md-0 mt-lg-3">
+                            <a href="">
+                                <div class="card card_elevation rounded-0">
+                                    <div class="card-body card_elevation_body">
+
+                                        <a href="{{ url_for('read_article', article_info=article_data.article_info[3].topic) }}" class="side_news_text">
+                                            {{article_data.article_info[3].topic_context}}
+                                        </a>
+
+                                        <div class="mt-5">
+                                            <p class="card-text mt-3"> <span class="p-1 rounded-2"
+                                                    style="background-color: rgb(212, 212, 212);">{{article_data.article_info[3].category_name}}</span> <span
+                                                    class="small_fs_">{{article_data.article_info[3].article_my_date[:-5] | format_date_somali_short}}</span> </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="" class="mt-3">
+                                <div class="card card_elevation rounded-0 ">
+                                    <div class="card-body card_elevation_body">
+
+                                        <a href="{{ url_for('read_article', article_info=article_data.article_info[4].topic) }}" class="side_news_text">
+                                            {{article_data.article_info[4].topic_context}}
+                                        </a>
+
+                                        <div class="mt-5">
+                                            <p class="card-text mt-3"> <span class="p-1 rounded-2"
+                                                    style="background-color: rgb(212, 212, 212);">{{article_data.article_info[4].category_name}}</span> <span
+                                                    class="small_fs_">{{article_data.article_info[4].article_my_date[:-5] | format_date_somali_short}}</span> </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                                       {%else%}
+                <h1 class="fs-6">
+                    Dear reader, there is no more articles. Please check back later.
+                </h1>
+                {%endif%}
+                
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <!-- section 4 end ======================================- -->
+
+    <!-- test monials start -->
+    <!-- images start -->
+
+    <section id="tranding" class="mt-5 mb-5">
+        <div class=" testmonial_container ps-0 pe-0 pt-5">
+            <div class="container ">
+                <h1 class="text-light v2_font">Student Testmonials</h1>
+            </div>
+
+            <div class="swiper tranding-slider">
+                <div class="swiper-wrapper">
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide bgcolor border-success border border-2">
+                        <div class="tranding-slide-content ">
+
+                            <div class="quoteDiv">
+                                <img src="{{url_for('static', filename='img/public/quotesGreen.png')}}" class="img-fluid quote" alt="">
+                            </div>
+                            <div class="container ps-4 pe-4 ps-sm-0 pe-sm-0">
+                                <div class="row  ms-2 me-2">
+                                    <div class="col align">
+                                        <div class="d-flex justify-content-start align-items-center ps-0">
+                                            <div class=" responsive-div">
+                                                <img src="{{url_for('static', filename='img/public/Ahmed_Khalif_Mumin.png')}}" class="img-fluid persons"
+                                                    alt="Person Image">
+                                            </div>
+                                            <div class="personalTestmonial">
+                                                <h5 class="v2_font">Ahmaed Khalif Muumin</h5>
+                                                <span class="d-block fs-6 fw-bold">Faculty of
+                                                    Computer Science</span>
+                                                <span
+                                                    class="border rounded badge-success border-success fw-light mt-4 text-success">Class
+                                                    of 2023</span>
+                                            </div>
+                                        </div>
+                                        <!-- justifiedtext -->
+                                        <div class="mt-3 ps-1 ps-1 card-text testInfo">
+                                            Joining Hormuud University's Computer Science program was a gateway to a
+                                            world of endless possibilities. From my very first semester, I was immersed
+                                            in a challenging yet supportive environment that fostered innovation,
+                                            critical thinking, and problem-solving.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide bgcolor border border-success border-2">
+                        <div class="tranding-slide-content ">
+
+                            <div class="quoteDiv">
+                                <img src="{{url_for('static', filename='img/public/quotesGreen.png')}}" class="img-fluid quote" alt="">
+                            </div>
+                            <div class="container ps-4 pe-4 ps-sm-0 pe-sm-0">
+                                <div class="row  ms-2 me-2">
+                                    <div class="col align">
+                                        <div class="d-flex justify-content-start align-items-center ps-0">
+                                            <div class=" responsive-div">
+                                                <img src="{{url_for('static', filename='img/public/Mushtak_Omar_Hussein.png')}}" class="img-fluid persons"
+                                                    alt="Person Image">
+                                            </div>
+                                            <div class="personalTestmonial">
+                                                <h5 class="v2_font">Mushtak Omar Hussein</h5>
+                                                <span class="d-block fs-6 fw-bold">Faculty of
+                                                    Business Administration</span>
+                                                <span
+                                                    class="border rounded badge-success border-success fw-light mt-4 text-success">Class
+                                                    of 2023</span>
+                                            </div>
+                                        </div>
+                                        <!-- justifiedtext -->
+                                        <div class="mt-3 ps-1 ps-1 card-text testInfo">My journey at Hormuud
+                                            University's Business Administration faculty has been nothing short of
+                                            transformative. When I first stepped onto campus, I had ambitions of
+                                            becoming a business leader but wasn't sure how to chart the course. Hormuud
+                                            University provided me with the compass and the map.
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <!-- Slide-end -->
+                    </div>
+
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide bgcolor border border-success border-2">
+                        <div class="tranding-slide-content ">
+
+                            <div class="quoteDiv">
+                                <img src="{{url_for('static', filename='img/public/quotesGreen.png')}}" class="img-fluid quote" alt="">
+                            </div>
+                            <div class="container ps-4 pe-4 ps-sm-0 pe-sm-0">
+                                <div class="row  ms-2 me-2">
+                                    <div class="col align">
+                                        <div class="d-flex justify-content-start align-items-center ps-0">
+                                            <div class=" responsive-div">
+                                                <img src="{{url_for('static', filename='img/public/Ikram_Abdi_Osman.png')}}" class="img-fluid persons"
+                                                    alt="Person Image">
+                                            </div>
+                                            <div class="personalTestmonial">
+                                                <h5 class="v2_font">Ikram Abdi Osman</h5>
+                                                <span class="d-block fs-6 fw-bold">Faculty of
+                                                    Information Technology</span>
+                                                <span
+                                                    class="border rounded badge-success border-success fw-light mt-4 text-success">Class
+                                                    of 2023</span>
+                                            </div>
+                                        </div>
+                                        <!-- justifiedtext -->
+                                        <div class="mt-3 ps-1 ps-1 card-text testInfo">Choosing Hormuud University for
+                                            my IT education was a pivotal decision in my life. It provided me with more
+                                            than just a degree; it was a comprehensive experience that shaped my
+                                            understanding of technology and its impact on the world.
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <!-- Slide-end -->
+                    </div>
+
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide bgcolor border border-success border-2">
+                        <div class="tranding-slide-content ">
+
+                            <div class="quoteDiv">
+                                <img src="{{url_for('static', filename='img/public/quotesGreen.png')}}" class="img-fluid quote" alt="">
+                            </div>
+                            <div class="container ps-4 pe-4 ps-sm-0 pe-sm-0">
+                                <div class="row  ms-2 me-2">
+                                    <div class="col align">
+                                        <div class="d-flex justify-content-start align-items-center ps-0">
+                                            <div class=" responsive-div">
+                                                <img src="{{url_for('static', filename='img/public/Abdikarin_Mohamed_Ali.png')}}"
+                                                    class="img-fluid persons" alt="Person Image">
+                                            </div>
+                                            <div class="personalTestmonial">
+                                                <h5 class="v2_font">Abdikarin Mohamed Ali (Daanduri)</h5>
+                                                <span class="d-block fs-6 fw-bold">Faculty of
+                                                    Computer Science</span>
+                                                <span
+                                                    class="border rounded badge-success border-success fw-light mt-4 text-success">Class
+                                                    of 2023</span>
+                                            </div>
+                                        </div>
+                                        <!-- justifiedtext -->
+                                        <div class="mt-3 ps-1 ps-1 card-text testInfo">Embarking on my Computer Science
+                                            degree at Hormuud University has been one of the most rewarding endeavors of
+                                            my life. With a curriculum that is as challenging as it is inspiring, I was
+                                            able to dive deep into the complexities of computing and emerge with a
+                                            profound understanding of its principles and applications.
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <!-- Slide-end -->
+                    </div>
+
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide bgcolor border border-success border-2">
+                        <div class="tranding-slide-content ">
+
+                            <div class="quoteDiv">
+                                <img src="{{url_for('static', filename='img/public/quotesGreen.png')}}" class="img-fluid quote" alt="">
+                            </div>
+                            <div class="container ps-4 pe-4 ps-sm-0 pe-sm-0">
+                                <div class="row  ms-2 me-2">
+                                    <div class="col align">
+                                        <div class="d-flex justify-content-start align-items-center ps-0">
+                                            <div class=" responsive-div">
+                                                <img src="{{url_for('static', filename='img/public/Abdiwali_Farah_Abdi.png')}}" class="img-fluid persons"
+                                                    alt="Person Image">
+                                            </div>
+                                            <div class="personalTestmonial">
+                                                <h5 class="v2_font">Abdiwali Farah Abdi</h5>
+                                                <span class="d-block fs-6 fw-bold">Faculty of
+                                                    Electrical Engineering</span>
+                                                <span
+                                                    class="border rounded badge-success border-success fw-light mt-4 text-success">Class
+                                                    of 2023</span>
+                                            </div>
+                                        </div>
+                                        <!-- justifiedtext -->
+                                        <div class="mt-3 ps-1 ps-1 card-text testInfo">From the moment I began my
+                                            journey at Hormuud University in the Electrical Engineering faculty, I knew
+                                            that I was on a path to discovery and innovation. The university's vibrant
+                                            academic environment and cutting-edge resources provided the perfect
+                                            platform for nurturing my passion for engineering.
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <!-- Slide-end -->
+                    </div>
+
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide bgcolor border border-success border-2">
+                        <div class="tranding-slide-content ">
+
+                            <div class="quoteDiv">
+                                <img src="{{url_for('static', filename='img/public/quotesGreen.png')}}" class="img-fluid quote" alt="">
+                            </div>
+                            <div class="container ps-4 pe-4 ps-sm-0 pe-sm-0">
+                                <div class="row  ms-2 me-2">
+                                    <div class="col align">
+                                        <div class="d-flex justify-content-start align-items-center ps-0">
+                                            <div class=" responsive-div">
+                                                <img src="{{url_for('static', filename='img/public/Nasteho_Ali_Hassan.png')}}" class="img-fluid persons"
+                                                    alt="Person Image">
+                                            </div>
+                                            <div class="personalTestmonial">
+                                                <h5 class="v2_font">Nasteho Ali Hassan</h5>
+                                                <span class="d-block fs-6 fw-bold">Faculty of
+                                                    Electrical Engineering</span>
+                                                <span
+                                                    class="border rounded badge-success border-success fw-light mt-4 text-success">Class
+                                                    of 2023</span>
+                                            </div>
+                                        </div>
+                                        <!-- justifiedtext -->
+                                        <div class="mt-3 ps-1 ps-1 card-text testInfo">As I reflect on my time at
+                                            Hormuud University, I am filled with a profound sense of accomplishment and
+                                            gratitude. The Electrical Engineering program here has been a crucible for
+                                            innovation, critical thinking, and technical excellence, all of which have
+                                            been pivotal in my educational journey.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide-end -->
+                    </div>
+
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide bgcolor border border-success border-2">
+                        <div class="tranding-slide-content ">
+
+                            <div class="quoteDiv">
+                                <img src="{{url_for('static', filename='img/public/quotesGreen.png')}}" class="img-fluid quote" alt="">
+                            </div>
+                            <div class="container ps-4 pe-4 ps-sm-0 pe-sm-0">
+                                <div class="row  ms-2 me-2">
+                                    <div class="col align">
+                                        <div class="d-flex justify-content-start align-items-center ps-0">
+                                            <div class=" responsive-div">
+                                                <img src="{{url_for('static', filename='img/public/Mohamed_Abdullahi_Mohamud.png')}}"
+                                                    class="img-fluid persons" alt="Person Image">
+                                            </div>
+                                            <div class="personalTestmonial">
+                                                <h5 class="v2_font">Mohamed Abdullahi Mohamud</h5>
+                                                <span class="d-block fs-6 fw-bold">Faculty of
+                                                    Electrical Engineering</span>
+                                                <span
+                                                    class="border rounded badge-success border-success fw-light mt-4 text-success">Class
+                                                    of 2023</span>
+                                            </div>
+                                        </div>
+                                        <!-- justifiedtext -->
+                                        <div class="mt-3 ps-1 ps-1 card-text testInfo">Enrolling in the Electrical
+                                            Engineering program at Hormuud University was the first step towards
+                                            realizing my dream of becoming an engineer capable of significant
+                                            technological contributions. The program's robust curriculum, which
+                                            encompasses the vast field of electrical systems provided a comprehensive
+                                            educational experience.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide-end -->
+                    </div>
+
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide bgcolor border-success border border-2">
+                        <div class="tranding-slide-content ">
+
+                            <div class="quoteDiv">
+                                <img src="{{url_for('static', filename='img/public/quotesGreen.png')}}" class="img-fluid quote" alt="">
+                            </div>
+                            <div class="container ps-4 pe-4 ps-sm-0 pe-sm-0">
+                                <div class="row  ms-2 me-2">
+                                    <div class="col align">
+                                        <div class="d-flex justify-content-start align-items-center ps-0">
+                                            <div class=" responsive-div">
+                                                <img src="{{url_for('static', filename='img/public/Abdikafi_Omar_Abdi.png')}}" class="img-fluid persons"
+                                                    alt="Person Image">
+                                            </div>
+                                            <div class="personalTestmonial">
+                                                <h5 class="v2_font">Abdikafi Omar Abdi</h5>
+                                                <span class="d-block fs-6 fw-bold">Faculty of
+                                                    Economics</span>
+                                                <span
+                                                    class="border rounded badge-success border-success fw-light mt-4 text-success">Class
+                                                    of 2023</span>
+                                            </div>
+                                        </div>
+                                        <!-- justifiedtext -->
+                                        <div class="mt-3 ps-1 ps-1 card-text testInfo">
+                                            My academic voyage at Hormuud University in the Economics program has been a
+                                            journey of growth, insight, and enlightenment. The university's robust
+                                            curriculum provided a comprehensive exploration of economic theories and
+                                            their real-world applications, equipping me with a deep understanding of
+                                            complex economic systems.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide bgcolor border-success border border-2">
+                        <div class="tranding-slide-content ">
+
+                            <div class="quoteDiv">
+                                <img src="{{url_for('static', filename='img/public/quotesGreen.png')}}" class="img-fluid quote" alt="">
+                            </div>
+                            <div class="container ps-4 pe-4 ps-sm-0 pe-sm-0">
+                                <div class="row  ms-2 me-2">
+                                    <div class="col align">
+                                        <div class="d-flex justify-content-start align-items-center ps-0">
+                                            <div class=" responsive-div">
+                                                <img src="{{url_for('static', filename='img/public/Hani_Yusuf_Abdi.png')}}" class="img-fluid persons"
+                                                    alt="Person Image">
+                                            </div>
+                                            <div class="personalTestmonial">
+                                                <h5 class="v2_font">Hani Yusuf Abdi</h5>
+                                                <span class="d-block fs-6 fw-bold">Faculty of
+                                                    Economics</span>
+                                                <span
+                                                    class="border rounded badge-success border-success fw-light mt-4 text-success">Class
+                                                    of 2023</span>
+                                            </div>
+                                        </div>
+                                        <!-- justifiedtext -->
+                                        <div class="mt-3 ps-1 ps-1 card-text testInfo">
+                                            Embarking on my academic journey in the Economics program at Hormuud
+                                            University has been a transformative and enlightening experience. The
+                                            program offered a perfect amalgamation of theoretical knowledge and
+                                            practical insights, allowing me to delve deeply into the complexities of
+                                            global and local economies.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide bgcolor border-success border border-2">
+                        <div class="tranding-slide-content ">
+
+                            <div class="quoteDiv">
+                                <img src="{{url_for('static', filename='img/public/quotesGreen.png')}}" class="img-fluid quote" alt="">
+                            </div>
+                            <div class="container ps-4 pe-4 ps-sm-0 pe-sm-0">
+                                <div class="row  ms-2 me-2">
+                                    <div class="col align">
+                                        <div class="d-flex justify-content-start align-items-center ps-0">
+                                            <div class=" responsive-div">
+                                                <img src="{{url_for('static', filename='img/public/Abdirahman_Esse_Salad.png')}}"
+                                                    class="img-fluid persons" alt="Person Image">
+                                            </div>
+                                            <div class="personalTestmonial">
+                                                <h5 class="v2_font">Abdirahman Esse Salad</h5>
+                                                <span class="d-block fs-6 fw-bold">Faculty of
+                                                    Geology</span>
+                                                <span
+                                                    class="border rounded badge-success border-success fw-light mt-4 text-success">Class
+                                                    of 2023</span>
+                                            </div>
+                                        </div>
+                                        <!-- justifiedtext -->
+                                        <div class="mt-3 ps-1 ps-1 card-text testInfo">
+                                            My journey as a Geology student at Hormuud University has been nothing short
+                                            of extraordinary. From the very first day, I was immersed in an environment
+                                            that not only values scientific exploration but also encourages a deeper
+                                            connection with our planet.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide bgcolor border-success border border-2">
+                        <div class="tranding-slide-content ">
+
+                            <div class="quoteDiv">
+                                <img src="{{url_for('static', filename='img/public/quotesGreen.png')}}" class="img-fluid quote" alt="">
+                            </div>
+                            <div class="container ps-4 pe-4 ps-sm-0 pe-sm-0">
+                                <div class="row  ms-2 me-2">
+                                    <div class="col align">
+                                        <div class="d-flex justify-content-start align-items-center ps-0">
+                                            <div class=" responsive-div">
+                                                <img src="{{url_for('static', filename='img/public/Raida_Ali_Mohamud.png')}}" class="img-fluid persons"
+                                                    alt="Person Image">
+                                            </div>
+                                            <div class="personalTestmonial">
+                                                <h5 class="v2_font">Ra'ida Ali Mohamud</h5>
+                                                <span class="d-block fs-6 fw-bold">Faculty of
+                                                    Geology</span>
+                                                <span
+                                                    class="border rounded badge-success border-success fw-light mt-4 text-success">Class
+                                                    of 2023</span>
+                                            </div>
+                                        </div>
+                                        <!-- justifiedtext -->
+                                        <div class="mt-3 ps-1 ps-1 card-text testInfo">
+                                            Studying Geology at Hormuud University has been an adventure of discovery
+                                            and enlightenment. The program’s depth and breadth exposed me to the
+                                            fascinating world beneath our feet, from the ancient processes that shape
+                                            the earth to the modern techniques used in studying them.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide bgcolor border-success border border-2">
+                        <div class="tranding-slide-content ">
+
+                            <div class="quoteDiv">
+                                <img src="{{url_for('static', filename='img/public/quotesGreen.png')}}" class="img-fluid quote" alt="">
+                            </div>
+                            <div class="container ps-4 pe-4 ps-sm-0 pe-sm-0">
+                                <div class="row  ms-2 me-2">
+                                    <div class="col align">
+                                        <div class="d-flex justify-content-start align-items-center ps-0">
+                                            <div class=" responsive-div">
+                                                <img src="{{url_for('static', filename='img/public/Adan_Naleye_Ali.png')}}" class="img-fluid persons"
+                                                    alt="Person Image">
+                                            </div>
+                                            <div class="personalTestmonial">
+                                                <h5 class="v2_font">Aadan Naaleye Ali</h5>
+                                                <span class="d-block fs-6 fw-bold">Faculty of
+                                                    Islamic Banking and Finance</span>
+                                                <span
+                                                    class="border rounded badge-success border-success fw-light mt-4 text-success">Class
+                                                    of 2023</span>
+                                            </div>
+                                        </div>
+                                        <!-- justifiedtext -->
+                                        <div class="mt-3 ps-1 ps-1 card-text testInfo">
+                                            Choosing to pursue my studies in Islamic Banking and Finance at Hormuud
+                                            University has been one of the most fulfilling decisions of my academic
+                                            career. The program offered a unique blend of finance principles grounded in
+                                            Islamic ethical values, providing me with a holistic understanding of the
+                                            financial world.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide bgcolor border-success border border-2">
+                        <div class="tranding-slide-content ">
+
+                            <div class="quoteDiv">
+                                <img src="{{url_for('static', filename='img/public/quotesGreen.png')}}" class="img-fluid quote" alt="">
+                            </div>
+                            <div class="container ps-4 pe-4 ps-sm-0 pe-sm-0">
+                                <div class="row  ms-2 me-2">
+                                    <div class="col align">
+                                        <div class="d-flex justify-content-start align-items-center ps-0">
+                                            <div class=" responsive-div">
+                                                <img src="{{url_for('static', filename='img/public/Leyla_Said_Ahmed.png')}}" class="img-fluid persons"
+                                                    alt="Person Image">
+                                            </div>
+                                            <div class="personalTestmonial">
+                                                <h5 class="v2_font">Leyla Said Ahmed</h5>
+                                                <span class="d-block fs-6 fw-bold">Faculty of
+                                                    Islamic Banking and Finance</span>
+                                                <span
+                                                    class="border rounded badge-success border-success fw-light mt-4 text-success">Class
+                                                    of 2023</span>
+                                            </div>
+                                        </div>
+                                        <!-- justifiedtext -->
+                                        <div class="mt-3 ps-1 ps-1 card-text testInfo">
+                                            My academic journey at Hormuud University in the Islamic Banking and Finance
+                                            program has been both enlightening and transformative. The program's unique
+                                            approach to finance, rooted in Islamic principles, provided me with a fresh
+                                            perspective on the financial world and its ethical implications.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide bgcolor border-success border border-2">
+                        <div class="tranding-slide-content ">
+
+                            <div class="quoteDiv">
+                                <img src="{{url_for('static', filename='img/public/quotesGreen.png')}}" class="img-fluid quote" alt="">
+                            </div>
+                            <div class="container ps-4 pe-4 ps-sm-0 pe-sm-0">
+                                <div class="row  ms-2 me-2">
+                                    <div class="col align">
+                                        <div class="d-flex justify-content-start align-items-center ps-0">
+                                            <div class=" responsive-div">
+                                                <img src="{{url_for('static', filename='img/public/Aisha_Abdukadir_Ahmed.png')}}"
+                                                    class="img-fluid persons" alt="Person Image">
+                                            </div>
+                                            <div class="personalTestmonial">
+                                                <h5 class="v2_font">Aisha Abdukadir Ahmed</h5>
+                                                <span class="d-block fs-6 fw-bold">Faculty of
+                                                    Public Relationship</span>
+                                                <span
+                                                    class="border rounded badge-success border-success fw-light mt-4 text-success">Class
+                                                    of 2023</span>
+                                            </div>
+                                        </div>
+                                        <!-- justifiedtext -->
+                                        <div class="mt-3 ps-1 ps-1 card-text testInfo">
+                                            Studying Public Relations at Hormuud University has been a transformative
+                                            experience. The program offered a dynamic blend of theory and practice,
+                                            equipping me with the tools to navigate the fast-paced world of media and
+                                            communications.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+
+
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide bgcolor border-success border border-2">
+                        <div class="tranding-slide-content ">
+
+                            <div class="quoteDiv">
+                                <img src="{{url_for('static', filename='img/public/quotesGreen.png')}}" class="img-fluid quote" alt="">
+                            </div>
+                            <div class="container ps-4 pe-4 ps-sm-0 pe-sm-0">
+                                <div class="row  ms-2 me-2">
+                                    <div class="col align">
+                                        <div class="d-flex justify-content-start align-items-center ps-0">
+                                            <div class=" responsive-div">
+                                                <img src="{{url_for('static', filename='img/public/Mohamed_Musse_Abdulle.png')}}"
+                                                    class="img-fluid persons" alt="Person Image">
+                                            </div>
+                                            <div class="personalTestmonial">
+                                                <h5 class="v2_font">Mohamed Musse Abdulle</h5>
+                                                <span class="d-block fs-6 fw-bold">Faculty of
+                                                    Public Relationship</span>
+                                                <span
+                                                    class="border rounded badge-success border-success fw-light mt-4 text-success">Class
+                                                    of 2023</span>
+                                            </div>
+                                        </div>
+                                        <!-- justifiedtext -->
+                                        <div class="mt-3 ps-1 ps-1 card-text testInfo">
+                                            My journey in the Public Relations program at Hormuud University has been
+                                            nothing short of extraordinary. The program's curriculum, rich in both
+                                            theoretical knowledge and practical application, has thoroughly prepared me
+                                            for a career in PR.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide bgcolor border-success border border-2">
+                        <div class="tranding-slide-content ">
+
+                            <div class="quoteDiv">
+                                <img src="{{url_for('static', filename='img/public/quotesGreen.png')}}" class="img-fluid quote" alt="">
+                            </div>
+                            <div class="container ps-4 pe-4 ps-sm-0 pe-sm-0">
+                                <div class="row  ms-2 me-2">
+                                    <div class="col align">
+                                        <div class="d-flex justify-content-start align-items-center ps-0">
+                                            <div class=" responsive-div">
+                                                <img src="{{url_for('static', filename='img/public/Hussein_Ali_Mohamed.png')}}" class="img-fluid persons"
+                                                    alt="Person Image">
+                                            </div>
+                                            <div class="personalTestmonial">
+                                                <h5 class="v2_font">Hussein Ali Mohamed</h5>
+                                                <span class="d-block fs-6 fw-bold">Faculty of
+                                                    Sharia and Leadership</span>
+                                                <span
+                                                    class="border rounded badge-success border-success fw-light mt-4 text-success">Class
+                                                    of 2023</span>
+                                            </div>
+                                        </div>
+                                        <!-- justifiedtext -->
+                                        <div class="mt-3 ps-1 ps-1 card-text testInfo">
+                                            My educational journey in the Sharia and Leadership program at Hormuud
+                                            University has been profoundly enriching and enlightening. The program
+                                            seamlessly blended the timeless wisdom of Sharia law with modern leadership
+                                            principles, preparing me for a role that demands both ethical integrity and
+                                            effective leadership skills.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide bgcolor border-success border border-2">
+                        <div class="tranding-slide-content ">
+
+                            <div class="quoteDiv">
+                                <img src="{{url_for('static', filename='img/public/quotesGreen.png')}}" class="img-fluid quote" alt="">
+                            </div>
+                            <div class="container ps-4 pe-4 ps-sm-0 pe-sm-0">
+                                <div class="row  ms-2 me-2">
+                                    <div class="col align">
+                                        <div class="d-flex justify-content-start align-items-center ps-0">
+                                            <div class=" responsive-div">
+                                                <img src="{{url_for('static', filename='img/public/Abdullahi_Abdinasir_Jama.png')}}"
+                                                    class="img-fluid persons" alt="Person Image">
+                                            </div>
+                                            <div class="personalTestmonial">
+                                                <h5 class="v2_font">Abdullahi Abdinasir Jama</h5>
+                                                <span class="d-block fs-6 fw-bold">Faculty of
+                                                    Sharia and Leadership</span>
+                                                <span
+                                                    class="border rounded badge-success border-success fw-light mt-4 text-success">Class
+                                                    of 2023</span>
+                                            </div>
+                                        </div>
+                                        <!-- justifiedtext -->
+                                        <div class="mt-3 ps-1 ps-1 card-text testInfo">
+                                            Enrolling in the Sharia and Leadership program at Hormuud University marked
+                                            the beginning of a transformative chapter in my life. The program offered a
+                                            unique combination of in-depth Sharia studies and practical leadership
+                                            training, providing me with a comprehensive understanding of Islamic ethical
+                                            principles and how they guide effective leadership.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide bgcolor border-success border border-2">
+                        <div class="tranding-slide-content ">
+
+                            <div class="quoteDiv">
+                                <img src="{{url_for('static', filename='img/public/quotesGreen.png')}}" class="img-fluid quote" alt="">
+                            </div>
+                            <div class="container ps-4 pe-4 ps-sm-0 pe-sm-0">
+                                <div class="row  ms-2 me-2">
+                                    <div class="col align">
+                                        <div class="d-flex justify-content-start align-items-center ps-0">
+                                            <div class=" responsive-div">
+                                                <img src="{{url_for('static', filename='img/public/Khalid_Mohamed_Osman.png')}}" class="img-fluid persons"
+                                                    alt="Person Image">
+                                            </div>
+                                            <div class="personalTestmonial">
+                                                <h5 class="v2_font">Khalid Mohamed Osman</h5>
+                                                <span class="d-block fs-6 fw-bold">Faculty of
+                                                    Sharia and Leadership</span>
+                                                <span
+                                                    class="border rounded badge-success border-success fw-light mt-4 text-success">Class
+                                                    of 2023</span>
+                                            </div>
+                                        </div>
+                                        <!-- justifiedtext -->
+                                        <div class="mt-3 ps-1 ps-1 card-text testInfo">
+                                            The Sharia and Leadership program at Hormuud University has been a
+                                            remarkable
+                                            journey of personal and professional growth. This program bridged the gap
+                                            between the rich traditions of Islamic Sharia and the contemporary practices
+                                            of effective leadership.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide bgcolor border-success border border-2">
+                        <div class="tranding-slide-content ">
+
+                            <div class="quoteDiv">
+                                <img src="{{url_for('static', filename='img/public/quotesGreen.png')}}" class="img-fluid quote" alt="">
+                            </div>
+                            <div class="container ps-4 pe-4 ps-sm-0 pe-sm-0">
+                                <div class="row  ms-2 me-2">
+                                    <div class="col align">
+                                        <div class="d-flex justify-content-start align-items-center ps-0">
+                                            <div class=" responsive-div">
+                                                <img src="{{url_for('static', filename='img/public/Abdirahin_Osman_Abtidon.png')}}"
+                                                    class="img-fluid persons" alt="Person Image">
+                                            </div>
+                                            <div class="personalTestmonial">
+                                                <h5 class="v2_font">Abdirahin Osman Abtidon</h5>
+                                                <span class="d-block fs-6 fw-bold">Faculty of
+                                                    Telecommunications</span>
+                                                <span
+                                                    class="border rounded badge-success border-success fw-light mt-4 text-success">Class
+                                                    of 2023</span>
+                                            </div>
+                                        </div>
+                                        <!-- justifiedtext -->
+                                        <div class="mt-3 ps-1 ps-1 card-text testInfo">
+                                            Enrolling in the Telecommunications program at Hormuud University was a
+                                            decision that set the stage for my future in the ever-evolving world of
+                                            technology. The program’s rigorous curriculum covered a wide array of
+                                            topics, from network infrastructure and wireless communications to digital
+                                            signal processing.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide bgcolor border-success border border-2">
+                        <div class="tranding-slide-content ">
+
+                            <div class="quoteDiv">
+                                <img src="{{url_for('static', filename='img/public/quotesGreen.png')}}" class="img-fluid quote" alt="">
+                            </div>
+                            <div class="container ps-4 pe-4 ps-sm-0 pe-sm-0">
+                                <div class="row  ms-2 me-2">
+                                    <div class="col align">
+                                        <div class="d-flex justify-content-start align-items-center ps-0">
+                                            <div class=" responsive-div">
+                                                <img src="{{url_for('static', filename='img/public/Hibo_Ali_Mohamed.png')}}" class="img-fluid persons"
+                                                    alt="Person Image">
+                                            </div>
+                                            <div class="personalTestmonial">
+                                                <h5 class="v2_font">Hibo Ali Mohamed</h5>
+                                                <span class="d-block fs-6 fw-bold">Faculty of
+                                                    Telecommunications</span>
+                                                <span
+                                                    class="border rounded badge-success border-success fw-light mt-4 text-success">Class
+                                                    of 2023</span>
+                                            </div>
+                                        </div>
+                                        <!-- justifiedtext -->
+                                        <div class="mt-3 ps-1 ps-1 card-text testInfo">
+                                            My experience in the Telecommunications program at Hormuud University has
+                                            been nothing short of transformative. The blend of theoretical learning with
+                                            practical application allowed me to deeply understand and engage with the
+                                            principles of telecommunications.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide bgcolor border-success border border-2">
+                        <div class="tranding-slide-content ">
+
+                            <div class="quoteDiv">
+                                <img src="{{url_for('static', filename='img/public/quotesGreen.png')}}" class="img-fluid quote" alt="">
+                            </div>
+                            <div class="container ps-4 pe-4 ps-sm-0 pe-sm-0">
+                                <div class="row  ms-2 me-2">
+                                    <div class="col align">
+                                        <div class="d-flex justify-content-start align-items-center ps-0">
+                                            <div class=" responsive-div">
+                                                <img src="{{url_for('static', filename='img/public/Bisharo_Abdiaziz_Ibrahim.png')}}"
+                                                    class="img-fluid persons" alt="Person Image">
+                                            </div>
+                                            <div class="personalTestmonial">
+                                                <h5 class="v2_font">Bisharo Abdiaziz Ibrahim</h5>
+                                                <span class="d-block fs-6 fw-bold">Faculty of
+                                                    Telecommunications</span>
+                                                <span
+                                                    class="border rounded badge-success border-success fw-light mt-4 text-success">Class
+                                                    of 2023</span>
+                                            </div>
+                                        </div>
+                                        <!-- justifiedtext -->
+                                        <div class="mt-3 ps-1 ps-1 card-text testInfo">
+                                            Choosing Hormuud University for my studies in Telecommunications has been a
+                                            pivotal point in my educational journey. The program’s comprehensive
+                                            curriculum, encompassing both the technical and managerial aspects of
+                                            telecommunications, provided a balanced and thorough education.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide bgcolor border-success border border-2">
+                        <div class="tranding-slide-content ">
+
+                            <div class="quoteDiv">
+                                <img src="{{url_for('static', filename='img/public/quotesGreen.png')}}" class="img-fluid quote" alt="">
+                            </div>
+                            <div class="container ps-4 pe-4 ps-sm-0 pe-sm-0">
+                                <div class="row  ms-2 me-2">
+                                    <div class="col align">
+                                        <div class="d-flex justify-content-start align-items-center ps-0">
+                                            <div class=" responsive-div">
+                                                <img src="{{url_for('static', filename='img/public/Sumaya_Said_Barre.png')}}" class="img-fluid persons"
+                                                    alt="Person Image">
+                                            </div>
+                                            <div class="personalTestmonial">
+                                                <h5 class="v2_font">Sumaya Said Barre</h5>
+                                                <span class="d-block fs-6 fw-bold">Faculty of
+                                                    Logistics</span>
+                                                <span
+                                                    class="border rounded badge-success border-success fw-light mt-4 text-success">Class
+                                                    of 2023</span>
+                                            </div>
+                                        </div>
+                                        <!-- justifiedtext -->
+                                        <div class="mt-3 ps-1 ps-1 card-text testInfo">
+                                            Enrolling in the Logistics program at Hormuud University was a turning point
+                                            in my academic and professional life. The program offered a perfect blend of
+                                            theoretical knowledge and practical skills essential for a career in
+                                            logistics and supply chain management.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide bgcolor border-success border border-2">
+                        <div class="tranding-slide-content ">
+
+                            <div class="quoteDiv">
+                                <img src="{{url_for('static', filename='img/public/quotesGreen.png')}}" class="img-fluid quote" alt="">
+                            </div>
+                            <div class="container ps-4 pe-4 ps-sm-0 pe-sm-0">
+                                <div class="row  ms-2 me-2">
+                                    <div class="col align">
+                                        <div class="d-flex justify-content-start align-items-center ps-0">
+                                            <div class=" responsive-div">
+                                                <img src="{{url_for('static', filename='img/public/Ahmed_Mohamed_Abdibari.png')}}"
+                                                    class="img-fluid persons" alt="Person Image">
+                                            </div>
+                                            <div class="personalTestmonial">
+                                                <h5 class="v2_font">Ahmed Mohamed Abdibari</h5>
+                                                <span class="d-block fs-6 fw-bold">Faculty of
+                                                    Logistics</span>
+                                                <span
+                                                    class="border rounded badge-success border-success fw-light mt-4 text-success">Class
+                                                    of 2023</span>
+                                            </div>
+                                        </div>
+                                        <!-- justifiedtext -->
+                                        <div class="mt-3 ps-1 ps-1 card-text testInfo">
+                                            My educational journey in the Logistics program at Hormuud University has
+                                            been both challenging and rewarding. The curriculum, designed to cover all
+                                            aspects of logistics and supply chain management, provided me with a
+                                            comprehensive understanding of the field.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+
+                </div>
+
+                <div class="tranding-slider-control">
+                    <div class="swiper-button-prev slider-arrow">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                    </div>
+                    <div class="swiper-button-next slider-arrow">
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- end of test monials -->
+
+    <!-- image rotating start ==================================================== -->
+
+    <section>
+
+        <div class="container mb-5">
+            <h2 class="display-5 v2_font" style="color: #168055;">Last Event Memories</h2>
+
+            <div class="text-muted">
+                Mogadishu 7 December, 2023: The Annual Summit of the Somali Research Universities of Mogadishu, Banadir
+                and Hormuud was held in Mogadishu.
+            </div>
+
+        </div>
+        <div class="container my-rotate-imgs-container justify-content-center mb-5">
+
+
+
+            <div class="slider mt-5 mb-5 ">
+
+                <span style="--i:1;"> <img src="{{url_for('static', filename='img/public/events.jpg')}}" alt="hu-testmonials-fartuun"> </span>
+                <span style="--i:2;"> <img src="{{url_for('static', filename='img/public/events7.jpg')}}" alt="hu-testmonials-fartuun"> </span>
+                <span style="--i:3;"> <img src="{{url_for('static', filename='img/public/events8.jpg')}}" alt="hu-testmonials-fartuun"> </span>
+                <span style="--i:4;"> <img src="{{url_for('static', filename='img/public/anual_2023_photo_group.jpg')}}" alt="hu-testmonials-fartuun">
+                </span>
+                <span style="--i:5;"> <img src="{{url_for('static', filename='img/public/events1.jpg')}}" alt="hu-testmonials-fartuun"> </span>
+                <span style="--i:6;"> <img src="{{url_for('static', filename='img/public/events5.jpg')}}" alt="hu-testmonials-fartuun"> </span>
+                <span style="--i:7;"> <img src="{{url_for('static', filename='img/public/events9.jpg')}}" alt="hu-testmonials-fartuun"> </span>
+                <span style="--i:8;"> <img src="{{url_for('static', filename='img/public/events6.jpg')}}" alt="hu-testmonials-fartuun"> </span>
+
+
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!-- image rotating end ==================================================== -->
+
+
+
+    <div class="">
+
+        <div class="container card_elevation_body pt-5 pb-5">
+
+            <h1 class="v2_font">Facts and figures</h1>
+            <div class="row mt-5 row-cols-2 row-cols-sm-2 row-cols-md-5 justify-content-center">
+
+                <div class="col text-center mt-3">
+                    <div type="button" class="btn btn-primary position-relative p-0">
+                        <span
+                            class="material-symbols-outlined facts_and_figures_icon border p-3 rounded-4 badge-primary border-primary">
+                            school
+                        </span>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle p-2 bg-primary border rounded-circle border-0">
+                            625+
+                            <span class="visually-hidden">New alerts</span>
+                        </span>
+                    </div>
+                    <div class="mt-2">
+                        Postgraduate students
+                    </div>
+
+                </div>
+                <div class="col text-center mt-3">
+                    <div type="button" class="btn btn-primary position-relative p-0">
+                        <span
+                            class="material-symbols-outlined facts_and_figures_icon border p-3 rounded-4 badge-danger border-danger ">
+                            workspace_premium
+                        </span>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border rounded-circle border-0 fw-bolder">
+                            1,142+
+                            <span class="visually-hidden">New alerts</span>
+                        </span>
+
+                    </div>
+                    <div class="mt-2">
+                        Undergraduate students
+                    </div>
+                </div>
+                <div class="col text-center mt-3">
+                    <div type="button" class="btn btn-primary position-relative p-0">
+                        <span
+                            class="material-symbols-outlined facts_and_figures_icon border p-3 rounded-4 badge-info border-info">
+                            menu_book
+                        </span>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle p-2 bg-info border rounded-circle border-0 fw-bolder">
+                            2,274+
+                            <span class="visually-hidden">New alerts</span>
+                        </span>
+
+                    </div>
+                    <div class="mt-2">
+                        Studying students
+                    </div>
+
+                </div>
+                <div class="col text-center mt-3 d-none">
+                    <div type="button" class="btn btn-primary position-relative p-0">
+                        <span
+                            class="material-symbols-outlined facts_and_figures_icon border p-3 rounded-4 badge-success border-success">
+                            globe
+                        </span>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle p-2 bg-success border rounded-circle border-0 fw-bolder">
+                            10+
+                            <span class="visually-hidden">New alerts</span>
+                        </span>
+
+                    </div>
+                    <div class="mt-2">
+                        International students
+                    </div>
+
+                </div>
+                <div class="col text-center mt-3">
+                    <div type="button" class="btn btn-primary position-relative p-0">
+                        <span
+                            class="material-symbols-outlined facts_and_figures_icon border p-3 rounded-4 badge-warning border-warning">
+                            groups_2
+                        </span>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle p-2 bg-warning border rounded-circle border-0 fw-bolder">
+                            194+
+                            <span class="visually-hidden">New alerts</span>
+                        </span>
+
+                    </div>
+                    <div class="mt-2">
+                        Academic staff
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- hu video section start -->
+    <div class="container mt-5 ps-0 pe-0 pb-0">
+
+        <h1 class="display-5 v2_font mb-3 text-blue">Dear, welcome to the university</h1>
+
+        <iframe src="https://www.youtube-nocookie.com/embed/hmdPn-45hi0?vq=hd1080&" width="100%" height="600"
+            title="Welcome to Hormuud university" frameborder="0" allowfullscreen></iframe>
+
+
+    </div>
+
+    <div class="container mt-5">
+        <div class="row row-cols-3">
+            <div class="col">
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/fX4goKQx57c"
+                    title="𝗦𝗧𝗨𝗗𝗘𝗡𝗧 𝗦𝗨𝗖𝗖𝗘𝗦𝗦 𝗦𝗧𝗢𝗥𝗬 - Engr 𝗔𝗜𝗦𝗛𝗔 𝗔𝗟𝗜 𝗠𝗢𝗔𝗟𝗜𝗠 𝗔𝗕𝗗𝗨𝗟𝗟𝗔𝗛𝗜"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col">
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/W0dDlJtpNrU"
+                    title="𝗦𝗧𝗨𝗗𝗘𝗡𝗧 𝗦𝗨𝗖𝗖𝗘𝗦𝗦 𝗦𝗧𝗢𝗥𝗬 - Engr. 𝗔𝗕𝗗𝗜𝗥𝗔𝗛𝗠𝗔𝗡 𝗠𝗢𝗛𝗔𝗠𝗘𝗗 𝗧𝗜𝗜𝗙𝗢𝗪"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col">
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/5F3Gdcogdxs"
+                    title="____   𝗦𝗧𝗨𝗗𝗘𝗡𝗧 𝗦𝗨𝗖𝗖𝗘𝗦𝗦 𝗦𝗧𝗢𝗥𝗬  ____ 𝗘𝗡𝗚. 𝗠𝗢𝗛𝗔𝗠𝗘𝗗 𝗔𝗕𝗗𝗜𝗥𝗔𝗛𝗠𝗔𝗡 𝗔𝗕𝗗𝗨𝗟𝗟𝗘"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- hu video section end -->
+
+    <!-- map start -->
+    <div class="container-fluid pt-3 pb-3 mt-5">
+
+        <h1 class="display-5 v2_font ms-md-5" style="color: #168055;">Campus Maps</h1>
+
+        <ul class="nav nav-tabs mb-3 justify-content-center border-bottom border-2 pb-2 border-success" id="myTab0"
+            role="tablist">
+            <li class="nav-item mb-3" role="presentation">
+                <button data-mdb-tab-init class="nav-link active" id="home-tab0" data-mdb-target="#home0" type="button"
+                    role="tab" aria-controls="home" aria-selected="true">
+                    Bulo-hubay Campus
+                </button>
+            </li>
+            <li class="nav-item mb-3" role="presentation">
+                <button data-mdb-tab-init class="nav-link" id="profile-tab0" data-mdb-target="#profile0" type="button"
+                    role="tab" aria-controls="profile" aria-selected="false">
+                    Postgraduate Campus
+                </button>
+            </li>
+            <li class="nav-item mb-3" role="presentation">
+                <button data-mdb-tab-init class="nav-link" id="contact-tab0" data-mdb-target="#contact0" type="button"
+                    role="tab" aria-controls="contact" aria-selected="false">
+                    Banadir Campus
+                </button>
+            </li>
+            <li class="nav-item mb-3" role="presentation">
+                <button data-mdb-tab-init class="nav-link bg-secondary" id="contact-tab0" data-mdb-target="#treedisha"
+                    type="button" role="tab" aria-controls="contact" aria-selected="false" disabled>
+                    KM-13 (Tredisha) Campus
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content " id="myTabContent0">
+            <div class="tab-pane fade show active" id="home0" role="tabpanel" aria-labelledby="home-tab0">
+                <div class="">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d249.20732945437035!2d45.30228697479934!3d2.028826300000009!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3d5841fe9c1ad9cd%3A0x33f794ad1e3d5205!2sHormuud%20University!5e0!3m2!1sen!2sso!4v1702109352291!5m2!1sen!2sso"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="rounded-5"></iframe>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile0" role="tabpanel" aria-labelledby="profile-tab0">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3987.315266243698!2d45.29972077167613!3d2.029639450830139!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3d58417ac6d808f1%3A0x940cf0f4300e4386!2sHormuud%20University%20Postgraduate%20Center!5e0!3m2!1sen!2sso!4v1702110578904!5m2!1sen!2sso"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="tab-pane fade" id="contact0" role="tabpanel" aria-labelledby="contact-tab0">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.2976415292974!2d45.294747296789566!3d2.03677330000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3d5843e0c02466d9%3A0x44a68b8d9100a29a!2sHormuud%20University%20(Banaadir%20Campus)!5e0!3m2!1sen!2sso!4v1702110636141!5m2!1sen!2sso"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="tab-pane fade" id="treedisha" role="tabpanel" aria-labelledby="contact-tab0">
+                Xarunta KM-13 (Tareedisha)
+            </div>
+        </div>
+        <div class="border border-1 border-success">
+
+        </div>
+
+        <!-- <div class="">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d249.20732945437035!2d45.30228697479934!3d2.028826300000009!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3d5841fe9c1ad9cd%3A0x33f794ad1e3d5205!2sHormuud%20University!5e0!3m2!1sen!2sso!4v1702109352291!5m2!1sen!2sso" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-5"></iframe>
+            </div> -->
+
+
+    </div>
+    <!-- map end -->
+
+    <!-- to here -->
+
+
+{% endblock %}

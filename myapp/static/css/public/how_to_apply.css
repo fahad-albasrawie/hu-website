@@ -1,0 +1,74 @@
+.dark_btn{
+    background-color: #a10000;
+    color: white;
+}
+.my_bg_primary{
+    background-color: #168056b9;
+}
+
+.my-hero{
+    background-color: #168056b9;
+    background-image: url("/static/img/public/howtoapllybgimage.png");
+    color: white;
+    background-size: cover;
+
+    background-blend-mode: multiply; 
+}
+
+.dark_card_bg{
+    background-color: #21262D;
+    color: white;
+}
+
+.my-hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+/* Large screens */
+@media (min-width: 992px) {
+    .my-hero {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+}
+
+/* Medium screens, less than 965px */
+@media (max-width: 964px) and (min-width: 576px) {
+    .my-hero {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+/* Small screens, less than 576px */
+@media (max-width: 575px) {
+    .my-hero {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+
+.custom-git-muted-text{
+    color: #8B949E;
+}
+
+
+
+.my-hero .container{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto ;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.vertical-line {
+    height: 100px; /* Adjust the height as needed */
+    width: 1px; /* Width of the line */
+    background-color: black; /* Color of the line */
+    margin: 0 auto; /* This centers the line if it's inside a container */
+}
+
+

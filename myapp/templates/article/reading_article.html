@@ -1,0 +1,94 @@
+{% extends 'public/public_layout.html' %}
+{% block title %} HU | Reading Article
+
+{% endblock %}
+
+<!-- custom css -->
+{% block news_custom_css %}
+{% endblock %}
+
+{% block content %}
+
+<section class="border">
+    <div class="container-lg mt-3 mb-5">
+        <div class="row  justify-content-center">
+            <div class="col-xl-10 ps-lg-0">
+                <h4 class="display-6 fs-4">Article</h4>
+
+                <div class="d-none">
+                    {{data}}
+                </div>
+                
+
+                <!-- Overview Division -->
+                <div class=" mt-5 pt-5">
+                    <div>
+                        <h6 class="text-center text-black">{{ data.article_info.article_date | format_date_somali }}</h6>
+                        <h5 class="display-5 text-center text-black mt-4">
+                            {{ data.article_info.topic}}
+                        </h5>
+                    </div>
+
+                    <div class="row justify-content-center mt-4">
+                        <div class="col-11 col-lg-8 text-center text-black  fw-bold">
+                            {{ data.article_info.topic_context }}
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Most recent posts -->
+                <div class="row pt-2 pb-2 mt-5">
+                    <div class="col mb-3 rounded">
+                        <div class="card position-relative rounded">
+                            <div class="card-img-container ">
+                                <a href="#">
+                                    <img src="{{ data.article_info.img }}"
+                                    class="card-img-top " alt="..." style="height: 600px;" >
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="mt-5 ps-3 pe-3">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-8 fs-6 text-blue-light mb-5">
+                            <div>
+                                {{ data.article_content| safe }}
+                            </div>
+                            <div class="mt-4">
+                                <a  href="{{url_for('index')}}" class="btn  fs-6 rounded-pill shadow-0  bg-success text-white mt-4 ">E<span class="text-lowercase">xplore more news</span></a>
+                            </div>
+                            
+                        </div>
+
+                        <!-- Authors -->
+                        <div class="mt-5 rounded bg-white">
+
+                            <div class="row  justify-content-between">
+                                <div class="col-lg-4 text-lg-end ">
+                                    <h4 class="text-blue-light text-blue-light mt-5 mb-3">
+                                        Author
+                                    </h4>
+        
+                                    <h5 class="display-5 fs-5 text-blue-light mb-5">
+                                        {{ data.article_info.author }}
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% endblock %}

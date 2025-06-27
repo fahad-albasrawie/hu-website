@@ -1,0 +1,212 @@
+{% extends 'public/public_layout.html' %}
+{% block title %} HU | President's message
+
+{% endblock %}
+
+<!-- custom css -->
+{% block news_custom_css %}
+{% endblock %}
+
+{% block content %}
+    <!-- from here content -->
+
+    <!-- Hero section start -->
+    <section>
+        <div class="container p-2">
+            <div class="row">
+                <div class="col-12 col-md-4 p-0">
+                    <div class="card ">
+                        <div class="card-body text-white" style="background-color: #168055;">
+                            <h1 class="v2_font ">Explore the Hormuud University Academic Calendar!</h1>
+
+                            <div class="mt-5">
+                                <p class="card-text fs-5">Get organized, get ahead! The Hormuud University Calendar is
+                                    your essential guide to important dates, key holidays, registration periods, and
+                                    more.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col align-self-center p-0">
+                    <img src="{{url_for('static', filename='img/public/ac-calender-hero-img.png')}}" class="card-img-top fit-image rounded-4"
+                        alt="Hormuud University Mission Image">
+                </div>
+            </div>
+
+
+            <div class=" mt-4 p-1">
+                <h3 class="text-center" style="color: #168055">
+                    Dates to remember, dreams to achieve! Click through the Hormuud University Calendar and discover a
+                    vibrant roadmap to your academic goals. Find inspiration, set reminders, and conquer your semester
+                    with confidence.
+                </h3>
+            </div>
+
+            <div class="mt-5 mb-5">
+                <div class="accordion accordion-flush shadow-2-strong pt-3" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                <span class="text-primary border p-2 rounded-pill badge-danger border-danger">
+                                    First Semister
+                                </span>
+
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse show text-center"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <img src="{{url_for('static', filename='img/public/ac-calender-2024.jpg')}}" class="card-img-top fit-image rounded-4"
+                                    alt="First Semister HU Calander" style="width: 50%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                <span class="text-primary border p-2 rounded-pill badge-secondary border-secondary">
+                                    Second Semister
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse text-center"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <img src="{{url_for('static', filename='img/public/Academic calender 2023-2024-2.jpg')}}" class="card-img-top fit-image rounded-4"
+                                    alt="First Semister HU Calander" style="width: 50%;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                <span class="text-primary border p-2 rounded-pill badge-success border-success">
+                                    Third Semister
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse text-center"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                
+                                <h3>
+                                    Next Semister's Calender is Pendding...
+                                </h3>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                <span class="text-primary border p-2 rounded-pill badge-warning border-warning">
+                                    Fourth Semister
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse text-center"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <h3>
+                                    Next Semister's Calender is Pendding...
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseFive">
+                                <span class="text-primary  border p-2 rounded-pill badge-primary border-primary">
+                                    Fifth Semister
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse text-center"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <h3>
+                                    Next Semister's Calender is Pendding...
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                aria-controls="flush-collapseSix">
+                                <span class="text-primary  border p-2 rounded-pill badge-light">
+                                    Sixth Semister
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse text-center"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <h3>
+                                    Next Semister's Calender is Pendding...
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseSeven" aria-expanded="false"
+                                aria-controls="flush-collapseSeven">
+                                <span class="text-light  border p-2 rounded-pill badge-dark border-dark">
+                                    Seventh Semister
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSeven" class="accordion-collapse collapse text-center"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <h3>
+                                    Next Semister's Calender is Pendding...
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseEight" aria-expanded="false"
+                                aria-controls="flush-collapseEight">
+                                <span class="text-primary  border p-2 rounded-pill badge-info border-info">
+                                    Eightth Semister
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseEight" class="accordion-collapse collapse text-center"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <h3>
+                                    Next Semister's Calender is Pendding...
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Hero section end -->
+
+{% endblock %}

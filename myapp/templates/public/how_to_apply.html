@@ -1,0 +1,160 @@
+{% extends 'public/public_layout.html' %}
+{% block title %} HU | How to Apply
+
+{% endblock %}
+
+<!-- custom css -->
+{% block news_custom_css %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/public/how_to_apply.css')}}" />
+{% endblock %}
+
+{% block content %}
+    <!-- from here content -->
+
+    <!-- Hero section start -->
+    <section class="my-hero">
+
+        <div class="container">
+            <h1 class="display-1 v2_font text-white fw-bolder d-none d-lg-block">
+                Unlock Your Potential,<br>
+                Start HU Application
+            </h1>
+
+            <h1 class="display-4 v2_font text-white fw-bolder d-lg-none">
+                Unlock Your Potential
+                Start HU Application
+            </h1>
+
+            <p class="hu-hero-font fs-4 custom-git-muted-text">
+                Our office is here to assist as you prepare to become a future Member. When you apply at Hormuud
+                University, you’re taking the first step in joining the Hormuud University community and becoming part
+                of the University system.
+            </p>
+
+            <div class="container mt-md-4 pt-md-4  mt-lg-5 pt-lg-5">
+
+                <div class="text-center pt-md-4 pt-lg-5">
+                    <h1 class=" fw-bolder fs-1">
+                        Ready to make it official?
+                    </h1>
+                    <p class="hu-hero-font fs-5 custom-git-muted-text">
+                        Scrol down to Apply Online or visit our Admissions Office at Bulo-hubei or Banadir Campus.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="row mt-5 pt-5 row-cols-1 row-cols-md-2">
+
+                <div class="col  rounded pb-5">
+
+                    <!-- card start -->
+                    <div class="card">
+                        <div class="card-body dark_card_bg rounded">
+                            <div class="mt-4">
+                                <span class="material-symbols-outlined text-white" style="font-size: 50px;">
+                                    contact_phone
+                                </span>
+                            </div>
+                            <h5 class="mt-4 mb-3 text-white">
+                                Please Apply by hand requests or Apply by Sending E-mail
+                            </h5>
+
+                            <div class="custom-git-muted-text">
+                                <span class="fw-bold">Email</span>: <span>admission@hu.edu.so</span>
+                                </span>
+
+                            </div>
+                            <div class="custom-git-muted-text">
+                                <span class="fw-bold">Mobile</span>: <span> +252613311119</span>
+                                </span>
+
+                            </div>
+
+                            <div class="custom-git-muted-text">
+                                <span class="fw-bold">Landline</span>: <span>+(2521) 858117</span>
+                                </span>
+
+                            </div>
+
+                            <div class="mt-5">
+                                <p class="custom-git-muted-text">
+                                    We strongly encourage you to take your time filling out the application. Be sure to
+                                    have all the information you need.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card end -->
+
+
+
+                </div>
+
+                <div class="col">
+                    <!-- card start -->
+                    <div class="card">
+                        <div class="card-body dark_card_bg rounded">
+
+                            <div class="mt-4">
+                                <span class="material-symbols-outlined text-white" style="font-size: 50px;">
+                                    contract_edit
+                                </span>
+                            </div>
+
+                            <form class="mt-4">
+                                <!-- Fullname input -->
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <input type="text" id="fullname" class="form-control p-3 text-white" />
+                                    <label class="form-label custom-git-muted-text" for="fullname">Full name</label>
+                                </div>
+                                <!-- Email input -->
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <input type="email" id="email-address" class="form-control p-3 text-white" />
+                                    <label class="form-label custom-git-muted-text" for="email-address">Email
+                                        address</label>
+                                </div>
+                                <!-- Phone number input -->
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <input type="text" id="phone" class="form-control p-3 text-white" />
+                                    <label class="form-label custom-git-muted-text" for="phone">Phone Number</label>
+                                </div>
+
+
+                                <!-- Application input -->
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <textarea class="form-control text-white" id="Application" rows="6"></textarea>
+                                    <label class="form-label custom-git-muted-text"
+                                        for="Application">Application</label>
+                                </div>
+
+
+                                <!-- Submit button -->
+                                <button data-mdb-ripple-init type="button" class="btn btn-secondary btn-block fs-4"
+                                     id="apply_me" onclick="apply('apply_me', 'applying')" style="display: block;" >A<span class="text-lowercase">pply now</span>
+                                </button>
+                                <button class="btn btn-secondary btn-block fs-4" type="button" disabled id="applying" style="display: none;" >
+                                    <span class="spinner-border spinner-border-md" aria-hidden="true"></span>
+                                    A<span class="text-lowercase">pplying now...</span>
+                                </button>
+
+
+                            </form>
+                        </div>
+                    </div>
+                    <!-- card end -->
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+    <!-- Hero section end -->
+
+    <!-- to here content end -->
+
+{% endblock %}

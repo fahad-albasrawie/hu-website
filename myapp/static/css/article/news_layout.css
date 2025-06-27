@@ -1,0 +1,286 @@
+
+  
+  /* Optionally remove the default toggle behavior */
+  /* .nav-dropdown-toggle::after {
+    display: none;
+  } */
+
+  /* HTML: <div class="loader" ========================================LOADRES></div> */
+.dot-loader {
+  width: 30px;
+  aspect-ratio: 1;
+  display:grid;
+  -webkit-mask: conic-gradient(from 15deg,#0000,#000);
+  animation: l26 1s infinite steps(12);
+}
+.dot-loader,
+.dot-loader:before,
+.dot-loader:after{
+  background:
+    radial-gradient(closest-side at 50% 12.5%,
+     #041e49c7 96%,#0000) 50% 0/20% 80% repeat-y,
+    radial-gradient(closest-side at 12.5% 50%,
+     #041e49c7 96%,#0000) 0 50%/80% 20% repeat-x;
+}
+.dot-loader:before,
+.dot-loader:after {
+  content: "";
+  grid-area: 1/1;
+  transform: rotate(30deg);
+}
+.dot-loader:after {
+  transform: rotate(60deg);
+}
+
+@keyframes l26 {
+  100% {transform:rotate(1turn)}
+}
+
+/* HTML: <div class="loader" ========================================LOADRES></div> */
+
+  html, body {
+    overflow: auto; /* or scroll */
+  }
+#top-dropdown-menu {
+    width: 100vw;
+    height: 25rem;
+    /* height: 100vw; */
+  }
+#my-offcanvas {
+    width: 100vw;
+  }
+
+  #my-offcanvas {
+    background-color: rgba(255, 255, 255, 0.3); /* Increase transparency */
+    backdrop-filter: blur(8px); /* Adjust the blur intensity as needed */
+    -webkit-backdrop-filter: blur(8px); /* For Safari */
+    border: none; /* Optional: Remove border for a seamless look */
+    box-shadow: none; /* Optional: Remove shadow for a cleaner look */
+}
+
+.transparent-bg {
+  background-color: rgba(255, 255, 255, 0) !important;
+  /* Increase transparency */
+  backdrop-filter: blur(8px) !important;
+  /* Adjust the blur intensity as needed */
+  -webkit-backdrop-filter: blur(8px) !important;
+  /* For Safari */
+  border: none !important;
+  /* Optional: Remove border for a seamless look */
+  box-shadow: none !important;
+  /* Optional: Remove shadow for a cleaner look */
+  color: #041E49 !important;
+}
+
+/* Hide the default caret toggle icon */
+.rem-accordion-btn-caret::after {
+  display: none !important;  /* Hides the default toggle indicator */
+}
+
+.transparent-bg button {
+  border: none !important; /* Specifically target button elements */
+  box-shadow: none !important; /* Also clear shadows on buttons */
+  outline: none !important; /* Remove outline for Chrome/Edge focus state */
+}
+
+
+.offcanvas-end {
+    transform: none !important; /* Prevents the slide-in effect */
+  }
+  .offcanvas {
+    transition: none !important; /* Disables the transition animation */
+  }
+  body {
+    background-color: #FAFBFF;
+  }
+
+#my-offcanvas-header{
+    background-color: #fafbff60 !important; /* Increase transparency */;
+  }
+
+.nav-font-size {
+    font-size: 14px;
+}
+
+.text-blue-light {
+    color: #041E49 !important;
+}
+.text-blue-light:focus {
+    color: #041E49 !important;
+}
+.text-blue-light:hover {
+    color: #041E49 !important;
+}
+
+.menu-btn-hover:hover {
+    background-color: #ececec;
+    color: #000;
+    border-radius: 10px;
+}
+
+.reg-btn-pg {
+    background-color: #041E49;
+    color: #fff;
+}
+
+.reg-btn-pg:focus {
+    background-color: #041E49 !important;
+    color: #fff;
+}
+
+.reg-btn-pg:active {
+    background-color: #041E49 !important;
+    color: #fff;
+}
+
+.reg-btn-pg:hover {
+    background-color: #041e49c2;
+    color: #fff;
+}
+.pbg{
+    background-color: #A8C7FA;
+}
+.sidebar-items-hover:hover {
+    background-color: #D3E4FF;
+    color: #475B7E;
+}
+
+.side-bar-bg-color{
+    /* background-color: #e2eaf7;  */
+    background-color: #F7F9FC; 
+    
+}
+
+
+.pbg-active:active{
+    background-color: #A8C7FA;
+}
+.pbg-active:focus{
+    background-color: #A8C7FA;
+}
+
+.pbg-hover:hover{
+    background-color: #A8C7FA !important;
+    color: #041E49 !important;
+}
+
+.my_sec_primary_txt_color{
+    color: #007bff;
+}
+
+.small-text {
+    font-size: 12px;
+}
+
+.small2-text {
+    font-size: 15px;
+}
+
+.blue-bg{
+    background-color: #E3ECFA !important;
+}
+
+.vertically-aligned{
+    vertical-align: middle; line-height: 1;
+}
+
+.blue-bg-hover:hover{
+    background-color: #E3ECFA;
+}
+
+.blue-text{
+    color: #475B7E !important;
+}
+
+.content-body{
+    background-color: #FAFBFF;
+}
+
+#nav-container{
+    background-color: #FAFBFF !important;
+}
+
+.primary-btn{
+    background-color: #80C2FF;
+}
+
+/* Make the dropdown menu more transparent and keep the background blurred */
+#top-dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.3); /* Increase transparency */
+    backdrop-filter: blur(8px); /* Adjust the blur intensity as needed */
+    -webkit-backdrop-filter: blur(8px); /* For Safari */
+    border: none; /* Optional: Remove border for a seamless look */
+    box-shadow: none; /* Optional: Remove shadow for a cleaner look */
+}
+
+/* Heroo images =========================================== */
+.card-img-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Smooth zoom transition */
+  }
+  
+  .card-img-container:hover .card-img-top {
+    transform: scale(1.1); /* Zoom-in effect */
+  }
+  
+  .card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .card-overlay p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .card-overlay h3 {
+    margin: 5px 0 0;
+    font-size: 18px;
+  }
+  
+
+  #footer-line {
+    border-top: 1px solid #041E49;
+  }
+  
+  /* Heroo images =========================================== */
+
+  .responsive-image {
+    max-width: 100%; /* Ensure image fits within the container */
+    height: auto;    /* Keep the aspect ratio */
+
+    border-radius: 10px ;
+    border: solid 2px;
+    padding: 5px;
+}
+
+.ytp-cued-thumbnail-overlay-image {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.ytp-cued-thumbnail-overlay-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
