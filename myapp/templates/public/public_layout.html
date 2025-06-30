@@ -135,6 +135,9 @@
                                         <a class="fw-bold fs-4">Adminstration</a>
 
                                         <div class="list-group list-group-flush">
+                                            <a href="{{url_for('board_of_director')}}" class="list-group-item list-group-item-action ps-0 disabled text-muted"
+                                              aria-disabled="true">Board of
+                                              Director</a>
                                             <a href="{{url_for('president_message')}}" class="list-group-item list-group-item-action ps-0">President
                                               Message
                                             </a>
@@ -142,9 +145,7 @@
                                               class="list-group-item list-group-item-action ps-0 the_text disabled text-muted">Deputy
                                               Vice President
                                               Office</a>
-                                            <a href="{{url_for('board_of_director')}}" class="list-group-item list-group-item-action ps-0 disabled text-muted"
-                                              aria-disabled="true">Board of
-                                              Director</a>
+                                            
                                             <a href="{{url_for('deans_and_director')}}" class="list-group-item list-group-item-action ps-0 disabled text-muted"
                                               aria-disabled="true">Deans &
                                               Director</a>
@@ -586,6 +587,10 @@
                                         data-bs-parent="#AboutaccordionFlushExample">
                                         <div class="accordion-body">
                                             <div class="list-group list-group-flush">
+                                                <a href="{{url_for('board_of_director')}}"
+                                                    class="list-group-item list-group-item-action ps-0 disabled text-muted">Board
+                                                    of
+                                                    Director</a>
                                                 <a href="{{url_for('president_message')}}"
                                                     class="list-group-item list-group-item-action ps-0">President
                                                     Message
@@ -594,10 +599,7 @@
                                                     class="list-group-item list-group-item-action ps-0 the_text disabled text-muted">Deputy
                                                     Vice President
                                                     Office</a>
-                                                <a href="{{url_for('board_of_director')}}"
-                                                    class="list-group-item list-group-item-action ps-0 disabled text-muted">Board
-                                                    of
-                                                    Director</a>
+                                                
                                                 <a href="{{url_for('deans_and_director')}}"
                                                     class="list-group-item list-group-item-action ps-0 disabled text-muted">Deans
                                                     &
@@ -808,7 +810,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item border-0 mb-3 mt-3">
+                            <div class="accordion-item border-0 mb-3 mt-3 d-none">
                                 <a class="top-dropdown-menu-link ms-4" href="{{url_for('research_public_center')}}">Research
                                     Public Center</a>
                             </div>

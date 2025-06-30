@@ -1,6 +1,14 @@
 from myapp import app
 from flask import render_template, request, jsonify, session, redirect, url_for, make_response
 from myapp.article.article_model import ArticleDatabase, ArticleModel, check_article_model_connection
+
+
+@app.errorhandler(404)
+def page_not_found(e):
+    # Render a custom template for 404 errors
+    print('Page not found.')
+    return render_template('public/page_not_found.html'), 404
+
 @app.route('/')
 @app.route('/home')
 @app.route('/index')

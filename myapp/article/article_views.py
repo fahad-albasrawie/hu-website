@@ -118,11 +118,11 @@ def check_article_model_connection():
 #         return False, f'Error: {e}.'
 
 # Custom 404 error handler
-@app.errorhandler(404)
-def page_not_found(e):
-    # Render a custom template for 404 errors
-    print('Page not found.1')
-    return render_template('article/page_not_found.html'), 404
+# @app.errorhandler(404)
+# def page_not_found(e):
+#     # Render a custom template for 404 errors
+#     print('Page not found.1')
+#     return render_template('public/page_not_found.html'), 404
 
 @app.route('/news')
 def news():
