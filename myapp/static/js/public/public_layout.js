@@ -14,8 +14,11 @@
 //       dropdown.setAttribute('aria-expanded', 'false');
 //   });
 // });
-
-
+const blinkElement = document.querySelector(".blinking-announcement");
+setInterval(() => {
+  blinkElement.style.opacity =
+    blinkElement.style.opacity === "0.5" ? "1" : "0.5";
+}, 1000);
 // ====================================== Tiny Script ==============================
 tinymce.init({
     selector: 'textarea#article',
