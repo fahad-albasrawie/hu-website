@@ -768,13 +768,26 @@ div.list-group.list-group-flush>.list-group-item-action {
 }
 
 .responsive-div {
-  width: 60%;  /* Preferred width */
+  width: 50%;  /* Preferred width */
   height: auto;  /* Adjusts height automatically */
   max-width: 500px;  /* Maximum width */
   max-height: 300px;  /* Maximum height */
   min-width: 200px;  /* Minimum width */
   min-height: 100px;  /* Minimum height */
   /* Add other styling as needed */
+}
+
+.graduators_img{
+  border-radius: 50%; object-fit: cover;
+  width: 200px;
+  height: 200px;
+  /* Make shadow  */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Adjust blur/spread */
+  transition: box-shadow 0.3s ease; /* Smooth hover effect (optional) */
+}
+.graduators_img:hover{
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15); /* Hover effect */
+  cursor: pointer;
 }
 
 .text-blue{
