@@ -3,23 +3,24 @@
   /* Replace with your desired color if needed */
 }
 
-.link-success-bg{
+.link-success-bg {
   background-color: #168055 !important;
 
 }
 
-.my_active_tap{
-  border : 1px solid #0063cc;
+.my_active_tap {
+  border: 1px solid #0063cc;
   padding: 3px;
   border-radius: 5px;
 }
 
 
-.side_bar_header{
+.side_bar_header {
   background-color: #168055 !important;
   /* Replace with your desired color if needed */
 
 }
+
 .my_active_link {
   color: #168055 !important;
 }
@@ -46,7 +47,7 @@
   height: 25rem;
 }
 
-#toggle_btn:hover{
+#toggle_btn:hover {
   background-color: #e4e4e4;
 }
 
@@ -61,27 +62,31 @@
 #faqgreen_hover:hover {
   color: #168055;
 }
-.accordion_topic:hover{
+
+.accordion_topic:hover {
   color: #168055;
 
 }
 
-#header_line_accordion{
+#header_line_accordion {
   border: 1px solid #f7f7f7;
 }
 
-#accordion_home{
+#accordion_home {
   color: rgb(82, 82, 82);
 }
-#accordion_home:hover{
-  color:  #168055;
+
+#accordion_home:hover {
+  color: #168055;
 
 }
-#faqgreen_hover{
+
+#faqgreen_hover {
   color: rgb(82, 82, 82);
 }
-#faqgreen_hover:hover{
-  color:  #168055;
+
+#faqgreen_hover:hover {
+  color: #168055;
 
 }
 
@@ -97,11 +102,12 @@ div.list-group.list-group-flush>.list-group-item-action {
   color: black;
 }
 
-#progress{
+#progress {
   background-color: #168055;
   color: white;
   position: fixed;
-  z-index: 1000; /* high value to ensure it stays on top */
+  z-index: 1000;
+  /* high value to ensure it stays on top */
   bottom: 20px;
   right: 10px;
   height: 70px;
@@ -113,7 +119,7 @@ div.list-group.list-group-flush>.list-group-item-action {
   cursor: pointer;
 }
 
-#progress-value{
+#progress-value {
   display: block;
   height: calc(100% - 15px);
   width: calc(100% - 15px);
@@ -126,11 +132,12 @@ div.list-group.list-group-flush>.list-group-item-action {
 }
 
 
-#progress-whatsApp{
+#progress-whatsApp {
   background-color: #168055;
   color: white;
   position: fixed;
-  z-index: 1000; /* high value to ensure it stays on top */
+  z-index: 1000;
+  /* high value to ensure it stays on top */
   bottom: 100px;
   right: 10px;
   height: 70px;
@@ -142,7 +149,7 @@ div.list-group.list-group-flush>.list-group-item-action {
   cursor: pointer;
 }
 
-#progress-value-whatsApp{
+#progress-value-whatsApp {
   display: block;
   height: calc(100% - 15px);
   width: calc(100% - 15px);
@@ -379,62 +386,182 @@ div.list-group.list-group-flush>.list-group-item-action {
 /* section 4 end =================================================== */
 
 /* test rotating images start================================================== */
-.slider{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.slider {
   position: relative;
-  width: 200px;
-  height: 200px;
-  transform-style: preserve-3d;
-  animation: rotate 30s infinite linear;
-
-  
-}
-
-@keyframes rotate{
-  0%{
-    transform: perspective(1000px) rotateY(0deg);
-  }
-  100%{
-    transform: perspective(1000px) rotateY(360deg);
-  }
-}
-
-.my-rotate-imgs-container{
-  /* height: 100vh; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: #ccc;
+  height: 70vh;
+  min-height: 500px;
   overflow: hidden;
 }
 
-.slider span{
+/* Large Screen Layout (lg and up) */
+.slider .slides {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 240px;
+  height: 320px;
+  background-image: var(--img);
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.slider .slides:nth-child(1),
+.slider .slides:nth-child(2) {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  transform-origin: center;
-  transform-style: preserve-3d ;
-  transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
-
+  transform: translateY(0);
+  box-shadow: none;
+  background-size: cover;
+  z-index: 1;
 }
 
-.slider span img{
+.slider .slides:nth-child(3) {
+  left: calc(50% + 100px);
+  z-index: 999;
+}
+
+.slider .slides:nth-child(3) .content {
+  display: none;
+}
+
+.slider .slides:nth-child(4) {
+  left: calc(50% + 370px);
+  z-index: 999;
+}
+
+.slider .slides:nth-child(4) .content {
+  display: none;
+}
+
+
+.slider.slides:nth-child(5) {
+  left: calc(50% + 1020px);
+}
+
+.slider .slides:nth-child(5) .content {
+  display: none;
+}
+
+.slider .slides:nth-child(6) {
+  left: calc(50% + 1020px);
+}
+
+.slider .slides:nth-child(6) .content {
+  display: none;
+}
+
+/* Common Styles */
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.buttons span {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: #111;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.buttons span::before {
+  content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  object-fit: cover;
-  transition: 2s;
-  
-
+  width: 15px;
+  height: 15px;
+  border-top: 4px solid #fff;
+  border-left: 4px solid #fff;
+  transform: rotate(315deg) translate(5px, 5px);
 }
 
-.slider span:hover img{
+.buttons span:nth-child(2)::before {
+  transform: rotate(135deg) translate(2px, 2px);
+}
 
-  transform: translate(-50px) scale(1.2)
+.buttons span:active {
+  opacity: 0.5;
+}
 
+.content {
+  position: relative;
+  padding: 40px;
+  max-width: 600px;
+  transition: 0.25s;
+  transition-delay: 0s;
+  transform: translateY(40px);
+  z-index: 10000;
+  color: rgb(247, 245, 246);
+}
+
+.content h2 {
+  font-size: 4em;
+}
+
+.slider .slides:nth-child(1) .content,
+.slider .slides:nth-child(2) .content {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.5s;
+}
+
+/* Mobile Layout (below lg) */
+@media (max-width: 991.98px) {
+  .slider {
+    height: 50vh;
+    min-height: 400px;
+    position: relative;
+  }
+
+  .slider .slides {
+    position: absolute;
+    width: 120px;
+    height: 160px;
+    top: auto;
+    bottom: 20px;
+    transform: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  }
+
+  .slider .slides:nth-child(3) {
+    left: 20px;
+  }
+
+  .slider .slides:nth-child(4) {
+    left: 160px;
+  }
+
+  .slider .slides:nth-child(5) {
+    left: 300px;
+    z-index: 9999;
+  }
+
+
+  .slider .slides:nth-child(6) {
+    left: 440px;
+    z-index: 9999
+  }
 }
 
 /* test rotating images end ======================================================*/
@@ -442,6 +569,7 @@ div.list-group.list-group-flush>.list-group-item-action {
 /* test monials start================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *,
 *::before,
 *::after {
@@ -474,15 +602,18 @@ div.list-group.list-group-flush>.list-group-item-action {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Center the image within the circle */
+  transform: translate(-50%, -50%);
+  /* Center the image within the circle */
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 .persons {
-  width: 100%; /* Adjust to your preference */
-  height: 100%; /* Adjust to your preference */
+  width: 100%;
+  /* Adjust to your preference */
+  height: 100%;
+  /* Adjust to your preference */
   border-radius: 50%;
 }
 
@@ -530,7 +661,7 @@ div.list-group.list-group-flush>.list-group-item-action {
 
 
 
-.bgcolor{
+.bgcolor {
   background-color: #ffffff;
   border-radius: 15px;
 }
@@ -572,7 +703,8 @@ div.list-group.list-group-flush>.list-group-item-action {
   height: 30rem;
   position: relative;
   opacity: 0.7;
-  transition: box-shadow 0.3s ease-in-out; /* Add transition for smooth effect */
+  transition: box-shadow 0.3s ease-in-out;
+  /* Add transition for smooth effect */
 }
 
 
@@ -580,21 +712,24 @@ div.list-group.list-group-flush>.list-group-item-action {
 /* it is mission */
 .tranding-slide-active {
   opacity: 1;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add box shadow to the active slide */
-  transition: box-shadow 0.3s ease-in-out; /* Add transition for smooth effect */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  /* Add box shadow to the active slide */
+  transition: box-shadow 0.3s ease-in-out;
+  /* Add transition for smooth effect */
 }
 
 /* blur the texts in active slides*/
-.align .personalTestmonial h5{
+.align .personalTestmonial h5 {
   color: transparent;
   text-shadow: 0 0 8px #000;
 }
 
-.align .testInfo{
+.align .testInfo {
   color: transparent;
   text-shadow: 0 0 8px #000;
 }
-.align .personalTestmonial span{
+
+.align .personalTestmonial span {
   color: transparent;
   text-shadow: 0 0 8px #168055;
 }
@@ -602,14 +737,15 @@ div.list-group.list-group-flush>.list-group-item-action {
 /* Unblur the active texts*/
 .tranding-slide-active .align .personalTestmonial h5 {
   color: #000;
-  text-shadow: none; 
-} 
+  text-shadow: none;
+}
 
-.tranding-slide-active .align .testInfo{
+.tranding-slide-active .align .testInfo {
   color: #000;
   text-shadow: none;
 }
-.tranding-slide-active .align .personalTestmonial span{
+
+.tranding-slide-active .align .personalTestmonial span {
   color: #168055;
   text-shadow: none;
 }
@@ -617,7 +753,8 @@ div.list-group.list-group-flush>.list-group-item-action {
 
 /* Blur the image in inactive slides */
 .tranding-slide .responsive-div img {
-  filter: blur(8px); /* Adjust the blur intensity as needed */
+  filter: blur(8px);
+  /* Adjust the blur intensity as needed */
 }
 
 /* Unblur the active image */
@@ -628,17 +765,20 @@ div.list-group.list-group-flush>.list-group-item-action {
 /* ================= end ================= */
 
 /* footer style */
-.footerHead{
+.footerHead {
   color: #fff;
   font-weight: bold;
 }
-.footertxt li{
+
+.footertxt li {
   color: #E6E7E8;
 }
-.footertxt a{
+
+.footertxt a {
   color: #E6E7E8;
 }
-.follow{
+
+.follow {
   color: #E6E7E8;
   font-weight: bold;
 }
@@ -648,6 +788,7 @@ div.list-group.list-group-flush>.list-group-item-action {
     width: 28rem !important;
     height: 36rem !important;
   }
+
   .tranding-slide .tranding-slide-img img {
     width: 28rem !important;
     height: 36rem !important;
@@ -768,31 +909,43 @@ div.list-group.list-group-flush>.list-group-item-action {
 }
 
 .responsive-div {
-  width: 50%;  /* Preferred width */
-  height: auto;  /* Adjusts height automatically */
-  max-width: 500px;  /* Maximum width */
-  max-height: 300px;  /* Maximum height */
-  min-width: 200px;  /* Minimum width */
-  min-height: 100px;  /* Minimum height */
+  width: 50%;
+  /* Preferred width */
+  height: auto;
+  /* Adjusts height automatically */
+  max-width: 500px;
+  /* Maximum width */
+  max-height: 300px;
+  /* Maximum height */
+  min-width: 200px;
+  /* Minimum width */
+  min-height: 100px;
+  /* Minimum height */
   /* Add other styling as needed */
 }
 
-.graduators_img{
-  border-radius: 50%; object-fit: cover;
+.graduators_img {
+  border-radius: 50%;
+  object-fit: cover;
   width: 200px;
   height: 200px;
   /* Make shadow  */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Adjust blur/spread */
-  transition: box-shadow 0.3s ease; /* Smooth hover effect (optional) */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  /* Adjust blur/spread */
+  transition: box-shadow 0.3s ease;
+  /* Smooth hover effect (optional) */
 }
-.graduators_img:hover{
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15); /* Hover effect */
+
+.graduators_img:hover {
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  /* Hover effect */
   cursor: pointer;
 }
 
-.text-blue{
+.text-blue {
   color: #2e84b6;
 }
+
 /* test monials end ======================================================*/
 
 

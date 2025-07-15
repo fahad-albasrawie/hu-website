@@ -7,7 +7,7 @@
       <excludeFolder url="file://$MODULE_DIR$/.b_venv/Scripts" />
       <excludeFolder url="file://$MODULE_DIR$/app" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.13 (AI_ENHANCED_EXAM_MONITORING)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.13 (HU_project)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
