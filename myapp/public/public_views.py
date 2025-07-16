@@ -23,6 +23,7 @@ def index():
         print('You are connected to the database successfully!')
         # Get the articles from the database
 
+        _, gallery_images = article.get_gallery_images()
         article_flag, article_data = article.get_articles()
         favorite_article_flag, favorite_article_data = article.get_favorite_articles()
         if article_flag and favorite_article_flag:
@@ -30,7 +31,8 @@ def index():
                 'article_info': article_data,
                 'favorite_article_info': favorite_article_data
             }
-            return render_template('public/index.html', article_data=article_data, graduators_words=graduators_words)
+            return render_template('public/index.html', article_data=article_data,
+                                   graduators_words=graduators_words, gallery_images = gallery_images)
     else:
         print('Connection to the database failed at getting dashboard data!')
         article_data = {

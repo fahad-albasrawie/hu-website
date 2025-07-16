@@ -605,52 +605,354 @@
     </div>
 
 
-    <div class="container">
-        <div class="slider border border-danger py-3">
-            <div class="slides" style="--img: url('{{url_for('static', filename='img/public/events.jpg')}}')">
-                <div class="content">
-                    <h2>Event 01</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-                </div>
-            </div>
-            <div class="slides" style="--img: url('{{url_for('static', filename='img/public/events7.jpg')}}')">
-                <div class="content">
-                    <h2>Event 02</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-                </div>
-            </div>
-            <div class="slides" style="--img: url('{{url_for('static', filename='img/public/events8.jpg')}}')">
-                <div class="content">
-                    <h2>Event 03</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-                </div>
-            </div>
-            <div class="slides"
-                style="--img: url('{{url_for('static', filename='img/public/anual_2023_photo_group.jpg')}}')">
-                <div class="content">
-                    <h2>Event 04</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-                </div>
-            </div>
-            <div class="slides" style="--img: url('{{url_for('static', filename='img/public/events1.jpg')}}')">
-                <div class="content">
-                    <h2>Event 05</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-                </div>
-            </div>
-            <div class="slides" style="--img: url('{{url_for('static', filename='img/public/events5.jpg')}}')">
-                <div class="content">
-                    <h2>Event 06</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+    <div class="container mt-4">
+        <ul class="nav nav-tabs border-0 d-flex align-items-center gap-3" id="galleryTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active border-0 px-1 py-2" id="exams-tab" data-bs-toggle="tab"
+                    data-bs-target="#exams" type="button" role="tab">Exams</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link border-0 px-1 py-2" id="convocation-tab" data-bs-toggle="tab"
+                    data-bs-target="#convocation" type="button" role="tab">Convocation</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link border-0 px-1 py-2" id="building-tab" data-bs-toggle="tab"
+                    data-bs-target="#building" type="button" role="tab">Building</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link border-0 px-1 py-2" id="students-tab" data-bs-toggle="tab"
+                    data-bs-target="#students" type="button" role="tab">Students</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link border-0 px-1 py-2" id="events-tab" data-bs-toggle="tab"
+                    data-bs-target="#events" type="button" role="tab">Events</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link border-0 px-1 py-2" id="orientations-tab" data-bs-toggle="tab"
+                    data-bs-target="#orientations" type="button" role="tab">Orientations</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link border-0 px-1 py-2" id="training-tab" data-bs-toggle="tab"
+                    data-bs-target="#training" type="button" role="tab">Training</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link border-0 px-1 py-2" id="others-tab" data-bs-toggle="tab"
+                    data-bs-target="#others" type="button" role="tab">Others</button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="galleryTabsContent">
+            <!-- Exams Tab -->
+            <div class="tab-pane fade show active" id="exams" role="tabpanel">
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-12 px-0">
+                            <div class="slider overflow-hidden rounded-3" id="exams-slider">
+                                {%if gallery_images%}
+                                {%for image in gallery_images%}
+                                {%if image.img_category == "Exams"%}
+                                <div class="slides" style="--img: url('{{image.img_path}}')"></div>
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                                {%endfor%}
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-center gap-5">
+                                <span
+                                    class="material-symbols-outlined prev rounded-pill exams-prev">arrow_back_ios</span>
+                                <span
+                                    class="material-symbols-outlined next rounded-pill exams-next">arrow_forward_ios</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Other slides... -->
-        </div>
+            <!-- Convocation Tab -->
+            <div class="tab-pane fade" id="convocation" role="tabpanel">
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-12 px-0">
+                            <div class="slider overflow-hidden rounded-3" id="convocation-slider">
+                                {%if gallery_images%}
+                                {%for image in gallery_images%}
+                                {%if image.img_category == "Convocational Ceremony"%}
+                                <div class="slides" style="--img: url('{{image.img_path}}')"></div>
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                                {%endfor%}
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-center gap-5">
+                                <span
+                                    class="material-symbols-outlined prev rounded-pill convocation-prev">arrow_back_ios</span>
+                                <span
+                                    class="material-symbols-outlined next rounded-pill convocation-next">arrow_forward_ios</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div class="buttons">
-            <span class="prev"></span>
-            <span class="next"></span>
+            <!-- Building Tab -->
+            <div class="tab-pane fade" id="building" role="tabpanel">
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-12 px-0">
+                            <div class="slider overflow-hidden rounded-3" id="building-slider">
+                                {%if gallery_images%}
+                                {%for image in gallery_images%}
+                                {%if image.img_category == "Building"%}
+                                <div class="slides" style="--img: url('{{image.img_path}}')"></div>
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                                {%endfor%}
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-center gap-5">
+                                <span
+                                    class="material-symbols-outlined prev rounded-pill building-prev">arrow_back_ios</span>
+                                <span
+                                    class="material-symbols-outlined next rounded-pill building-next">arrow_forward_ios</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Students Tab -->
+            <div class="tab-pane fade" id="students" role="tabpanel">
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-12 px-0">
+                            <div class="slider overflow-hidden rounded-3" id="students-slider">
+                                {%if gallery_images%}
+                                {%for image in gallery_images%}
+                                {%if image.img_category == "Students"%}
+                                <div class="slides" style="--img: url('{{image.img_path}}')"></div>
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                                {%endfor%}
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-center gap-5">
+                                <span
+                                    class="material-symbols-outlined prev rounded-pill students-prev">arrow_back_ios</span>
+                                <span
+                                    class="material-symbols-outlined next rounded-pill students-next">arrow_forward_ios</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Events Tab -->
+            <div class="tab-pane fade" id="events" role="tabpanel">
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-12 px-0">
+                            <div class="slider overflow-hidden rounded-3" id="events-slider">
+                                {%if gallery_images%}
+                                {%for image in gallery_images%}
+                                {%if image.img_category == "Events"%}
+                                <div class="slides" style="--img: url('{{image.img_path}}')"></div>
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                                {%endfor%}
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-center gap-5">
+                                <span
+                                    class="material-symbols-outlined prev rounded-pill events-prev">arrow_back_ios</span>
+                                <span
+                                    class="material-symbols-outlined next rounded-pill events-next">arrow_forward_ios</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Orientations Tab -->
+            <div class="tab-pane fade" id="orientations" role="tabpanel">
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-12 px-0">
+                            <div class="slider overflow-hidden rounded-3" id="orientations-slider">
+                                {%if gallery_images%}
+                                {%for image in gallery_images%}
+                                {%if image.img_category == "Orientations"%}
+                                <div class="slides" style="--img: url('{{image.img_path}}')"></div>
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                                {%endfor%}
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-center gap-5">
+                                <span
+                                    class="material-symbols-outlined prev rounded-pill orientations-prev">arrow_back_ios</span>
+                                <span
+                                    class="material-symbols-outlined next rounded-pill orientations-next">arrow_forward_ios</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Training Tab -->
+            <div class="tab-pane fade" id="training" role="tabpanel">
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-12 px-0">
+                            <div class="slider overflow-hidden rounded-3" id="training-slider">
+                                {%if gallery_images%}
+                                {%for image in gallery_images%}
+                                {%if image.img_category == "training"%}
+                                <div class="slides" style="--img: url('{{image.img_path}}')"></div>
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                                {%endfor%}
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-center gap-5">
+                                <span
+                                    class="material-symbols-outlined prev rounded-pill training-prev">arrow_back_ios</span>
+                                <span
+                                    class="material-symbols-outlined next rounded-pill training-next">arrow_forward_ios</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Others Tab -->
+            <div class="tab-pane fade" id="others" role="tabpanel">
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-12 px-0">
+                            <div class="slider overflow-hidden rounded-3" id="others-slider">
+                                {%if gallery_images%}
+                                {%for image in gallery_images%}
+                                {%if image.img_category == "Others"%}
+                                <div class="slides" style="--img: url('{{image.img_path}}')"></div>
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                                {%endfor%}
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-center gap-5">
+                                <span
+                                    class="material-symbols-outlined prev rounded-pill others-prev">arrow_back_ios</span>
+                                <span
+                                    class="material-symbols-outlined next rounded-pill others-next">arrow_forward_ios</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -868,19 +1170,36 @@
 <!-- to here -->
 
 <script>
-    let next = document.querySelector('.next');
-    let prev = document.querySelector('.prev');
-    let slider = document.querySelector('.slider');
+    // Initialize all sliders
+    function initSlider(sliderId, prevBtnClass, nextBtnClass) {
+        const slider = document.querySelector(`#${sliderId}`);
+        const prev = document.querySelector(`.${prevBtnClass}`);
+        const next = document.querySelector(`.${nextBtnClass}`);
 
-    next.addEventListener('click', function () {
-        let slides = document.querySelectorAll('.slides');
-        slider.appendChild(slides[0]);
-    })
+        if (prev && next && slider) {
+            prev.addEventListener('click', function () {
+                let slides = slider.querySelectorAll('.slides');
+                slider.appendChild(slides[0]);
+            });
 
-    prev.addEventListener('click', function () {
-        let slides = document.querySelectorAll('.slides');
-        slider.prepend(slides[slides.length - 1]);
-    })
+            next.addEventListener('click', function () {
+                let slides = slider.querySelectorAll('.slides');
+                slider.prepend(slides[slides.length - 1]);
+            });
+        }
+    }
+
+    // Initialize each slider when the page loads
+    document.addEventListener('DOMContentLoaded', function () {
+        initSlider('exams-slider', 'exams-prev', 'exams-next');
+        initSlider('convocation-slider', 'convocation-prev', 'convocation-next');
+        initSlider('building-slider', 'building-prev', 'building-next');
+        initSlider('students-slider', 'students-prev', 'students-next');
+        initSlider('events-slider', 'events-prev', 'events-next');
+        initSlider('orientations-slider', 'orientations-prev', 'orientations-next');
+        initSlider('training-slider', 'training-prev', 'training-next');
+        initSlider('others-slider', 'others-prev', 'others-next');
+    });
 </script>
 
 {% endblock %}

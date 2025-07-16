@@ -217,6 +217,24 @@ class ArticleModel:
             print(f'Error: {e}')
             return False, f'Error: {e}.'
 
+    def get_gallery_images(self):
+        sql = """
+                SELECT * FROM gallery;
+        """
+        try:
+            self.cursor.execute(sql)
+            result = self.cursor.fetchall()
+            if result:
+                print('Waa la heli karaa sawirada matxafka')
+                result = [dict(zip([key[0] for key in self.cursor.description], row)) for row in result]
+
+                return True, result
+            else:
+                print('Lama helin wax sawiro matxaf ah.')
+                return True, {}
+        except Exception as e:
+            print(f'Error: {e}')
+            return False, f'Error: {e}.'
 
 my_configuration = ArticleDbConfiguration()
 
