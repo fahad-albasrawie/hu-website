@@ -235,7 +235,7 @@
         <div class="row row-cols-1 row-cols-md-2">
             <div class="col-12 col-md-4 mb-3">
                 <h1 class="v2_font display-6 fw-bold fs-2 text-blue">Upcomming events</h1>
-                <a href="" id="all_events" class="all_events">Explore all upcoming events
+                <a href="#" id="all_events" class="all_events" data-bs-toggle="modal" data-bs-target="#exploreUppcommingEvents">Explore all upcoming events
                     <span class="ms-3 ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
@@ -244,6 +244,25 @@
                         </svg>
                     </span>
                 </a>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exploreUppcommingEvents" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Upcomming events</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="text-danger v2_font">No more upcoming events yet</h3>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary text-capitalize" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary text-capitalize">Save changes</button>
+                </div>
+                </div>
+            </div>
             </div>
 
             <div class="col-12 col-md-8 mb-3">
@@ -651,7 +670,7 @@
                                 {%if gallery_images%}
                                 {%for image in gallery_images%}
                                 {%if image.img_category == "Exams"%}
-                                <div class="slides" style="--img: url('{{image.img_path}}')"></div>
+                                <div class="slides" style="--img: url('https://beta.hu.edu.so/gallery/{{image.img_path}}')"></div>
                                 {%else%}
                                 <div class="slides"
                                     style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
@@ -690,7 +709,7 @@
                                 {%if gallery_images%}
                                 {%for image in gallery_images%}
                                 {%if image.img_category == "Convocational Ceremony"%}
-                                <div class="slides" style="--img: url('{{image.img_path}}')"></div>
+                                <div class="slides" style="--img: url('https://beta.hu.edu.so/gallery/{{image.img_path}}')"></div>
                                 {%else%}
                                 <div class="slides"
                                     style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
@@ -729,7 +748,7 @@
                                 {%if gallery_images%}
                                 {%for image in gallery_images%}
                                 {%if image.img_category == "Building"%}
-                                <div class="slides" style="--img: url('{{image.img_path}}')"></div>
+                                <div class="slides" style="--img: url('https://beta.hu.edu.so/gallery/{{image.img_path}}')"></div>
                                 {%else%}
                                 <div class="slides"
                                     style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
@@ -768,7 +787,7 @@
                                 {%if gallery_images%}
                                 {%for image in gallery_images%}
                                 {%if image.img_category == "Students"%}
-                                <div class="slides" style="--img: url('{{image.img_path}}')"></div>
+                                <div class="slides" style="--img: url('https://beta.hu.edu.so/gallery/{{image.img_path}}')"></div>
                                 {%else%}
                                 <div class="slides"
                                     style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
@@ -807,7 +826,7 @@
                                 {%if gallery_images%}
                                 {%for image in gallery_images%}
                                 {%if image.img_category == "Events"%}
-                                <div class="slides" style="--img: url('{{image.img_path}}')"></div>
+                                <div class="slides" style="--img: url('https://beta.hu.edu.so/gallery/{{image.img_path}}')"></div>
                                 {%else%}
                                 <div class="slides"
                                     style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
@@ -846,7 +865,7 @@
                                 {%if gallery_images%}
                                 {%for image in gallery_images%}
                                 {%if image.img_category == "Orientations"%}
-                                <div class="slides" style="--img: url('{{image.img_path}}')"></div>
+                                <div class="slides" style="--img: url('https://beta.hu.edu.so/gallery/{{image.img_path}}')"></div>
                                 {%else%}
                                 <div class="slides"
                                     style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
@@ -885,7 +904,7 @@
                                 {%if gallery_images%}
                                 {%for image in gallery_images%}
                                 {%if image.img_category == "training"%}
-                                <div class="slides" style="--img: url('{{image.img_path}}')"></div>
+                                <div class="slides" style="--img: url('https://beta.hu.edu.so/gallery/{{image.img_path}}')"></div>
                                 {%else%}
                                 <div class="slides"
                                     style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
@@ -924,7 +943,7 @@
                                 {%if gallery_images%}
                                 {%for image in gallery_images%}
                                 {%if image.img_category == "Others"%}
-                                <div class="slides" style="--img: url('{{image.img_path}}')"></div>
+                                <div class="slides" style="--img: url('https://beta.hu.edu.so/gallery/{{image.img_path}}')"></div>
                                 {%else%}
                                 <div class="slides"
                                     style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
