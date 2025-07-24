@@ -200,6 +200,42 @@ class ArticleModel:
             print(f'Error: {e}')
             return False, f'Error: {e}.'
 
+    def check_status_article_by_topic_name(self, topic_name):
+        sql = """
+                SELECT 
+            article_topic.id AS topic_id,
+            article_topic.topic,
+            article_topic.img AS image,
+            article_topic.topic_context,
+            topic_category.category AS category_name,
+            CONCAT(author.f_name, ' ', author.s_name, ' ', author.l_name) AS full_name,
+            article.my_date AS article_my_date,
+            article.id AS article_id,
+            article.article AS article_body
+        FROM 
+            article
+            JOIN article_topic ON article.topic_id = article_topic.id
+            JOIN author ON article_topic.author_id = author.id
+            JOIN topic_category ON article_topic.topic_category_id = topic_category.id
+            WHERE article_topic.topic = %s AND article.visibility != 'draft'
+            ;
+        """
+        try:
+            self.cursor.execute(sql, (topic_name,))
+            result = self.cursor.fetchall()
+            print(result)
+            if result:
+                print('Hubinta Furnaashiyaha maqaalka')
+                result = [dict(zip([key[0] for key in self.cursor.description], row)) for row in result]
+
+                return True, result
+            else:
+                print('Maqaalkaasi ma furna')
+                return False, []
+        except Exception as e:
+            print(f'Error: {e}')
+            return False, f'Error: {e}.'
+
     def get_img_topic_id(self, topic_id):
         sql = """
         SELECT img FROM article_topic WHERE id = %s;
@@ -266,7 +302,7 @@ if __name__ == '__main__':
     connection_status, article_model = check_article_model_connection()
     if connection_status:
         print('You are connected to the database successfully!')
-        flag, _ = article_model.get_favorite_articles()
+        flag, _ = article_model.check_status_article_by_topic_name("𝐌𝐮𝐧𝐚𝐚𝐬𝐚𝐛𝐚𝐝𝐝𝐚 𝐗𝐚𝐟𝐥𝐚𝐝𝐝𝐚 𝐐𝐚𝐥𝐢𝐧-𝐣𝐚𝐛𝐢𝐧𝐭𝐚 𝐃𝐮𝐟𝐜𝐚𝐝𝐝𝐢𝐢 𝟑𝐚𝐚𝐝 𝐞𝐞 𝐀𝐫𝐝𝐚𝐲𝐝𝐚 𝐊𝐮𝐥𝐥𝐢𝐲𝐚𝐝𝐝𝐚 𝐒𝐡𝐚𝐫𝐞𝐞𝐜𝐚𝐝𝐚 𝐢𝐲𝐨 𝐇𝐨𝐠𝐚𝐚𝐦𝐢𝐧𝐭𝐚")
         if flag:
             print(_)
             # send_last_phase_email(_)

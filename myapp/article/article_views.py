@@ -193,7 +193,14 @@ def reading_article(article):
         # connect to the database
         print('Connecting to the database...')
         print(f"This is is the article name '", session['my_article_data']['topic'], "' we are looking for")
+
         connection_status, article = check_article_model_connection()
+        # Check if the article is open or not
+        my_flag, res = article.check_status_article_by_topic_name(session['my_article_data']['topic'])
+        if not my_flag:
+            print('This article is not open for reading.')
+            return render_template('article/article_page_not_found.html'), 404
+
         flag, result = article.get_article_by_topic_name(
             topic_name=session['my_article_data']['topic']
         )
