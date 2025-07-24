@@ -468,13 +468,6 @@
                     <li class="nav-item">
                         <a class="nav-link " href="{{url_for('news')}}">News</a>
                     </li>
-                    <hr />
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{url_for('faq')}}">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="{{url_for('news')}}">News</a>
-                    </li>
                 </ul>
                 <!-- Left links -->
             </div>
@@ -835,6 +828,10 @@
                         </div>
                     </div>
                 </div>
+                
+                <hr />
+                <a href="{{url_for('faq')}}" class=" ps-4 d-flex accordion_topic mt-2" id="faqgreen_hover">FAQ</a>
+                <a href="{{url_for('news')}}" class=" ps-4 d-flex accordion_topic mt-2" id="faqgreen_hover">News</a>
                 <a href="https://hemis.hu.edu.so/" class=" ps-4 d-flex accordion_topic mt-2" id="faqgreen_hover">HEMIS No.</a>
                 <a href="http://portal.hu.edu.so/" class=" ps-4 d-flex accordion_topic mt-2" id="faqgreen_hover">HU Student Portal</a>
 

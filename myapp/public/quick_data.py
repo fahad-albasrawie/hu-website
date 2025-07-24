@@ -3,7 +3,7 @@ graduators_words = {
         'name': 'Abdisalan Abdikadir',
         'faculty': 'Faculty of Computer Science',
         'class': 'Class of 2024',
-        'image': 'static/img/graduates/cs/1.JPG',  # Corrected filename to match HTML
+        'image': 'static/img/graduates/cs/1.jpg',  # Corrected filename to match HTML
         'word': "Joining Hormuud University's Computer Science program was a gateway to a world of endless possibilities. From my very first semester, I was immersed in a challenging yet supportive environment that fostered innovation, critical thinking, and problem-solving."
     },
     'number2': {

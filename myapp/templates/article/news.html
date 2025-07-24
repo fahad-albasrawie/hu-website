@@ -40,7 +40,7 @@
                             <div class="card-img-container ">
                                 <a
                                     href="{{ url_for('read_article', article_info=article_data.favorite_article_info[0].topic) }}">
-                                    <img src="{{article_data.favorite_article_info[0].image}}" class="card-img-top "
+                                    <img src="https://hu.edu.so/article_imgs/{{article_data.favorite_article_info[0].image}}" class="card-img-top "
                                         alt="..." style="height: 417px;">
                                 </a>
                             </div>
@@ -63,7 +63,7 @@
                                         <a
                                             href="{{ url_for('read_article', article_info=article_data.favorite_article_info[1].topic) }}">
 
-                                            <img src="{{article_data.favorite_article_info[1].image}}"
+                                            <img src="https://hu.edu.so/article_imgs/{{article_data.favorite_article_info[1].image}}"
                                                 class="card-img-top " alt="..." style="height: 200px;">
                                         </a>
                                     </div>
@@ -78,7 +78,7 @@
                                 <div class="card position-relative rounded">
                                     <div class="card-img-container ">
                                         <a
-                                            href="{{ url_for('read_article', article_info=article_data.favorite_article_info[2].topic) }}">
+                                            href="https://hu.edu.so/article_imgs/{{ url_for('read_article', article_info=article_data.favorite_article_info[2].topic) }}">
                                             <img src="{{article_data.favorite_article_info[2].image}}"
                                                 class="card-img-top " alt="..." style="height: 200px;">
                                         </a>
@@ -128,7 +128,7 @@
                                 <div class="card-img-container ">
                                     <a
                                         href="{{ url_for('read_article', article_info=article.topic) }}">
-                                        <img src="{{article.image}}" class="card-img-top " alt="..."
+                                        <img src="https://hu.edu.so/article_imgs/{{article.image}}" class="card-img-top " alt="..."
                                             style="height: 460px;">
                                     </a>
 
