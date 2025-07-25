@@ -1,0 +1,62 @@
+hero image size
+7973 x 3572
+
+
+testmonials: 2453 x 2292
+
+
+
+UPDATE trainee 
+SET status = 0
+WHERE Email = 'hargaisa2022@gmail.com';
+
+
+UPDATE trainee 
+SET status = -1
+WHERE Email = 'cabduqaadir4309@gmail.com';
+
+السلام عليكم ورحمة الله وبركاته. 
+Tababbarte, waxaa farriintaan laguugu soo dirayaa in laguugu ogeysiiyo in maanta oo Sabti ah 12/16/2023 uu si rasmi ah u billaabmayo tababbarka aad isku soo qortay. 
+
+Waqtigu la imaanayo waa 4:20 PM. Waa fogaan-dersi (online) waxaad ku soo galagysaa (zoom meeting ama Google Meet)
+
+Galabtaan waxaanu isla ogaan doonnaa halka aan rabno inaan ka tallaabo qaadno iyo barta aan rabno inaan ku tallaabo joogsano. Waxaa, sidoo kale, aynu qaadaa dhigi doonnaa hannaanka iyo geedi-socodka tababbarka haddii Eebbe yiraahdo. 
+
+Fiirmo gaar: Waxaa jira is-xaadirin (Attendance). Maqanaanshaha waxa uu ka mid yahay waxyaabaha tababbartaha u horseedi kara inuu ka haro safarka dabadeedna uusan gaarin gunta iyo halkii uu hiisganayey 10 bil ka dib.
+
+
+Si aan kuwa kale kaaga soocno; "Diyaar baan ahay" ma inoogu soo warcelin kartaa fadlan. Waa tallaabada iyo foolka u dambeeya.
+
+Mahadsanid 
+
+Tixgelin,
+Kooxda Albasrawie
+
+
+CREATE TABLE attendance (id BIGINT primary key auto_increment, trainee_id BIGINT, course_id INT, present CHAR(2), created_date TIMESTAMP DEFAULT NOW(),
+
+
+FOREIGN KEY (trainee_id) REFERENCES trainee (id),
+FOREIGN KEY (course_id) REFERENCES course (id)
+
+);
+
+UPDATE trainee 
+SET f_name = 'Jaabir' WHERE id = 103
+
+
+Waxaan ahay waadiga dugsiyadaa
+
+This site uses secure server from Google 
+to deliver and enhance the quality of its 
+services and to analyze traffic.
+
+
+
+Wargelin
+
+Iimaylka soo dira
+
+
+
+

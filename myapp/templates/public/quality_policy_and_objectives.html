@@ -1,0 +1,69 @@
+{% extends 'public/public_layout.html' %}
+{% block title %} HU | Quality Policy And Objectives
+
+{% endblock %}
+
+<!-- custom css -->
+{% block news_custom_css %}
+{% endblock %}
+
+{% block content %}
+    <!-- from here content -->
+
+    <!-- Here section start -->
+    <section class="mt-5 mb-5 p-1">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col text-center">
+                    <h1 class="display-3 fw-normal text-black">Quality Policy and Objectives</h1>
+                </div>
+            </div>
+        </div>
+        <div class="col d-none d-md-block mt-5">
+            <img src="{{url_for('static', filename='img/public/qpao.jpg')}}" class="card-img-top fit-image rounded-4"
+                alt="Hormuud University Mission Image">
+        </div>
+        <div class="col d-md-none mt-5">
+            <img src="{{url_for('static', filename='img/public/qpao2.jp')}}g" class="card-img-top fit-image rounded-4"
+                alt="Hormuud University Mission Image">
+        </div>
+        <div class="bg-light text-center fs-5 p-5 pb-5 fw-bold">
+        WE ARE COMMITTED TO PROVIDE QUALITY, EFFICIENT AND EFFECTIVE SERVICE TO THE UNIVERSITY STAKEHOLDERS
+        </div>
+    </section>
+
+    <section class="mt-5 pt-5 mb-5">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="">
+                    <h1 class="display-6 fw-normal text-black mb-5">Quality Policy</h1>
+                    <p class="fs-5">
+                        Hormuud University is committed to provide quality, efficient and effective service to the University stakeholders through a dynamic and excellent management system imbued with values and professionalism.
+                    </p>
+                </div>
+                <div class="mt-5">
+                    <h1 class="display-6 fw-normal text-black mb-5">
+                        Quality Objectives
+                    </h1>
+                    <div class="container mt-3 list-with-bullets fs-5">
+                        <ul>
+                            <li>Identify the needs and wants of the University stakeholders.</li>
+                            <li>Attain organizational efficiency and effectiveness.</li>
+                            <li>Develop and improve competencies of human resource.</li>
+                            <li>Disseminate information efficiently to all stakeholders.</li>
+                            <li>Ensure functional and efficient management systems.</li>
+                            <li>Provide adequate resources and facilities.</li>
+                            <li>Improve quality services continuously through a responsive feedback mechanism.</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Here section end -->
+    
+
+    <!-- to here content end -->
+
+{% endblock %}

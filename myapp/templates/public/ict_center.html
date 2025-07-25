@@ -1,0 +1,79 @@
+{% extends 'public/public_layout.html' %}
+{% block title %} HU | ICT Center
+
+{% endblock %}
+
+<!-- custom css -->
+{% block news_custom_css %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/public/ict_center.css')}}" />
+{% endblock %}
+
+{% block content %}
+    <!-- from here content -->
+
+     <!-- Hero section start -->
+     <section class="mb-5 my-hero">
+
+        <div class="container border border-2 diff-right-darkness" style="background-color: 0 0 0 0 (.2);">
+            <h1 class="display-1 v2_font">
+                Empowering Innovation
+            </h1>
+
+        </div>
+
+    </section>
+    <!-- Hero section end -->
+
+
+        <!-- overview and information section start -->
+        <section class="mb-5">
+
+            <div class="container-sm ps-4 pe-4 ">
+    
+                <div class="row  justify-content-center">
+                    <div class="col-md-12 col-lg-8 ">
+                        <h1 class="display-3 text-black">
+                            Overview
+                        </h1>
+                        <p class="fs-5 text-dark">
+                            Welcome to Hormuud University's Information and Communications Technology (ICT) Lab – the nucleus of innovation and technological advancement. As you step into our state-of-the-art ICT lab, you are embraced by a space where the leaders of tomorrow are shaped today. Our lab is a bustling hub, equipped with cutting-edge computers and software that empower students and researchers to push the boundaries of computing, programming, and digital design.
+                        </p>
+                        <p class="fs-5 text-dark">
+                            Picture the scene: rows of sleek, modern computers line the room, each a portal to a world of information and opportunity. Our students, dressed in the formal hues of academic dedication, are engaged in a variety of tasks from coding complex algorithms to designing the next generation of user interfaces. In one corner, a group project unfolds as students collaborate, their screens a mosaic of code and creativity. In another, a focused individual troubleshoots a piece of software, their concentration palpable.
+                        </p>
+                        
+                        <div class="mt-5 border border-2 border-primary rounded-3 p-1">
+                            <img src="/static/img/public/LAB_3.jpg" class="card-img-top rounded"
+                                alt="Picture the scene: rows of sleek" width="50">
+                        </div>
+
+                        <p class="fs-5 text-dark mt-4">
+                            The light-filled room, with its large windows, not only brings in natural brightness but also offers a view that reminds us of the world awaiting the innovations born here. Whiteboards adorned with scribbles of brainstorming sessions tell tales of problem-solving and ingenuity. This is where technology meets talent, and where learning is hands-on.
+                        </p>
+                        <p class="fs-5 text-dark mt-4">
+                            At Hormuud University's ICT Lab, education is not just about absorbing information; it's about applying knowledge to real-world challenges. It's a place where students are not just taught—they are inspired to learn, to explore, and to create.
+                        </p>
+
+                        <div class="mt-5 border border-2 border-primary rounded-3 p-1">
+                            <img src="/static/img/public/LAB_9.jpg" class="card-img-top rounded"
+                                alt="Picture the scene: rows of sleek" width="50">
+                        </div>
+
+                        <p class="fs-5 text-dark mt-4">
+                            Whether you're a prospective student, a proud parent, or a curious visitor, we invite you to delve deeper into the vibrant academic life that pulsates through our ICT lab. Here, we don't just dream of the future; we start building it.
+                        </p>
+
+                    </div>
+                </div>
+    
+    
+            </div>
+    
+        </section>
+        <!-- overview and information section end -->
+
+
+
+    <!-- to here content end -->
+
+{% endblock %}

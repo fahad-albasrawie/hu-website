@@ -1,0 +1,1291 @@
+{% extends 'public/public_layout.html' %}
+{% block title %} HU | President's message
+
+{% endblock %}
+
+<!-- custom css -->
+{% block news_custom_css %}
+{% endblock %}
+
+{% block content %}
+    <!-- from here content -->
+
+    <!-- hero section start -->
+    <section class="mb-5">
+        <div class="container  mt-5">
+
+            <h1 class="display-3 text-black">
+                Faculty Deans' Message to Students, Navigating Your <span style="font-weight: 800;">Academic</span> Path
+            </h1>
+
+            <div class="mt-5 ">
+
+                <div class="container">
+                    <!-- Controls -->
+
+                    <div class="row  justify-content-between mb-3">
+                        <div class="col">
+                            <button type="button" class="btn btn-outline-success" data-mdb-ripple-init
+                                data-mdb-ripple-color="dark" data-mdb-target="#carouselMaterialStyle"
+                                data-mdb-slide="prev">
+                                <span class="material-symbols-outlined " style="font-size: 35px;">
+                                    arrow_back_ios
+                                </span>
+                            </button>
+
+                        </div>
+                        <div class="col text-end">
+                            <button type="button" class="btn btn-outline-success" data-mdb-ripple-init
+                                data-mdb-ripple-color="dark" data-mdb-target="#carouselMaterialStyle"
+                                data-mdb-slide="next">
+                                <span class="material-symbols-outlined" style="font-size: 35px;">
+                                    arrow_forward_ios
+                                </span>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel wrapper -->
+                <div id="carouselMaterialStyle" class="carousel slide" data-mdb-ride="carousel" data-mdb-carousel-init>
+                    <!-- Indicators -->
+
+                    <!-- Inner -->
+                    <div class="carousel-inner rounded-5 shadow-4-strong">
+                        <!-- Single item -->
+                        <div class="carousel-item active ">
+
+                            <!-- my conatiner start -->
+                            <div class="container pb-5 pb-lg-1">
+                                <div class="row row-cols-1 row-cols-lg-2">
+                                    <div class="col p-0 ">
+                                        <img src="{{url_for('static', filename='img/public/Engineering-hero-image.png')}}"
+                                            class="card-img-top fit-image rounded-4"
+                                            alt="Hormuud University Mission Image">
+                                    </div>
+                                    <div class="col text-center text-lg-start">
+
+                                        <h1 class="text-info mt-3">
+                                            Faculty of Engineering
+                                        </h1>
+                                        <h6 class="text-success">Unveil Innovation Strategies for Your Pillowside
+                                        </h6>
+
+                                        <div class="mt-3 text-muted fs-5">
+                                            <span>
+                                                Eng. Mohamed Said Yusuf
+                                            </span>
+                                            <br>
+                                            <span>
+                                                Dean, Faculty of Engineering, Hormuud University
+                                            </span>
+                                        </div>
+
+
+                                        <p class="mt-3">
+                                            Welcome to the Faculty of Engineering at Hormuud University. We feel proud
+                                            that among all private universities in Somalia we are the pioneer in
+                                            establishing
+                                            the graduate programs in Telecommunication, Mechanical, and Computer
+                                            Engineering...
+                                        </p>
+
+                                        <div class="text-center text-lg-center">
+                                            <button type="button" class="btn btn-primary btn-rounded fw-bold"
+                                                data-mdb-ripple-init class="btn btn-primary" type="button"
+                                                data-mdb-collapse-init data-mdb-ripple-init
+                                                data-mdb-target="#engineering-message" aria-expanded="false"
+                                                aria-controls="engineering-message">R<span class="text-lowercase">ead
+                                                    more message</span> </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- Collapsed content 1 start -->
+                                <!-- more messages start -->
+                                <!-- Collapsed content 1 start -->
+                                <!-- overview and information section start -->
+                                <section class="collapse mt-5 mb-5" id="engineering-message">
+
+                                    <div class="container-sm ps-4 pe-4 ">
+
+                                        <div class="row  justify-content-center ">
+                                            <div class="col-md-12 col-lg-8 ">
+                                                <h1 class="display-6 text-black">
+                                                    Charting Your Course towards Technological Advancement
+                                                </h1>
+                                                <p class="fs-5 text-dark mt-5">
+                                                    Students enrolled in our programs take balance set of modules to
+                                                    obtain a solid foundation in engineering and general education. Our
+                                                    Students undergo industrial and vacation training to acquire and
+                                                    sharpen their technical and communication skills.
+                                                </p>
+                                                <p class="fs-5 text-dark">
+                                                    As well as the professional approach of the Faculty, Alhamdulillah,
+                                                    here at Hormuud University, we are proud to offer a high-quality
+                                                    education and friendly environment where the students can generate
+                                                    creative ideas, develop the teamwork attitude and leadership skills
+                                                    needed for their professional careers.
+                                                </p>
+                                                <p class="fs-5 text-dark">
+                                                    Our programs develop the knowledge and professional skills of our
+                                                    students, for careers that lead the future development of
+                                                    Electronics, Communications, Mechanical, Construction and Computing
+                                                    technologies.
+                                                </p>
+                                                <p class="fs-5 text-dark">
+                                                    The university has developed numerous lab facilities for the
+                                                    students, which includes Communication lab, Computer lab, Internet
+                                                    and simulation lab,Electronics lab, Circuit, and measurement lab,
+                                                    Microprocessor lab, Physics lab.
+                                                </p>
+                                                <p class="fs-5 text-dark">
+                                                    Highly qualified academic members are leading the faculty (most of
+                                                    them completed their higher education from renowned universities in
+                                                    the world).
+                                                </p>
+
+                                                <h3 class="display-7 text-black mt-5">
+                                                    The faculty currently offers the following degree programs:
+                                                </h3>
+
+                                                <div class="mt-5">
+                                                    <ul>
+                                                        <li><span class="me-2 ">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                                                                    height="8" fill="currentColor"
+                                                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                    <circle cx="8" cy="8" r="8" />
+                                                                </svg>
+                                                            </span> Bachelor of Science in Electrical Engineering
+                                                        </li>
+                                                        <li>
+                                                            <span class="me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                                                                    height="8" fill="currentColor"
+                                                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                    <circle cx="8" cy="8" r="8" />
+                                                                </svg>
+                                                            </span>
+                                                            Bachelor of Science in Telecommunication Engineering
+                                                        </li>
+                                                        <li>
+                                                            <span class="me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                                                                    height="8" fill="currentColor"
+                                                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                    <circle cx="8" cy="8" r="8" />
+                                                                </svg>
+                                                            </span>
+                                                            Bachelor of Science in Mechanical Engineering
+                                                        </li>
+                                                        <li>
+                                                            <span class="me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                                                                    height="8" fill="currentColor"
+                                                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                    <circle cx="8" cy="8" r="8" />
+                                                                </svg>
+                                                            </span>
+                                                            Bachelor of Science in Civil Engineering
+                                                        </li>
+                                                        <li>
+                                                            <span class="me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                                                                    height="8" fill="currentColor"
+                                                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                    <circle cx="8" cy="8" r="8" />
+                                                                </svg>
+                                                            </span>
+                                                            Bachelor of Science in Engineering Geology
+                                                        </li>
+                                                        <li>
+                                                            <span class="me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                                                                    height="8" fill="currentColor"
+                                                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                    <circle cx="8" cy="8" r="8" />
+                                                                </svg>
+                                                            </span>
+                                                            Bachelor of Science in Chemical Engineering
+                                                        </li>
+
+
+
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="mt-5">
+
+                                                    <p>
+                                                        Besides that, the faculty arranges various activities like
+                                                        seminar, workshop, view exchange programs, science fair, sports
+                                                        tournaments, and technology contest etc. that will enhance to
+                                                        build up student’s quality beyond the academic syllabus.
+                                                    </p>
+
+                                                    <h6>
+                                                        Eng. Mohamed Said Yusuf
+
+                                                    </h6>
+                                                    <h6>
+                                                        Dean, Faculty of Engineering
+                                                    </h6>
+
+                                                    <h6>
+                                                        Hormuud University
+                                                    </h6>
+
+                                                </div>
+
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+
+
+
+
+                                </section>
+                                <!-- overview and information section end -->
+
+                                <!-- Collapsed content 1 start -->
+
+                                <!-- more messages end -->
+
+                            </div>
+
+                            <!-- My conatiner end -->
+
+                            <!-- <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </div> -->
+                        </div>
+
+                        <!-- Single item -->
+                        <div class="carousel-item">
+                            <!-- my conatiner start -->
+                            <div class="container pb-5 pb-lg-1">
+                                <div class="row row-cols-1 row-cols-lg-2">
+                                    <div class="col p-0 ">
+                                        <img src="{{url_for('static', filename='img/public/ComputerScinec_man.png')}}"
+                                            class="card-img-top fit-image rounded-4"
+                                            alt="Hormuud University Mission Image">
+                                    </div>
+                                    <div class="col text-center text-lg-start">
+
+                                        <h1 class="text-info mt-3">
+                                            Faculty of Computer Science
+                                        </h1>
+                                        <h6 class="text-success">Coding in Your Dreams, Creating in Reality
+                                        </h6>
+
+                                        <div class="mt-3 text-muted fs-5">
+                                            <span>
+                                                Eng. Mohamed Omar Hassan
+                                            </span>
+                                            <br>
+                                            <span>
+                                                Dean, faculty of Computer science, Hormuud University
+                                            </span>
+                                        </div>
+
+
+                                        <p class="mt-3">
+                                            The faculty of computer science and information technology of Hormuud
+                                            University thrives the educational background that enables the students of
+                                            sciences and technology to gain the required knowledge and experience
+                                            through which they will be able to work any field related to computer
+                                            science and IT...
+                                        </p>
+
+                                        <div class="text-center text-lg-center">
+                                            <button type="button" class="btn btn-primary btn-rounded fw-bold"
+                                                data-mdb-ripple-init class="btn btn-primary" type="button"
+                                                data-mdb-collapse-init data-mdb-ripple-init
+                                                data-mdb-target="#computerScience-message" aria-expanded="false"
+                                                aria-controls="computerScience-message">R<span
+                                                    class="text-lowercase">ead
+                                                    more message</span> </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- Collapsed content 1 start -->
+                                <!-- more messages start -->
+                                <!-- Collapsed content 1 start -->
+                                <!-- overview and information section start -->
+                                <section class="collapse mt-5 mb-5" id="computerScience-message">
+
+                                    <div class="container-sm ps-4 pe-4 ">
+
+                                        <div class="row  justify-content-center ">
+                                            <div class="col-md-12 col-lg-8 ">
+                                                <h1 class="display-6 text-black">
+                                                    Unveiling the Digital World and Navigating the Landscape of
+                                                    Information Technology
+                                                </h1>
+                                                <p class="fs-5 text-dark mt-5">
+                                                    Even though the computer science and IT engineering are very
+                                                    challenging in Somalia we have being able to become one of the top
+                                                    leading universities in these fields through faculty instructors who
+                                                    have the required academic experience of teaching to deliver the
+                                                    best practices and to achieve the maximum objectives, this practices
+                                                    can be seen from the computer science and IT labs that are busy with
+                                                    students performing programs in different fields on science and IT
+                                                    to practice the materials being thought in the class with the help
+                                                    of the lab engineers that are ready to fulfill the student needs. We
+                                                    have very rich library full of computer science and IT books to make
+                                                    sure the students have the best reference books to flow.
+                                                </p>
+                                                <p class="fs-5 text-dark">
+                                                    Our development and research center newly brought highly trained
+                                                    professionals specialized for CISCO certification to build the
+                                                    networking base of our students to prepare them to CISCO
+                                                    CERTIFICATION exams.
+                                                </p>
+                                                <p class="fs-5 text-dark">
+                                                    Our training department together with the research and development
+                                                    center arranges quality-training section which covers variety of
+                                                    areas like web development using (HTML 5), IOS App development,
+                                                    Graphic Designing using (PS&AI), C++ programing, JAVA programing,
+                                                    CISCO CCNA, AI, Data science etc.
+                                                </p>
+                                                <p class="fs-5 text-dark">
+
+                                                    By providing a diverse range of contents in our program, we are
+                                                    trying to make sure that our students are fit for various career
+                                                    opportunities, all of which are exciting, rewarding, and greatly
+                                                    needed for our rapidly developing country. Depending upon their
+                                                    choice, they may either join field jobs, such as Software Engineers,
+                                                    Sales Managers, Hardware and Software Vendors, Consultants,
+                                                    Programmers, etc., or work in academic institutions as researchers
+                                                    or teachers.
+                                                </p>
+                                                <p class="fs-5 text-dark">
+                                                    My message to students will be “if you didn’t stand for something
+                                                    you will fall for everything”, as you join us, we will lead you to
+                                                    the right path of becoming one of the best programmers and app
+                                                    developers in the country, not only we are giving you a knowledge
+                                                    required to this field we will also help you reach your potential by
+                                                    consultancy and discussion. As you enroll to this department, we are
+                                                    expecting you to utilize every hour, every minute and every second
+                                                    of the four years you are spending with us and never skip a
+                                                    class/lecture because if you do you will never catch up.
+                                                </p>
+                                                <p class="fs-5 text-dark">
+                                                    It is very highly recommended for the students to attend all the
+                                                    classes and section to be able to pass or attend the final exams as
+                                                    the attendance has very serious regulations in our department and
+                                                    anyone who violates it will be sanctioned accordingly. we are
+                                                    defined by our values and social welfare but we are under no
+                                                    circumstances except or tolerate any misconduct against the
+                                                    university rule-of-law, remember This is not our only department to
+                                                    make it the best in the country but it is your department as well so
+                                                    we need you to help us to develop it together for farther reach.
+                                                    Please allow me to welcome you again to the one of the fastest
+                                                    growing and most job demanding faculties in the world.
+                                                </p>
+
+                                                <h3 class="display-7 text-black mt-5">
+                                                    The faculty currently offers the following degree programs:
+                                                </h3>
+
+                                                <div class="mt-5">
+                                                    <ul>
+                                                        <li><span class="me-2 ">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                                                                    height="8" fill="currentColor"
+                                                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                    <circle cx="8" cy="8" r="8" />
+                                                                </svg>
+                                                            </span> Bachelor of Computer Science
+                                                        </li>
+                                                        <li>
+                                                            <span class="me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                                                                    height="8" fill="currentColor"
+                                                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                    <circle cx="8" cy="8" r="8" />
+                                                                </svg>
+                                                            </span>
+                                                            Bachelor of Information Technology
+                                                        </li>
+                                                        <li>
+                                                            <span class="me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                                                                    height="8" fill="currentColor"
+                                                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                    <circle cx="8" cy="8" r="8" />
+                                                                </svg>
+                                                            </span>
+                                                            Bachelor of Data Science
+                                                        </li>
+                                                        <li>
+                                                            <span class="me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                                                                    height="8" fill="currentColor"
+                                                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                    <circle cx="8" cy="8" r="8" />
+                                                                </svg>
+                                                            </span>
+                                                            Bachelor of Software Engineering
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="mt-5">
+
+                                                    <p>
+                                                        The program aims to equip students for a range of career
+                                                        opportunities, including technical and academic roles. The
+                                                        university emphasizes the importance of consistent attendance
+                                                        and engagement in classes, as this is crucial for success and
+                                                        compliance with strict attendance policies. Misconduct is not
+                                                        tolerated, aligning with the university's values and rules. The
+                                                        faculty welcomes new students to this fast-growing and in-demand
+                                                        field, encouraging them to contribute to its development.
+                                                    </p>
+
+                                                    <h6>
+                                                        Eng. Mohamed Omar Hassan
+
+                                                    </h6>
+                                                    <h6>
+                                                        Dean, faculty of Computer science and IT
+                                                    </h6>
+
+                                                    <h6>
+                                                        Hormuud University
+                                                    </h6>
+
+                                                </div>
+
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+
+
+
+
+                                </section>
+                                <!-- overview and information section end -->
+
+                                <!-- Collapsed content 1 start -->
+
+                                <!-- more messages end -->
+
+                            </div>
+
+                            <!-- My conatiner end -->
+                        </div>
+
+                        <!-- Single item -->
+                        <div class="carousel-item">
+                            <!-- my conatiner start -->
+                            <div class="container pb-5 pb-lg-1">
+                                <div class="row row-cols-1 row-cols-lg-2">
+                                    <div class="col p-0 ">
+                                        <img src="{{url_for('static', filename='img/public/Economic-management.png')}}"
+                                            class="card-img-top fit-image rounded-4"
+                                            alt="Hormuud University Mission Image">
+                                    </div>
+                                    <div class="col text-center text-lg-start">
+
+                                        <h1 class="text-info mt-3">
+                                            Faculty of Economics & Management Sciences
+                                        </h1>
+                                        <h6 class="text-success">Explore the Dynamic World of Economics and Management
+                                        </h6>
+
+                                        <div class="mt-3 text-muted fs-5">
+                                            <span>
+                                                Mr. Abdullahi Abshir Abdirahman
+                                            </span>
+                                            <br>
+                                            <span>
+                                                Dean, Faculty of Economics & Management Sciences
+                                            </span>
+                                        </div>
+
+
+                                        <p class="mt-3">
+                                            Welcome to the Faculty of Economics and Management Sciences (FEMS), at
+                                            Hormuud University. The Faculty of Economics and Management Sciences (FEMS),
+                                            is one of the developer Faculties at the Hormuud University...
+                                        </p>
+
+                                        <div class="text-center text-lg-center">
+                                            <button type="button" class="btn btn-primary btn-rounded fw-bold"
+                                                data-mdb-ripple-init class="btn btn-primary" type="button"
+                                                data-mdb-collapse-init data-mdb-ripple-init
+                                                data-mdb-target="#economyand-managament-message" aria-expanded="false"
+                                                aria-controls="economyand-managament-message">R<span
+                                                    class="text-lowercase">ead
+                                                    more message</span> </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- Collapsed content 1 start -->
+                                <!-- more messages start -->
+                                <!-- Collapsed content 1 start -->
+                                <!-- overview and information section start -->
+                                <section class="collapse mt-5 mb-5" id="economyand-managament-message">
+
+                                    <div class="container-sm ps-4 pe-4 ">
+
+                                        <div class="row  justify-content-center ">
+                                            <div class="col-md-12 col-lg-8 ">
+                                                <h1 class="display-6 text-black">
+                                                    Explore the World of Economics and Management at Hormuud
+                                                    University's Faculty of Economics and Management Sciences (FEMS)
+                                                </h1>
+                                                <p class="fs-5 text-dark mt-5">
+                                                    The Faculty aims to continuously strengthen its position as the
+                                                    leading institution in the fields of economic, financial and
+                                                    management sciences through its academic and research excellence. At
+                                                    the same time the Faculty remains committed to delivering competent,
+                                                    creative, responsible and productive citizens – the “Thought
+                                                    Leaders” of the Hormuud University.
+                                                </p>
+                                                <p class="fs-5 text-dark">
+                                                    The Faculty of Economics and Management Sciences (FEMS), focus on
+                                                    developing specialized skills in the areas of Business
+                                                    Administration, Islamic Banking & Finance, Public Administration,
+                                                    Economics and accounting.
+                                                </p>
+                                                <p class="fs-5 text-dark">
+                                                    The faculty produces graduates and intellectuals capable of playing
+                                                    their role as educated, professional and virtuous scholars in
+                                                    today’s modern world.
+                                                    FEMS provides learning opportunities that will fulfill your dreams
+                                                    for higher education that prepare you for leadership roles in
+                                                    today’s complex business environment and opening new career
+                                                    opportunities.
+
+                                                </p>
+                                                <p class="fs-5 text-dark">
+
+                                                    I once again welcome you as prospective students of FEMS in our
+                                                    pursuit of “inspiring minds’ shaping the future” through our
+                                                    dedication to quality education for a better future.
+                                                </p>
+
+                                                <h3 class="display-7 text-black mt-5">
+                                                    The Faculty of Economics and Management Sciences at Hormuud
+                                                    University, offers for the degree of Bachelor on the following
+                                                    Departments:
+                                                </h3>
+
+                                                <div class="mt-5">
+                                                    <ul>
+                                                        <li><span class="me-2 ">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                                                                    height="8" fill="currentColor"
+                                                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                    <circle cx="8" cy="8" r="8" />
+                                                                </svg>
+                                                            </span> Business Administration
+                                                        </li>
+                                                        <li>
+                                                            <span class="me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                                                                    height="8" fill="currentColor"
+                                                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                    <circle cx="8" cy="8" r="8" />
+                                                                </svg>
+                                                            </span>
+                                                            Islamic Banking & Finance
+                                                        </li>
+                                                        <li>
+                                                            <span class="me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                                                                    height="8" fill="currentColor"
+                                                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                    <circle cx="8" cy="8" r="8" />
+                                                                </svg>
+                                                            </span>
+                                                            Public Administration
+                                                        </li>
+                                                        <li>
+                                                            <span class="me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                                                                    height="8" fill="currentColor"
+                                                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                    <circle cx="8" cy="8" r="8" />
+                                                                </svg>
+                                                            </span>
+                                                            Islamic Economics
+                                                        </li>
+                                                        <li>
+                                                            <span class="me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                                                                    height="8" fill="currentColor"
+                                                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                    <circle cx="8" cy="8" r="8" />
+                                                                </svg>
+                                                            </span>
+                                                            Logistics & Procurement
+
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="mt-5">
+
+                                                    <p>
+                                                        In conclusion, the Faculty of Economics and Management Sciences
+                                                        (FEMS) at Hormuud University stands as a beacon of academic and
+                                                        research excellence in the fields of economics and management
+                                                        sciences.
+                                                    </p>
+
+                                                    <h6>
+                                                        Mr. Abdullahi Abshir Abdirahman
+
+
+                                                    </h6>
+                                                    <h6>
+                                                        Dean, Faculty of Economics & Management Sciences
+                                                    </h6>
+
+                                                    <h6>
+                                                        Hormuud University
+                                                    </h6>
+
+                                                </div>
+
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+
+
+
+
+                                </section>
+                                <!-- overview and information section end -->
+
+                                <!-- Collapsed content 1 start -->
+
+                                <!-- more messages end -->
+
+                            </div>
+
+                            <!-- My conatiner end -->
+                        </div>
+
+                        <!-- additional crasoule items start -->
+                        <!-- Single item -->
+                        <div class="carousel-item">
+                            <!-- my conatiner start -->
+                            <div class="container pb-5 pb-lg-1">
+                                <div class="row row-cols-1 row-cols-lg-2">
+                                    <div class="col p-0 ">
+                                        <img src="{{url_for('static', filename='img/public/SocialSciences.png')}}"
+                                            class="card-img-top fit-image rounded-4"
+                                            alt="Hormuud University Mission Image">
+                                    </div>
+                                    <div class="col text-center text-lg-start">
+
+                                        <h1 class="text-info mt-3">
+                                            Faculty of Arts & Social Sciences
+                                        </h1>
+                                        <h6 class="text-success">Unlock Your Potential at Hormuud University's FASS
+                                        </h6>
+
+                                        <div class="mt-3 text-muted fs-5">
+                                            <span>
+                                                Mr. Abdikarim Barqadle Igale
+                                            </span>
+                                            <br>
+                                            <span>
+                                                Dean, Faculty of Arts and Social Sciences
+                                            </span>
+                                        </div>
+
+
+                                        <p class="mt-3">
+                                            Thank you for your great interest in the Faculty of Arts and Social Sciences
+                                            (FASS) at Hormuud University – Somalia.
+                                            As a Faculty Dean, I am extremely delighted to welcome you to the
+                                            Destination of Knowledge, ...
+                                        </p>
+
+                                        <div class="text-center text-lg-center">
+                                            <button type="button" class="btn btn-primary btn-rounded fw-bold"
+                                                data-mdb-ripple-init class="btn btn-primary" type="button"
+                                                data-mdb-collapse-init data-mdb-ripple-init
+                                                data-mdb-target="#economyand-managament-message" aria-expanded="false"
+                                                aria-controls="economyand-managament-message">R<span
+                                                    class="text-lowercase">ead
+                                                    more message</span> </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- Collapsed content 1 start -->
+                                <!-- more messages start -->
+                                <!-- Collapsed content 1 start -->
+                                <!-- overview and information section start -->
+                                <section class="collapse mt-5 mb-5" id="economyand-managament-message">
+
+                                    <div class="container-sm ps-4 pe-4 ">
+
+                                        <div class="row  justify-content-center ">
+                                            <div class="col-md-12 col-lg-8 ">
+                                                <h1 class="display-6 text-black">Embarking on a Journey of Excellence
+                                                </h1>
+                                                <p class="fs-5 text-dark mt-5">
+                                                    I am extremely delighted to welcome you to the Destination of
+                                                    Knowledge, where we have a dedicated staff, caring mentors and
+                                                    hardworking students who are passionate about what they are doing,
+                                                    teaching and learning. The Faculty is an excellent center that
+                                                    provides students with positive, challenging but rewarding learning
+                                                    experiences and relatively vibrant environment.
+                                                </p>
+                                                <p class="fs-5 text-dark">
+                                                    The base of these specializations is stunningly aligned with two
+                                                    approaches: widening one’s world view and developing one’s critical
+                                                    thinking techniques. Throughout studies, students will cultivate
+                                                    strong critical thinking, analytical reasoning, problem solving,
+                                                    communication skills, and creative talents.
+                                                </p>
+                                                <p class="fs-5 text-dark">
+                                                    These qualities are desperately required for any successful career
+                                                    in any marketplace and we – at FASS – offer our students an
+                                                    opportunity to broaden their views and foster their critical
+                                                    approach through our rich curriculum, seminars, workshops, and
+                                                    activities in and off campus. Tailoring our students with the needs
+                                                    of market jobs sets the Faculty’s mission to provide an inspiring
+                                                    teaching and learning experiences through creative transformation.
+                                                    It is also an added value and positive contribution to Somali nation
+                                                    to have nurtured intellectuals, capable to examine the nation’s
+                                                    development, at large, from social perspectives. Our method is that
+                                                    we are driven by results and values that necessarily maps our minds
+                                                    to harness students’ hidden talents and transform these gifts into
+                                                    practice.
+
+                                                </p>
+                                                <p class="fs-5 text-dark">
+                                                    With these capacities and supports in place, I invite you to join us
+                                                    by sharing the values and standards we set for ourselves as we
+                                                    promote the highest degree of quality in teaching and learning in
+                                                    our nation. By joining HU, you will be part of successful process
+                                                    that will illuminate your academic and career life Insha-Allah.
+                                                    Thank you for your support.
+                                                </p>
+
+                                                <h3 class="display-7 text-black mt-5">
+                                                    The FASS offers so far, a degree of Bachelor in the following
+                                                    Departments:
+                                                </h3>
+
+                                                <div class="mt-5">
+                                                    <ul>
+                                                        <li><span class="me-2 ">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                                                                    height="8" fill="currentColor"
+                                                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                    <circle cx="8" cy="8" r="8" />
+                                                                </svg>
+                                                            </span> Department of Public Relations
+                                                        </li>
+                                                        <li>
+                                                            <span class="me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                                                                    height="8" fill="currentColor"
+                                                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                    <circle cx="8" cy="8" r="8" />
+                                                                </svg>
+                                                            </span>
+                                                            Department of Mass Communication
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="mt-5">
+
+                                                    <p>
+                                                        Mr. Abdikarim Barqadle Igale, Dean of the Faculty of Arts and
+                                                        Social Sciences (FASS) at Hormuud University, extends a
+                                                        heartfelt welcome to students interested in joining this vibrant
+                                                        educational hub. FASS prides itself on its dedicated staff,
+                                                        caring mentors, and hardworking students who contribute to a
+                                                        dynamic learning environment.
+                                                    </p>
+
+                                                    <h6>
+                                                        Mr. Abdikarim Barqadle Igale
+
+
+                                                    </h6>
+                                                    <h6>
+                                                        Dean, Faculty of Arts and Social Sciences
+                                                    </h6>
+
+                                                    <h6>
+                                                        Hormuud University
+                                                    </h6>
+
+                                                </div>
+
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+
+
+
+
+                                </section>
+                                <!-- overview and information section end -->
+
+                                <!-- Collapsed content 1 start -->
+
+                                <!-- more messages end -->
+
+                            </div>
+
+                            <!-- My conatiner end -->
+                        </div>
+
+                        <!-- additional crasoule items start -->
+                        <!-- Single item -->
+                        <div class="carousel-item">
+                            <!-- my conatiner start -->
+                            <div class="container pb-5 pb-lg-1">
+                                <div class="row row-cols-1 row-cols-lg-2">
+                                    <div class="col p-0 ">
+                                        <img src="{{url_for('static', filename='img/public/ShariaLeadership-man.png')}}"
+                                            class="card-img-top fit-image rounded-4"
+                                            alt="Hormuud University Mission Image">
+                                    </div>
+                                    <div class="col text-center text-lg-start">
+
+                                        <h1 class="text-info mt-3">
+                                            Faculty of Shari’a & Leadership
+                                        </h1>
+                                        <h6 class="text-success text-end">مسيرة نحو الريادة
+                                        </h6>
+
+                                        <div class="mt-3 text-muted fs-5 text-end">
+                                            <span>
+                                                الأستاذ جمال
+                                            </span>
+                                            <br>
+                                            <span>
+                                                منسق كلية الشريعـة والقيادة
+                                            </span>
+                                        </div>
+
+
+                                        <p class="mt-3 text-end">
+                                            يسعدنى أن أرحب بكم كلية الشريعة والقياده فى جامعة هرمود. وقد أنشئت هذه
+                                            الكلية عام 2019م لتدريس العلوم الشرعية والقيادية فى الصومال وخاصة في مقديشوا
+                                            وضواحيها، وهى تعتبر الكليه الخامسه فى جامعة هرمود، وذلك لتلبية حاجة المجتمع
+                                            الصومالي إلى متخصصين بالعلوم الشرعية قادرين على القيام بدور إيجابي وفعال في
+                                            المجتمع.
+                                        </p>
+
+                                        <div class="text-center text-lg-center">
+                                            <button type="button" class="btn btn-primary btn-rounded fw-bold"
+                                                data-mdb-ripple-init class="btn btn-primary" type="button"
+                                                data-mdb-collapse-init data-mdb-ripple-init
+                                                data-mdb-target="#economyand-managament-message" aria-expanded="false"
+                                                aria-controls="economyand-managament-message">R<span
+                                                    class="text-lowercase">ead
+                                                    more message</span> </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- Collapsed content 1 start -->
+                                <!-- more messages start -->
+                                <!-- Collapsed content 1 start -->
+                                <!-- overview and information section start -->
+                                <section class="collapse mt-5 mb-5" id="economyand-managament-message">
+
+                                    <div class="container-sm ps-4 pe-4 ">
+
+                                        <div class="row  justify-content-center ">
+                                            <div class="col-md-12 col-lg-8 ">
+                                                <h1 class="display-6 text-black text-end">
+                                                    كــلية الشــريعــة والـقيـادة
+                                                    <br>
+                                                    رسالـة العميد
+
+
+                                                </h1>
+                                                <p class="fs-5 text-dark mt-5 text-end">
+                                                    يسعدنى أن أرحب بكم كلية الشريعة والقياده فى جامعة هرمود. وقد أنشئت
+                                                    هذه الكلية عام 2019م لتدريس العلوم الشرعية والقيادية فى الصومال
+                                                    وخاصة في مقديشوا وضواحيها، وهى تعتبر الكليه الخامسه فى جامعة هرمود،
+                                                    وذلك لتلبية حاجة المجتمع الصومالي إلى متخصصين بالعلوم الشرعية قادرين
+                                                    على القيام بدور إيجابي وفعال في المجتمع.
+                                                </p>
+
+                                                <h3 class="display-7 text-black mt-5 text-end">
+                                                    تسعى الكلية لتحقيق الأهداف التالية:–
+                                                </h3>
+
+                                                <div class="mt-5 text-end">
+                                                    <ul>
+                                                        <li> إعداد الكادر المؤهل في مجال الشريعة، القادر على القيام بدور
+                                                            قيادي فعال في خدمة المجتمع.<span class="me-2 ">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                                                                    height="8" fill="currentColor"
+                                                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                    <circle cx="8" cy="8" r="8" />
+                                                                </svg>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+
+                                                            تزويد الطالب بالمعرفة الشاملة للعلوم الشرعية والمهارات
+                                                            القيادية<span class="me-2 ">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                                                                    height="8" fill="currentColor"
+                                                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                    <circle cx="8" cy="8" r="8" />
+                                                                </svg>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            تنمية قدرات الطالب ومهاراته على البحث العلمي في مجالي
+                                                            الشريعة والقيادة<span class="me-2 ">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                                                                    height="8" fill="currentColor"
+                                                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                    <circle cx="8" cy="8" r="8" />
+                                                                </svg>
+                                                            </span>
+
+                                                        </li>
+
+                                                        <li>
+                                                            توفير بيئة تعليمية متميزة وتطوير الوحدات المساندة للعملية
+                                                            التعليمية<span class="me-2 ">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                                                                    height="8" fill="currentColor"
+                                                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                    <circle cx="8" cy="8" r="8" />
+                                                                </svg>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+
+                                                            المساهمة في نشر العلم الشرعي وتعزيز الثقافة الإسلامية في
+                                                            المجتمع<span class="me-2 ">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                                                                    height="8" fill="currentColor"
+                                                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                    <circle cx="8" cy="8" r="8" />
+                                                                </svg>
+                                                            </span>
+
+                                                        </li>
+                                                        <li>
+                                                            إعداد الكفاءات المتخصصة في القيادة مع العناية بالتأصيل
+                                                            الشرعي<span class="me-2 ">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                                                                    height="8" fill="currentColor"
+                                                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                    <circle cx="8" cy="8" r="8" />
+                                                                </svg>
+                                                            </span>
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="mt-5 text-end">
+
+                                                    <p>
+                                                        اسأل الله أن يعيننا وإياكم على حسن أداء المهام، والصدق فى
+                                                        النوايا، والاخلاص فى العمل
+                                                    </p>
+
+                                                    <h6>
+                                                        الأستاذ جمال
+
+
+                                                    </h6>
+                                                    <h6>
+                                                        منسق كلية الشريعـة والقيادة
+                                                    </h6>
+
+                                                    <h6>
+                                                        جامعة هرمود
+
+                                                    </h6>
+
+                                                </div>
+
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+
+
+
+
+                                </section>
+                                <!-- overview and information section end -->
+
+                                <!-- Collapsed content 1 start -->
+
+                                <!-- more messages end -->
+
+                            </div>
+
+                            <!-- My conatiner end -->
+                        </div>
+
+                        <!-- additional crasoule items start -->
+                        <!-- Single item -->
+                        <div class="carousel-item">
+                            <!-- my conatiner start -->
+                            <div class="container pb-5 pb-lg-1">
+                                <div class="row row-cols-1 row-cols-lg-2">
+                                    <div class="col p-0 ">
+                                        <img src="{{url_for('static', filename='img/public/Agriculture.png')}}" class="card-img-top fit-image rounded-4"
+                                            alt="Hormuud University Mission Image">
+                                    </div>
+                                    <div class="col text-center text-lg-start">
+
+                                        <h1 class="text-info mt-3">
+                                            Faculty of Agriculture
+
+                                        </h1>
+                                        <h6 class="text-success">Harvesting Knowledge and Skills
+                                        </h6>
+
+                                        <div class="mt-3 text-muted fs-5">
+                                            <span>
+                                                Eng Yusuf Ali Arif.
+                                            </span>
+                                            <br>
+                                            <span>
+                                                Dean, Faculty of Agriculture.
+                                            </span>
+                                        </div>
+
+
+                                        <p class="mt-3">
+
+
+                                            Welcome to the faculty of agriculture at Hormuud University. Generally,
+                                            agriculture plays a significant role in the economy and prosperity of the
+                                            world. Especially, in Somalia one of the main natural resources of the
+                                            country is agriculture....
+                                        </p>
+
+                                        <div class="text-center text-lg-center">
+                                            <button type="button" class="btn btn-primary btn-rounded fw-bold"
+                                                data-mdb-ripple-init class="btn btn-primary" type="button"
+                                                data-mdb-collapse-init data-mdb-ripple-init
+                                                data-mdb-target="#economyand-managament-message" aria-expanded="false"
+                                                aria-controls="economyand-managament-message">R<span
+                                                    class="text-lowercase">ead
+                                                    more message</span> </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- Collapsed content 1 start -->
+                                <!-- more messages start -->
+                                <!-- Collapsed content 1 start -->
+                                <!-- overview and information section start -->
+                                <section class="collapse mt-5 mb-5" id="economyand-managament-message">
+
+                                    <div class="container-sm ps-4 pe-4 ">
+
+                                        <div class="row  justify-content-center ">
+                                            <div class="col-md-12 col-lg-8 ">
+                                                <h1 class="display-6 text-black">Join the Faculty of Agriculture at
+                                                    Hormuud University for a Fruitful Future
+                                                </h1>
+                                                <p class="fs-5 text-dark mt-5">
+                                                    According to the study programs; the faculty gives students full
+                                                    education about this faculty, practical lessons, workshops and
+                                                    seminars, and training about agriculture. The faculty has a field
+                                                    required for students’ practical program and to research anything
+                                                    about agriculture. The faculty also has fully implemented greenhouse
+                                                    fields, small tools, and machines that facilitate to practice
+                                                    students and easy to do field operations.
+                                                </p>
+                                                <p class="fs-5 text-dark">
+                                                    As faculty of Agriculture at Hormuud University, our vision and
+                                                    mission are to produce well-qualified and skilled full
+                                                    agriculturists (students) that have the ability to work in fields
+                                                    for production and in the academic arena for education. Finally,
+                                                    every person, parent or student who needs his/ his children’s
+                                                    agricultural ambition to become true welcome to the faculty of
+                                                    agriculture.
+
+                                                </p>
+                                                <h3 class="display-7 text-black mt-5">
+                                                    This faculty comprise four departments:
+                                                </h3>
+
+                                                <div class="mt-5">
+                                                    <ul>
+                                                        <li><span class="me-2 ">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                                                                    height="8" fill="currentColor"
+                                                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                    <circle cx="8" cy="8" r="8" />
+                                                                </svg>
+                                                            </span> Department of Agronomy (Soil, crop & environmental
+                                                            study)
+                                                        </li>
+                                                        <li>
+                                                            <span class="me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                                                                    height="8" fill="currentColor"
+                                                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                    <circle cx="8" cy="8" r="8" />
+                                                                </svg>
+                                                            </span>
+                                                            Department of Plant protection (Generally plant pathology &
+                                                            plant entomology)
+                                                        </li>
+                                                        <li>
+                                                            <span class="me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                                                                    height="8" fill="currentColor"
+                                                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                    <circle cx="8" cy="8" r="8" />
+                                                                </svg>
+                                                            </span>
+                                                            Department of Horticulture (Fruit, vegetable, ornamental
+                                                            plants & land scaping agriculture)
+                                                        </li>
+                                                        <li>
+                                                            <span class="me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                                                                    height="8" fill="currentColor"
+                                                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                    <circle cx="8" cy="8" r="8" />
+                                                                </svg>
+                                                            </span>
+                                                            Department of Animal Husbandry (Generally animal production
+                                                            & animal medicine)
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="mt-5">
+
+                                                    <p>
+                                                        Eng Yusuf Ali Arif, the Dean of the Faculty of Agriculture at
+                                                        Hormuud University, extends a warm welcome to those interested
+                                                        in the vital field of agriculture, which is especially crucial
+                                                        in Somalia. The faculty is composed of four departments:
+                                                        Agronomy, Plant Protection, Horticulture, and Animal Husbandry,
+                                                        each focusing on different aspects of agriculture, from soil and
+                                                        crop studies to animal production and medicine.
+                                                    </p>
+
+                                                    <h6>
+                                                        Eng Yusuf Ali Arif.
+
+
+                                                    </h6>
+                                                    <h6>
+                                                        Dean, Faculty of Agriculture.
+                                                    </h6>
+
+                                                    <h6>
+                                                        Hormuud University
+                                                    </h6>
+
+                                                </div>
+
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+
+
+
+
+                                </section>
+                                <!-- overview and information section end -->
+
+                                <!-- Collapsed content 1 start -->
+
+                                <!-- more messages end -->
+
+                            </div>
+
+                            <!-- My conatiner end -->
+                        </div>
+
+
+                    </div>
+                    <!-- Inner -->
+
+                    <!-- additional crasoule items end -->
+
+                </div>
+                <!-- Inner -->
+
+                <!-- additional crasoule items end -->
+
+
+
+
+
+
+
+            </div>
+            <!-- Inner -->
+
+
+
+
+        </div>
+        <!-- Carousel wrapper -->
+
+        </div>
+
+        </div>
+    </section>
+    <!-- hero section end -->
+
+
+    <!-- to here content end -->
+
+{% endblock %}

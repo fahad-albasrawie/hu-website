@@ -1,0 +1,1223 @@
+{% extends 'public/public_layout.html' %}
+{% block title %} HU | Home
+
+{% endblock %}
+
+<!-- custom css -->
+{% block news_custom_css %}
+{% endblock %}
+
+{% block content %}
+
+
+
+<!-- from here -->
+
+<section class="background-section mb-5">
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false"
+        data-bs-interval="5000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 0"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="5" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="6" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="7" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="8" aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="9" aria-label="Slide 9"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="10" aria-label="Slide 10"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="11" aria-label="Slide 11"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item c-item active">
+                <img src="{{url_for('static', filename='img/public/heros/biulding1.jpg')}}" class="d-block w-100 c-img"
+                    alt="Slide 1">
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="v2_font text-title fs-3 mt-5">Good environment, good study</p>
+                    <h1 class="display-1 fw-bolder text-capitalize hu-hero-font">WELCOME TO THE BIG ENVIRONMENT</h1>
+                </div>
+            </div>
+
+            <div class="carousel-item  c-item">
+                <img src="{{url_for('static', filename='img/public/heros/students.jpg')}}" class="d-block w-100 c-img"
+                    alt="Slide 0">
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="v2_font  fs-3 text-title">Students are the creators</p>
+                    <h1 class="display-1 fw-bolder text-capitalize hu-hero-font">JOIN US AND BECOME CREATIVE</h1>
+                </div>
+            </div>
+
+            <div class="carousel-item c-item">
+                <img src="{{url_for('static', filename='img/public/practical/practical3.jpg')}}"
+                    class="d-block w-100 c-img" alt="Slide 2">
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="v2_font text-title fs-3 mt-5">Destination activities</p>
+                    <h1 class="display-1 fw-bolder text-capitalize hu-hero-font">WE ALWAYS SEEK DIFFERENCE</h1>
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img src="{{url_for('static', filename='img/public/library.jpg')}}" class="d-block w-100 c-img"
+                    alt="Slide 3">
+                <div class="carousel-caption top-0 mt-4 ">
+                    <p class="v2_font text-title fs-3 mt-5">Library, the ocean of knowledge</p>
+                    <h1 class="display-1 fw-bolder text-capitalize hu-hero-font">STUDENTS LEARN BY READING</h1>
+
+                </div>
+            </div>
+
+            <div class="carousel-item c-item">
+                <img src="{{url_for('static', filename='img/public/inovation_agriculture.jpg')}}"
+                    class="d-block w-100 c-img" alt="Slide 4">
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="v2_font text-title fs-3 mt-5">Innovation in Agriculture</p>
+                    <h1 class="display-1 fw-bolder text-capitalize hu-hero-font text-uppercase">EMBRACING TRADITIONS
+                        AND TECHNOLOGY
+                    </h1>
+
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img src="{{url_for('static', filename='img/public/LAB/LAB1.jpg')}}" class="d-block w-100 c-img"
+                    alt="Slide 5">
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="v2_font text-title fs-3 mt-5">Students have the priority</p>
+                    <h1 class="display-1 fw-bolder text-capitalize hu-hero-font">FUTURE GAME CHANGERS ARE STUDENTS
+                    </h1>
+
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img src="{{url_for('static', filename='img/public/Convocational/7.jpg')}}" class="d-block w-100 c-img"
+                    alt="Slide 6">
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="v2_font text-title fs-3 mt-5">🎓 Hormuud University Class of 2024</p>
+                    <h1 class="display-1 fw-bolder text-capitalize hu-hero-font">CELEBRATING EXCELLENCE, DREAMS, AND NEW
+                        BEGINNINGS
+                    </h1>
+
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img src="{{url_for('static', filename='img/public/heros/biulding3.jpg')}}" class="d-block w-100 c-img"
+                    alt="Slide 7">
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="v2_font text-title fs-3 mt-5">🌿 A Campus that Inspires</p>
+                    <h1 class="display-1 fw-bolder text-capitalize hu-hero-font">A PLACE WHERE KNOWLEDGE MEETS SERENITY
+                    </h1>
+
+                </div>
+            </div>
+
+            <div class="carousel-item c-item">
+                <img src="{{url_for('static', filename='img/public/Exam/exam4.jpg')}}" class="d-block w-100 c-img"
+                    alt="Slide 8">
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="v2_font text-title fs-3 mt-5">👥 Moments that Matter</p>
+                    <h1 class="display-1 fw-bolder text-capitalize hu-hero-font">THE PULSE OF IDEAS, PEOPLE, UNITY, AND
+                        FUELING MINDS
+                    </h1>
+
+                </div>
+            </div>
+
+            <div class="carousel-item c-item">
+                <img src="{{url_for('static', filename='img/public/practical/practical4.jpg')}}"
+                    class="d-block w-100 c-img" alt="Slide 9">
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="v2_font text-title fs-3 mt-5">💡 Voices at the Table</p>
+                    <h1 class="display-1 fw-bolder text-capitalize hu-hero-font">IGNITING IDEAS, ONE DIALOGUE AT A TIME
+                        AND CIRCLE OF VISIONARIES
+                    </h1>
+
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img src="{{url_for('static', filename='img/public/sub-heros/NEA5.jpg')}}" class="d-block w-100 c-img"
+                    alt="Slide 10">
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="v2_font text-title fs-3 mt-5">🧠 Ideas in Motion, Futures in Formation</p>
+                    <h1 class="display-1 fw-bolder text-capitalize hu-hero-font">CRAFTING SOLUTIONS. CULTIVATING
+                        LEADERSHIP. DRIVING IMPACT.
+                    </h1>
+
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img src="{{url_for('static', filename='img/public/practical/practical7.jpg')}}"
+                    class="d-block w-100 c-img" alt="Slide 11">
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="v2_font text-title fs-3 mt-5">🏗️ Learning by Doing, Growing by Building</p>
+                    <h1 class="display-1 fw-bolder text-capitalize hu-hero-font">FROM TOOLS TO TALENT — MENTORSHIP IN
+                        MOTION.
+                    </h1>
+
+                </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+
+<!-- sestion two start ==============================================================================-->
+
+<section class="mt-4 mb-5 pb-5">
+
+    <h1 class="v2_font text-center fw-bolder mt-5 ms-1 me-1" style="color: #168055;">A university for a progressive
+        education</h1>
+
+    <div class="row ms-1 me-1 mt-5 row-cols-1 row-cols-md-2 row-cols-lg-4">
+        <div class="col mb-3 ">
+
+            <div class="image-container">
+                <img src="{{url_for('static', filename='img/public/events/21.JPG')}}" alt="Your Image Description">
+                <div class="text-overlay">
+                    <h1 class="display-6 fw-bold text-white fs-6 v2_font">Creative@HU</h1>
+                    <p class="text-white mb-0 text-center v2_font">⚙️🌊 Engineering Beyond the Shoreline</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="col mb-3 ">
+            <div class="image-container">
+                <img src="{{url_for('static', filename='img/public/eng-lap.jpg')}}" alt="Your Image Description">
+                <div class="text-overlay">
+                    <h1 class="display-6 fw-bold text-white fs-6 v2_font">Invent@HU</h1>
+                    <p class="text-white mb-0 text-center v2_font">Tomorrow depends on what we work on today</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="col mb-3 ">
+            <div class="image-container">
+                <img src="{{url_for('static', filename='img/public/events/15.jpg')}}" alt="Your Image Description">
+                <div class="text-overlay">
+                    <h1 class="display-6 fw-bold text-white fs-6 v2_font">Quran Tabsera Launch Ceremony@HU</h1>
+                    <p class="text-white mb-0 text-center v2_font">🌐 Quran Tabsera: The Future of Tafseer in Your Hands
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-3 ">
+            <div class="image-container">
+                <img src="{{url_for('static', filename='img/public/fartuun.jpeg')}}" alt="Your Image Description">
+                <div class="text-overlay">
+                    <h1 class="display-6 fw-bold text-white fs-6 v2_font">Study@HU</h1>
+                    <p class="text-white mb-0 text-center v2_font">Come with an idea and make it done at HU</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<!-- sestion two end ==============================================================================-->
+
+<!-- section start 3 ======================================-->
+
+<section class="mt-5 section3 mb-5 pt-5 pb-5">
+
+    <div class="container mt-5 mb-5">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col-12 col-md-4 mb-3">
+                <h1 class="v2_font display-6 fw-bold fs-2 text-blue">Upcomming events</h1>
+                <a href="#" id="all_events" class="all_events" data-bs-toggle="modal" data-bs-target="#exploreUppcommingEvents">Explore all upcoming events
+                    <span class="ms-3 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exploreUppcommingEvents" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Upcomming events</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="text-danger v2_font">No more upcoming events yet</h3>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary text-capitalize" data-bs-dismiss="modal">Close</button>
+
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-12 col-md-8 mb-3">
+                <div class="card card_elevation card-header-border">
+                    <div class="card-body">
+                        <div class="row ">
+                            <div class="col-3 text-center text-blue">
+                                <span class="v2_font fs-1 fw-bold ">
+                                    29
+                                </span>
+                                <span class="v2_font">DECEMBER  </span>
+                            </div>
+                            <div class="col">
+                                We are excited to announce the upcoming Graduation Ceremony of, which will be held
+                                at
+                                <span class="text-success fw-bold">
+                                    8:00 AM - 5:00 PM. <sup class="badge-warning border border-warning px-2 rounded-3">Tentative</sup>
+                                </span>
+
+                                <div class="text-end">
+                                    <a href="#" class="text-blue all_events text-decoration-none" data-bs-toggle="modal" data-bs-target="#exploreUppcommingEvents">Read more
+
+                                        <span class="ms-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-arrow-right-circle-fill"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<!-- section end 3 ======================================-->
+
+
+<!-- section 4 start ======================================- -->
+<section class="mt-5 mb-5">
+
+    <div class="container">
+        <h1 class="display-1 fw-bolder fs-1 v2_font" style="color: #168055;">News</h1>
+
+        <div class="row mt-5 mb-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
+            <!-- Check if the article are more than 3 -->
+            {%if article_data.favorite_article_info|length >=3%}
+            <div class="col mb-3">
+                <a href="">
+                    <div class="card card_elevation ">
+                        <div class="bg-image hover-overlay news_card_bg_image" data-mdb-ripple-init
+                            data-mdb-ripple-color="light">
+                            <a
+                                href="{{ url_for('read_article', article_info=article_data.favorite_article_info[0].topic) }}">
+                                <img src="{{article_data.favorite_article_info[0].image}}" class="card-img-top "
+                                    alt="..." style="height: 417px;">
+                            </a>
+                        </div>
+                        <div class="card-body card_elevation_body">
+                            <a href="#" class="all_events text-decoration-none">
+                                <h5 class="card-title v2_font fw-bolder fs-4">
+                                    {{article_data.favorite_article_info[0].topic}}</h5>
+                            </a>
+                            <p class="card-text mt-3"> <span class="p-1 rounded-2"
+                                    style="background-color: rgb(212, 212, 212);">{{article_data.favorite_article_info[0].category_name}}</span>
+                                <span class="small_fs_">{{article_data.favorite_article_info[0].article_my_date[:-5] |
+                                    format_date_somali_short}}</span>
+                            </p>
+
+                            <div class="mb-5">
+                                <p class="card-text">{{article_data.favorite_article_info[0].topic_context}}</p>
+                            </div>
+
+                            <div class="mt-5 mb-5">
+                                <a href="{{ url_for('read_article', article_info=article_data.favorite_article_info[0].topic) }}"
+                                    class="text-blue all_events text-decoration-none">
+                                    <span class="me-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                            fill="currentColor" class="bi bi-arrow-right-circle-fill"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                                        </svg>
+                                    </span>
+                                    <span>Read more from HU news</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+            <div class="col mb-3">
+                <a href="">
+                    <div class="card card_elevation ">
+                        <div class="bg-image hover-overlay news_card_bg_image" data-mdb-ripple-init
+                            data-mdb-ripple-color="light">
+                            <a
+                                href="{{ url_for('read_article', article_info=article_data.favorite_article_info[1].topic) }}">
+                                <img src="{{article_data.favorite_article_info[1].image}}" class="card-img-top "
+                                    alt="..." style="height: 417px;">
+                            </a>
+                        </div>
+                        <div class="card-body card_elevation_body">
+                            <a href="#" class="all_events text-decoration-none">
+                                <h5 class="card-title v2_font fw-bolder fs-4">
+                                    {{article_data.favorite_article_info[1].topic}}</h5>
+                            </a>
+                            <p class="card-text mt-3"> <span class="p-1 rounded-2"
+                                    style="background-color: rgb(212, 212, 212);">{{article_data.favorite_article_info[1].category_name}}</span>
+                                <span class="small_fs_">{{article_data.favorite_article_info[1].article_my_date[:-5] |
+                                    format_date_somali_short}}</span>
+                            </p>
+
+                            <div class="mb-5">
+                                <p class="card-text">{{article_data.favorite_article_info[1].topic_context}}</p>
+                            </div>
+
+                            <div class="mt-5 mb-5">
+                                <a href="{{ url_for('read_article', article_info=article_data.favorite_article_info[1].topic) }}"
+                                    class="text-blue all_events text-decoration-none">
+                                    <span class="me-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                            fill="currentColor" class="bi bi-arrow-right-circle-fill"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                                        </svg>
+                                    </span>
+                                    <span>Read more from HU news</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+            {%else%}
+            <h1 class="fs-6">
+                Dear reader, there is no more articles. Please check back later.
+            </h1>
+            {%endif%}
+
+            <div class="col mb-3 col-md-12 ">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-1 ">
+
+                    {%if article_data.article_info|length >=5%}
+
+                    <div class="col">
+                        <a href="">
+                            <div class="card card_elevation ">
+                                <div class="card-body card_elevation_body">
+
+                                    <a href="{{ url_for('read_article', article_info=article_data.article_info[2].topic) }}"
+                                        class="side_news_text">
+                                        {{article_data.article_info[2].topic_context}}
+                                    </a>
+
+                                    <div class="mt-5">
+                                        <p class="card-text mt-3"> <span class="p-1 rounded-2"
+                                                style="background-color: rgb(212, 212, 212);">{{article_data.article_info[2].category_name}}</span>
+                                            <span class="small_fs_">{{article_data.article_info[2].article_my_date[:-5]
+                                                | format_date_somali_short}}</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col mt-3 mt-sm-0 mt-md-0 mt-lg-3">
+                        <a href="">
+                            <div class="card card_elevation rounded-0">
+                                <div class="card-body card_elevation_body">
+
+                                    <a href="{{ url_for('read_article', article_info=article_data.article_info[3].topic) }}"
+                                        class="side_news_text">
+                                        {{article_data.article_info[3].topic_context}}
+                                    </a>
+
+                                    <div class="mt-5">
+                                        <p class="card-text mt-3"> <span class="p-1 rounded-2"
+                                                style="background-color: rgb(212, 212, 212);">{{article_data.article_info[3].category_name}}</span>
+                                            <span class="small_fs_">{{article_data.article_info[3].article_my_date[:-5]
+                                                | format_date_somali_short}}</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="" class="mt-3">
+                            <div class="card card_elevation rounded-0 ">
+                                <div class="card-body card_elevation_body">
+
+                                    <a href="{{ url_for('read_article', article_info=article_data.article_info[4].topic) }}"
+                                        class="side_news_text">
+                                        {{article_data.article_info[4].topic_context}}
+                                    </a>
+
+                                    <div class="mt-5">
+                                        <p class="card-text mt-3"> <span class="p-1 rounded-2"
+                                                style="background-color: rgb(212, 212, 212);">{{article_data.article_info[4].category_name}}</span>
+                                            <span class="small_fs_">{{article_data.article_info[4].article_my_date[:-5]
+                                                | format_date_somali_short}}</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    {%else%}
+                    <h1 class="fs-6">
+                        Dear reader, there is no more articles. Please check back later.
+                    </h1>
+                    {%endif%}
+
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+</section>
+<!-- section 4 end ======================================- -->
+
+<!-- section start =============Graduators=========================- -->
+<section class="container">
+    <h1 class="display-1 fw-bolder fs-1 v2_font" style="color: #388AB9;">Graduators</h1>
+
+    <h4 class="display-1 fw-bolder fs-4 v2_font text-black">Words of Wisdom from Those Who Walked Before You</h4>
+    <hr style="height: 4px; background-color: #198754; opacity: 1; border: none" />
+
+    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 mt-5 mb-5 justify-content-between">
+
+        {%if graduators_words|length >= 1%}
+
+        {% for graduator in graduators_words.values() %}
+
+        <div class="col">
+            <div class="card shadow-0">
+                <div class="justify-content-center">
+                    <div class="text-center">
+                        <img src="/static/img/public/{{graduator.image[11:]}}" class="graduators_img"
+                            data-bs-toggle="modal" data-bs-target="#model{{loop.index}}" alt="Person Image">
+                    </div>
+                </div>
+
+                <div class="card-body text-center">
+                    <div class="personalTestmonial">
+                        <h5 class="v2_font">{{graduator.name}}</h5>
+                        <span class="d-block fs-6 fw-bold">{{graduator.faculty}}</span>
+                        <span
+                            class="border rounded badge-success border-success fw-light mt-4 text-success">{{graduator.class}}</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="model{{loop.index}}" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        </div>
+                        <div class="modal-body">
+                            <div class="card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <div class="justify-content-center">
+                                            <div class="text-center">
+                                                <img src="/static/img/public/{{graduator.image[11:]}}"
+                                                    class="graduators_img" alt="Person Image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body text-center">
+                                            <div class="personalTestmonial">
+                                                <h5 class="v2_font">{{graduator.name}}</h5>
+                                                <span class="d-block fs-6 fw-bold">{{graduator.faculty}}</span>
+                                                <span
+                                                    class="border rounded badge-success border-success fw-light mt-4 text-success">{{graduator.class}}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr />
+                                <p class="d-inline-flex gap-1">
+                                <div class="ms-4">
+                                    <a class="btn btn-secondary rounded-pill fw-bold" data-bs-toggle="collapse"
+                                        href="#collapse{{loop.index}}" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        My words
+                                    </a>
+                                </div>
+
+                                </p>
+                                <div class="collapse" id="collapse{{loop.index}}">
+                                    <div class="card card-body">
+                                        {{graduator.word}}
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        {%endfor%}
+        {%endif%}
+
+    </div>
+
+</section>
+<!-- section end ===================Graduators===================- -->
+
+
+<!-- test monials start -->
+<!-- images start -->
+
+
+<!-- end of test monials -->
+
+<!-- image rotating start ==================================================== -->
+
+<!-- Last Event Memories Section -->
+<!-- Last Event Memories Section -->
+<section class="mt-5">
+    <div class="container mb-3">
+        <h2 class="display-5 v2_font" style="color: #168055;">Gallery Glimpses</h2>
+        <div class="text-muted">
+            Showcasing Exams, Convocation, Buildings, Students, Events, Orientations, Training, and Others.
+        </div>
+    </div>
+
+
+    <div class="container mt-4">
+        <ul class="nav nav-tabs border-0 d-flex align-items-center gap-3" id="galleryTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active border-0 px-1 py-2" id="exams-tab" data-bs-toggle="tab"
+                    data-bs-target="#exams" type="button" role="tab">Exams</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link border-0 px-1 py-2" id="convocation-tab" data-bs-toggle="tab"
+                    data-bs-target="#convocation" type="button" role="tab">Convocation</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link border-0 px-1 py-2" id="building-tab" data-bs-toggle="tab"
+                    data-bs-target="#building" type="button" role="tab">Building</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link border-0 px-1 py-2" id="students-tab" data-bs-toggle="tab"
+                    data-bs-target="#students" type="button" role="tab">Students</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link border-0 px-1 py-2" id="events-tab" data-bs-toggle="tab"
+                    data-bs-target="#events" type="button" role="tab">Events</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link border-0 px-1 py-2" id="orientations-tab" data-bs-toggle="tab"
+                    data-bs-target="#orientations" type="button" role="tab">Orientations</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link border-0 px-1 py-2" id="training-tab" data-bs-toggle="tab"
+                    data-bs-target="#training" type="button" role="tab">Training</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link border-0 px-1 py-2" id="others-tab" data-bs-toggle="tab"
+                    data-bs-target="#others" type="button" role="tab">Others</button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="galleryTabsContent">
+            <!-- Exams Tab -->
+            <div class="tab-pane fade show active" id="exams" role="tabpanel">
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-12 px-0">
+                            <div class="slider overflow-hidden rounded-3" id="exams-slider">
+                                {%if gallery_images%}
+                                {%for image in gallery_images%}
+                                {%if image.img_category == "Exams"%}
+                                <div class="slides" style="--img: url('https://beta.hu.edu.so/gallery/{{image.img_path}}')"></div>
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                                {%endfor%}
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-center gap-5">
+                                <span
+                                    class="material-symbols-outlined prev rounded-pill exams-prev">arrow_back_ios</span>
+                                <span
+                                    class="material-symbols-outlined next rounded-pill exams-next">arrow_forward_ios</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Convocation Tab -->
+            <div class="tab-pane fade" id="convocation" role="tabpanel">
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-12 px-0">
+                            <div class="slider overflow-hidden rounded-3" id="convocation-slider">
+                                {%if gallery_images%}
+                                {%for image in gallery_images%}
+                                {%if image.img_category == "Convocational Ceremony"%}
+                                <div class="slides" style="--img: url('https://beta.hu.edu.so/gallery/{{image.img_path}}')"></div>
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                                {%endfor%}
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-center gap-5">
+                                <span
+                                    class="material-symbols-outlined prev rounded-pill convocation-prev">arrow_back_ios</span>
+                                <span
+                                    class="material-symbols-outlined next rounded-pill convocation-next">arrow_forward_ios</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Building Tab -->
+            <div class="tab-pane fade" id="building" role="tabpanel">
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-12 px-0">
+                            <div class="slider overflow-hidden rounded-3" id="building-slider">
+                                {%if gallery_images%}
+                                {%for image in gallery_images%}
+                                {%if image.img_category == "Building"%}
+                                <div class="slides" style="--img: url('https://beta.hu.edu.so/gallery/{{image.img_path}}')"></div>
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                                {%endfor%}
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-center gap-5">
+                                <span
+                                    class="material-symbols-outlined prev rounded-pill building-prev">arrow_back_ios</span>
+                                <span
+                                    class="material-symbols-outlined next rounded-pill building-next">arrow_forward_ios</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Students Tab -->
+            <div class="tab-pane fade" id="students" role="tabpanel">
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-12 px-0">
+                            <div class="slider overflow-hidden rounded-3" id="students-slider">
+                                {%if gallery_images%}
+                                {%for image in gallery_images%}
+                                {%if image.img_category == "Students"%}
+                                <div class="slides" style="--img: url('https://beta.hu.edu.so/gallery/{{image.img_path}}')"></div>
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                                {%endfor%}
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-center gap-5">
+                                <span
+                                    class="material-symbols-outlined prev rounded-pill students-prev">arrow_back_ios</span>
+                                <span
+                                    class="material-symbols-outlined next rounded-pill students-next">arrow_forward_ios</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Events Tab -->
+            <div class="tab-pane fade" id="events" role="tabpanel">
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-12 px-0">
+                            <div class="slider overflow-hidden rounded-3" id="events-slider">
+                                {%if gallery_images%}
+                                {%for image in gallery_images%}
+                                {%if image.img_category == "Events"%}
+                                <div class="slides" style="--img: url('https://beta.hu.edu.so/gallery/{{image.img_path}}')"></div>
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                                {%endfor%}
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-center gap-5">
+                                <span
+                                    class="material-symbols-outlined prev rounded-pill events-prev">arrow_back_ios</span>
+                                <span
+                                    class="material-symbols-outlined next rounded-pill events-next">arrow_forward_ios</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Orientations Tab -->
+            <div class="tab-pane fade" id="orientations" role="tabpanel">
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-12 px-0">
+                            <div class="slider overflow-hidden rounded-3" id="orientations-slider">
+                                {%if gallery_images%}
+                                {%for image in gallery_images%}
+                                {%if image.img_category == "Orientations"%}
+                                <div class="slides" style="--img: url('https://beta.hu.edu.so/gallery/{{image.img_path}}')"></div>
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                                {%endfor%}
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-center gap-5">
+                                <span
+                                    class="material-symbols-outlined prev rounded-pill orientations-prev">arrow_back_ios</span>
+                                <span
+                                    class="material-symbols-outlined next rounded-pill orientations-next">arrow_forward_ios</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Training Tab -->
+            <div class="tab-pane fade" id="training" role="tabpanel">
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-12 px-0">
+                            <div class="slider overflow-hidden rounded-3" id="training-slider">
+                                {%if gallery_images%}
+                                {%for image in gallery_images%}
+                                {%if image.img_category == "training"%}
+                                <div class="slides" style="--img: url('https://beta.hu.edu.so/gallery/{{image.img_path}}')"></div>
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                                {%endfor%}
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-center gap-5">
+                                <span
+                                    class="material-symbols-outlined prev rounded-pill training-prev">arrow_back_ios</span>
+                                <span
+                                    class="material-symbols-outlined next rounded-pill training-next">arrow_forward_ios</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Others Tab -->
+            <div class="tab-pane fade" id="others" role="tabpanel">
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-12 px-0">
+                            <div class="slider overflow-hidden rounded-3" id="others-slider">
+                                {%if gallery_images%}
+                                {%for image in gallery_images%}
+                                {%if image.img_category == "Others"%}
+                                <div class="slides" style="--img: url('https://beta.hu.edu.so/gallery/{{image.img_path}}')"></div>
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                                {%endfor%}
+                                {%else%}
+                                <div class="slides"
+                                    style="background-color: #f1f1f1; display: flex; justify-content: center; align-items: center;">
+                                    <p>No images available yet</p>
+                                </div>
+                                {%endif%}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-center gap-5">
+                                <span
+                                    class="material-symbols-outlined prev rounded-pill others-prev">arrow_back_ios</span>
+                                <span
+                                    class="material-symbols-outlined next rounded-pill others-next">arrow_forward_ios</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- image rotating end ==================================================== -->
+
+
+
+<div class="mt-5">
+
+    <div class="container card_elevation_body pt-5 pb-5">
+
+        <h1 class="v2_font">Facts and figures</h1>
+        <div class="row mt-5 row-cols-2 row-cols-sm-2 row-cols-md-5 justify-content-center">
+
+            <div class="col text-center mt-3">
+                <div type="button" class="btn btn-primary position-relative p-0">
+                    <span
+                        class="material-symbols-outlined facts_and_figures_icon border p-3 rounded-4 badge-primary border-primary">
+                        school
+                    </span>
+                    <span
+                        class="position-absolute top-0 start-100 translate-middle p-2 bg-primary border rounded-circle border-0">
+                        625+
+                        <span class="visually-hidden">New alerts</span>
+                    </span>
+                </div>
+                <div class="mt-2">
+                    Postgraduate students
+                </div>
+
+            </div>
+            <div class="col text-center mt-3">
+                <div type="button" class="btn btn-primary position-relative p-0">
+                    <span
+                        class="material-symbols-outlined facts_and_figures_icon border p-3 rounded-4 badge-danger border-danger ">
+                        workspace_premium
+                    </span>
+                    <span
+                        class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border rounded-circle border-0 fw-bolder">
+                        1,142+
+                        <span class="visually-hidden">New alerts</span>
+                    </span>
+
+                </div>
+                <div class="mt-2">
+                    Undergraduate students
+                </div>
+            </div>
+            <div class="col text-center mt-3">
+                <div type="button" class="btn btn-primary position-relative p-0">
+                    <span
+                        class="material-symbols-outlined facts_and_figures_icon border p-3 rounded-4 badge-info border-info">
+                        menu_book
+                    </span>
+                    <span
+                        class="position-absolute top-0 start-100 translate-middle p-2 bg-info border rounded-circle border-0 fw-bolder">
+                        2,274+
+                        <span class="visually-hidden">New alerts</span>
+                    </span>
+
+                </div>
+                <div class="mt-2">
+                    Studying students
+                </div>
+
+            </div>
+            <div class="col text-center mt-3 d-none">
+                <div type="button" class="btn btn-primary position-relative p-0">
+                    <span
+                        class="material-symbols-outlined facts_and_figures_icon border p-3 rounded-4 badge-success border-success">
+                        globe
+                    </span>
+                    <span
+                        class="position-absolute top-0 start-100 translate-middle p-2 bg-success border rounded-circle border-0 fw-bolder">
+                        10+
+                        <span class="visually-hidden">New alerts</span>
+                    </span>
+
+                </div>
+                <div class="mt-2">
+                    International students
+                </div>
+
+            </div>
+            <div class="col text-center mt-3">
+                <div type="button" class="btn btn-primary position-relative p-0">
+                    <span
+                        class="material-symbols-outlined facts_and_figures_icon border p-3 rounded-4 badge-warning border-warning">
+                        groups_2
+                    </span>
+                    <span
+                        class="position-absolute top-0 start-100 translate-middle p-2 bg-warning border rounded-circle border-0 fw-bolder">
+                        194+
+                        <span class="visually-hidden">New alerts</span>
+                    </span>
+
+                </div>
+                <div class="mt-2">
+                    Academic staff
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- hu video section start -->
+<div class="container mt-5 ps-0 pe-0 pb-0">
+
+    <h1 class="display-5 v2_font mb-3 text-blue">Dear, welcome to the university</h1>
+
+    <iframe src="https://www.youtube-nocookie.com/embed/hmdPn-45hi0?vq=hd1080&" width="100%" height="600"
+        title="Welcome to Hormuud university" frameborder="0" allowfullscreen></iframe>
+
+
+</div>
+
+<div class="container mt-5">
+    <div class="row row-cols-3">
+        <div class="col">
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/fX4goKQx57c"
+                title="𝗦𝗧𝗨𝗗𝗘𝗡𝗧 𝗦𝗨𝗖𝗖𝗘𝗦𝗦 𝗦𝗧𝗢𝗥𝗬 - Engr 𝗔𝗜𝗦𝗛𝗔 𝗔𝗟𝗜 𝗠𝗢𝗔𝗟𝗜𝗠 𝗔𝗕𝗗𝗨𝗟𝗟𝗔𝗛𝗜"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div class="col">
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/W0dDlJtpNrU"
+                title="𝗦𝗧𝗨𝗗𝗘𝗡𝗧 𝗦𝗨𝗖𝗖𝗘𝗦𝗦 𝗦𝗧𝗢𝗥𝗬 - Engr. 𝗔𝗕𝗗𝗜𝗥𝗔𝗛𝗠𝗔𝗡 𝗠𝗢𝗛𝗔𝗠𝗘𝗗 𝗧𝗜𝗜𝗙𝗢𝗪"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div class="col">
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/5F3Gdcogdxs"
+                title="____   𝗦𝗧𝗨𝗗𝗘𝗡𝗧 𝗦𝗨𝗖𝗖𝗘𝗦𝗦 𝗦𝗧𝗢𝗥𝗬  ____ 𝗘𝗡𝗚. 𝗠𝗢𝗛𝗔𝗠𝗘𝗗 𝗔𝗕𝗗𝗜𝗥𝗔𝗛𝗠𝗔𝗡 𝗔𝗕𝗗𝗨𝗟𝗟𝗘"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+<!-- hu video section end -->
+
+<!-- map start -->
+<div class="container-fluid pt-3 pb-3 mt-5">
+
+    <h1 class="display-5 v2_font ms-md-5" style="color: #168055;">Campus Maps</h1>
+
+    <ul class="nav nav-tabs mb-3 justify-content-center border-bottom border-2 pb-2 border-success" id="myTab0"
+        role="tablist">
+        <li class="nav-item mb-3" role="presentation">
+            <button data-mdb-tab-init class="nav-link active" id="home-tab0" data-mdb-target="#home0" type="button"
+                role="tab" aria-controls="home" aria-selected="true">
+                Bulo-hubay Campus
+            </button>
+        </li>
+        <li class="nav-item mb-3" role="presentation">
+            <button data-mdb-tab-init class="nav-link" id="profile-tab0" data-mdb-target="#profile0" type="button"
+                role="tab" aria-controls="profile" aria-selected="false">
+                Postgraduate Campus
+            </button>
+        </li>
+        <li class="nav-item mb-3" role="presentation">
+            <button data-mdb-tab-init class="nav-link" id="contact-tab0" data-mdb-target="#contact0" type="button"
+                role="tab" aria-controls="contact" aria-selected="false">
+                Banadir Campus
+            </button>
+        </li>
+        <li class="nav-item mb-3" role="presentation">
+            <button data-mdb-tab-init class="nav-link bg-secondary" id="contact-tab0" data-mdb-target="#treedisha"
+                type="button" role="tab" aria-controls="contact" aria-selected="false" disabled>
+                KM-13 (Tredisha) Campus
+            </button>
+        </li>
+    </ul>
+    <div class="tab-content " id="myTabContent0">
+        <div class="tab-pane fade show active" id="home0" role="tabpanel" aria-labelledby="home-tab0">
+            <div class="">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d249.20732945437035!2d45.30228697479934!3d2.028826300000009!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3d5841fe9c1ad9cd%3A0x33f794ad1e3d5205!2sHormuud%20University!5e0!3m2!1sen!2sso!4v1702109352291!5m2!1sen!2sso"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="rounded-5"></iframe>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="profile0" role="tabpanel" aria-labelledby="profile-tab0">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3987.315266243698!2d45.29972077167613!3d2.029639450830139!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3d58417ac6d808f1%3A0x940cf0f4300e4386!2sHormuud%20University%20Postgraduate%20Center!5e0!3m2!1sen!2sso!4v1702110578904!5m2!1sen!2sso"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="tab-pane fade" id="contact0" role="tabpanel" aria-labelledby="contact-tab0">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.2976415292974!2d45.294747296789566!3d2.03677330000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3d5843e0c02466d9%3A0x44a68b8d9100a29a!2sHormuud%20University%20(Banaadir%20Campus)!5e0!3m2!1sen!2sso!4v1702110636141!5m2!1sen!2sso"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="tab-pane fade" id="treedisha" role="tabpanel" aria-labelledby="contact-tab0">
+            Xarunta KM-13 (Tareedisha)
+        </div>
+    </div>
+    <div class="border border-1 border-success">
+
+    </div>
+
+    <!-- <div class="">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d249.20732945437035!2d45.30228697479934!3d2.028826300000009!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3d5841fe9c1ad9cd%3A0x33f794ad1e3d5205!2sHormuud%20University!5e0!3m2!1sen!2sso!4v1702109352291!5m2!1sen!2sso" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-5"></iframe>
+            </div> -->
+
+
+</div>
+<!-- map end -->
+
+<!-- to here -->
+
+<script>
+    // Initialize all sliders
+    function initSlider(sliderId, prevBtnClass, nextBtnClass) {
+        const slider = document.querySelector(`#${sliderId}`);
+        const prev = document.querySelector(`.${prevBtnClass}`);
+        const next = document.querySelector(`.${nextBtnClass}`);
+
+        if (prev && next && slider) {
+            prev.addEventListener('click', function () {
+                let slides = slider.querySelectorAll('.slides');
+                slider.appendChild(slides[0]);
+            });
+
+            next.addEventListener('click', function () {
+                let slides = slider.querySelectorAll('.slides');
+                slider.prepend(slides[slides.length - 1]);
+            });
+        }
+    }
+
+    // Initialize each slider when the page loads
+    document.addEventListener('DOMContentLoaded', function () {
+        initSlider('exams-slider', 'exams-prev', 'exams-next');
+        initSlider('convocation-slider', 'convocation-prev', 'convocation-next');
+        initSlider('building-slider', 'building-prev', 'building-next');
+        initSlider('students-slider', 'students-prev', 'students-next');
+        initSlider('events-slider', 'events-prev', 'events-next');
+        initSlider('orientations-slider', 'orientations-prev', 'orientations-next');
+        initSlider('training-slider', 'training-prev', 'training-next');
+        initSlider('others-slider', 'others-prev', 'others-next');
+    });
+</script>
+
+{% endblock %}

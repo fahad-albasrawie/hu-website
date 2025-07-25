@@ -1,0 +1,31 @@
+
+.my_bg_primary{
+    background-color: #168056b9;
+}
+
+.my-hero{
+    background-color: #168056b9;
+    background-image: url("../img/contact_us_hero_bg.png");
+    color: white;
+    background-size: cover;
+
+    background-blend-mode: multiply; 
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.my-hero .container{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto ;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.vertical-line {
+    height: 100px; /* Adjust the height as needed */
+    width: 1px; /* Width of the line */
+    background-color: black; /* Color of the line */
+    margin: 0 auto; /* This centers the line if it's inside a container */
+}

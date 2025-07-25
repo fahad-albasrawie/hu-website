@@ -1,0 +1,194 @@
+{% extends 'public/public_layout.html' %}
+{% block title %} HU | Entry Requirements
+
+{% endblock %}
+
+<!-- custom css -->
+{% block news_custom_css %}
+{% endblock %}
+
+{% block content %}
+    <!-- from here content -->
+
+    <section class="mt-5 pt-md-5 mb-5">
+        <div class="container">
+            <h1 class="display-6 v2_font text-dark text-center">
+                Knowledge is Power: Exploring HU's Entrance Qualifications
+            </h1>
+        </div>
+
+        <div class="col">
+            <img src="{{url_for('static', filename='img/public/HU Pre-req.png')}}" class="card-img-top fit-image rounded-4"
+                alt="Hormuud University Mission Image">
+        </div>
+
+        <div class="bg-light">
+
+            <div class="container  pt-4 pb-4">
+                <h1 class="ms-3 display-8 text-danger">
+                    Requirements
+                </h1>
+
+                <div class="row mt-3 ms-1 me-1 row-cols-2 row-cols-md-2 row-cols-lg-5">
+
+
+                    <div class="col mb-3">
+                        <h3 class="text-black">
+                            Certificate
+                        </h3>
+
+                        <div>
+                            Copy and original of secondary leaving certificate
+                        </div>
+
+                    </div>
+                    <div class="col mb-3">
+                        <h3 class="text-black">
+                            Letter
+                        </h3>
+                        <div>
+                            Good Conduct & Application Letter
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <h3 class="text-black">
+                            Fee
+                        </h3>
+                        <div>
+                            Admission exam fee <span class="text-black fw-bold">$40</span>
+                            <br>
+                            <span>
+                                Passport sized photos (8)
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <h3 class="text-black">
+                            Exam
+                        </h3>
+                        <div>
+                            Pass entry exams
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3 align-self-center">
+                        <a href="{{url_for('how_to_apply')}}" class="btn btn-info rounded-pill fs-6 fw-bold">A<span
+                                class="text-lowercase">pply now <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                    height="20" fill="currentColor" class="bi bi-box-arrow-up-right"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                                    <path fill-rule="evenodd"
+                                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                                </svg> </span></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- overview and information section start -->
+    <section class=" mb-5">
+
+        <div class="container ps-4 pe-4">
+
+            <div class="row  justify-content-center">
+                <div class="col-md-12 col-lg-8">
+                    <h1 class="display-3 text-black">
+                        Overview
+                    </h1>
+                    <p class="fs-5 text-dark">
+                        Hormuud University welcomes your application! This guide outlines the key steps and timelines to
+                        ensure a smooth journey. Review your eligibility (certificates, letter, fee) and choose your
+                        program before submitting your application. Prepare for the program-specific entry exam after
+                        the deadline. Upon passing, your application will be reviewed, and you'll receive the admission
+                        decision shortly. For detailed information and forms, visit the "Apply Now" section on the
+                        university website. Remember, deadlines and specifics might change, so check the official
+                        website for the latest updates. Good luck with your application!
+                    </p>
+                    <h3 class="display-7 text-black mt-5">
+                        Application process
+                    </h3>
+
+                    <div class="mt-5">
+                        <ul>
+                            <li><span class="me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                                        class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                        <circle cx="8" cy="8" r="8" />
+                                    </svg>
+                                </span> Ensure your application is complete. We cannot review it until everything is
+                                submitted.
+                            </li>
+                            <li>
+                                <span class="me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                                        class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                        <circle cx="8" cy="8" r="8" />
+                                    </svg>
+                                </span>
+                                Choose your program carefully. This is an important decision that will impact your
+                                studies.
+                            </li>
+                            <li>
+                                <span class="me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                                        class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                        <circle cx="8" cy="8" r="8" />
+                                    </svg>
+                                </span>
+
+                                Pay the $40 admission fee to one of the following bank accounts:
+                            </li>
+                            <ul>
+                                <li><span class="me-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                                            class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                            <circle cx="8" cy="8" r="8" />
+                                        </svg>
+                                    </span>SALAAM SOMALI BANK: 30028742</li>
+                                <li>
+                                    <span class="me-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                                            class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                            <circle cx="8" cy="8" r="8" />
+                                        </svg>
+                                    </span>
+
+                                    Note: The application fee is non-refundable.
+                                </li>
+                            </ul>
+
+                            <li>
+                                <span class="me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                                        class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                        <circle cx="8" cy="8" r="8" />
+                                    </svg>
+                                </span>
+                                After submitting your application, we will contact you (email or call) regarding your
+                                entry or acceptance exam.
+                            </li>
+                        </ul>
+
+                        <div>
+                            For more details please contact (+2521) 852805 / (+2521) 852860.
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+    <!-- overview and information section end -->
+
+
+
+    <!-- to here content end -->
+
+{% endblock %}

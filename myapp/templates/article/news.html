@@ -1,0 +1,171 @@
+{% extends 'public/public_layout.html' %}
+{% block title %} HU | Articles
+
+{% endblock %}
+<!-- custom css -->
+{% block news_custom_css %}
+
+{% endblock %}
+
+{% block content %}
+
+<section class="border">
+    <div class="container-lg mt-3 mb-5">
+        <div class="row  justify-content-center">
+            <div class="col-xl-10 ps-lg-0">
+                <h4 class="display-6 fs-4">Article</h4>
+
+                <div class="d-none">
+                    {{article_data}}
+
+                </div>
+
+                <!-- Overview Division -->
+                <div class=" mt-5 pt-5">
+                    <div>
+                        <h5 class="display-6 fs-6 text-center">Article</h5>
+                        <h5 class="display-5 text-center text-black mt-4">Overview</h5>
+                    </div>
+
+                </div>
+
+                <!-- Check if the article are more than 3 -->
+                {%if article_data.favorite_article_info|length >=3%}
+
+                <!-- Most recent posts -->
+                <div class="row pt-2 pb-2 mt-5">
+
+                    <div class="col-sm-12 col-lg-8 mb-3 rounded">
+                        <div class="card position-relative rounded">
+                            <div class="card-img-container ">
+                                <a
+                                    href="{{ url_for('read_article', article_info=article_data.favorite_article_info[0].topic) }}">
+                                    <img src="https://hu.edu.so/article_imgs/{{article_data.favorite_article_info[0].image}}" class="card-img-top "
+                                        alt="..." style="height: 417px;">
+                                </a>
+                            </div>
+                            <div class="card-overlay">
+                                <p>{{article_data.favorite_article_info[0].category_name}} •
+                                    {{article_data.favorite_article_info[0].article_my_date[:-5] | format_date_somali_short}}</p>
+                                <h6>{{article_data.favorite_article_info[0].topic}}</h6>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--The sec two smaller img-->
+
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-sm-6 col-lg-12 mb-3 ">
+                                <div class="card position-relative rounded">
+                                    <div class="card-img-container ">
+                                        <a
+                                            href="{{ url_for('read_article', article_info=article_data.favorite_article_info[1].topic) }}">
+
+                                            <img src="https://hu.edu.so/article_imgs/{{article_data.favorite_article_info[1].image}}"
+                                                class="card-img-top " alt="..." style="height: 200px;">
+                                        </a>
+                                    </div>
+                                    <div class="card-overlay">
+                                        <p>{{article_data.favorite_article_info[1].category_name}} •
+                                            {{article_data.favorite_article_info[1].article_my_date[:-5] | format_date_somali_short}} </p>
+                                        <h6>{{article_data.favorite_article_info[1].topic}}</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-12 ">
+                                <div class="card position-relative rounded">
+                                    <div class="card-img-container ">
+                                        <a
+                                            href="https://hu.edu.so/article_imgs/{{ url_for('read_article', article_info=article_data.favorite_article_info[2].topic) }}">
+                                            <img src="{{article_data.favorite_article_info[2].image}}"
+                                                class="card-img-top " alt="..." style="height: 200px;">
+                                        </a>
+
+                                    </div>
+                                    <div class="card-overlay">
+                                        <p>{{article_data.favorite_article_info[2].category_name}} •
+                                            {{article_data.favorite_article_info[2].article_my_date[:-5] | format_date_somali_short}}</p>
+                                        <h6>{{article_data.favorite_article_info[2].topic}}</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                {%else%}
+                <h1 class="fs-6">
+                    Dear reader, there is no more articles. Please check back later.
+                </h1>
+                {%endif%}
+
+                {%if article_data%}
+
+                <!-- Latest articles -->
+                <div class=" mt-5">
+
+                    <div class="mt-5">
+                        <h2 class="text-black fw-light">Latest Articles</h2>
+                    </div>
+
+                    <div class="row pt-2 pb-2  mt-4 row-cols-1 row-cols-md-3">
+
+                        <!-- Check if the article are more than 3 -->
+                        {%if article_data.article_info%}
+
+                        <!-- Loop throgh all articles -->
+                        {%for article in article_data.article_info%}
+
+                        <!-- Check that they are not favorate -->
+
+                        {%if article.article_visibility == 'open'%}
+                        <div class="col mb-3">
+                            <div class="card position-relative rounded">
+                                <div class="card-img-container ">
+                                    <a
+                                        href="{{ url_for('read_article', article_info=article.topic) }}">
+                                        <img src="https://hu.edu.so/article_imgs/{{article.image}}" class="card-img-top " alt="..."
+                                            style="height: 460px;">
+                                    </a>
+
+                                </div>
+                                <div class="card-overlay">
+                                    <p>{{article.category_name}} • {{article.article_my_date[:-5] | format_date_somali_short}}</p>
+                                    <h6>{{article.topic}}</h6>
+                                </div>
+                            </div>
+                        </div>
+                        {%endif%}
+
+                        {%endfor%}
+
+                        {%else%}
+                        <h1 class="fs-6">
+                            Others are comming...
+                        </h1>
+                        {%endif%}
+
+
+                    </div>
+                </div>
+
+                {%else%}
+
+                <h1 >
+                    These is no more articles.
+                </h1>
+
+                {%endif%}
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% endblock %}
