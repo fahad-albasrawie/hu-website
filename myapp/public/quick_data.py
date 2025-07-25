@@ -161,3 +161,5 @@ graduators_words = {
         'word': "My educational journey in the Logistics program at Hormuud University has been both challenging and rewarding. The curriculum, designed to cover all aspects of logistics and supply chain management, provided me with a comprehensive understanding of the field."
     }
 }
+
+# If the ocde works do not touch
